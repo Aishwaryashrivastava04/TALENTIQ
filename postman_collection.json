@@ -1,0 +1,278 @@
+{
+  "info": {
+    "_postman_id": "talentiq-smart-recruitment-api-direct",
+    "name": "TALENTIQ | Smart Recruitment API (Ready to Run)",
+    "description": "Direct, zero-setup Postman Collection for TALENTIQ.\nAll URLs are pre-configured to http://127.0.0.1:5005/api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "0. System Health",
+      "item": [
+        {
+          "name": "1. Health Check (Test Connection)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/health",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "1. Authentication",
+      "item": [
+        {
+          "name": "2. Register User (Any Details)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.token) {",
+                  "    pm.globals.set('authToken', jsonData.token);",
+                  "    console.log('Saved Global Auth Token!');",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"full_name\": \"Aishwarya Shree\",\n  \"email\": \"aishwarya.shree@talentcorp.com\",\n  \"phone\": \"+919113173220\",\n  \"password\": \"Password@123\",\n  \"role\": \"HR_MANAGER\"\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/auth/register",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "auth", "register"]
+            }
+          }
+        },
+        {
+          "name": "3. Login (Get JWT Token)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.token) {",
+                  "    pm.globals.set('authToken', jsonData.token);",
+                  "    console.log('Saved Global Auth Token!');",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"aishwarya.shree@talentcorp.com\",\n  \"password\": \"Password@123\"\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/auth/login",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "auth", "login"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Dashboard & Recruitment Data",
+      "item": [
+        {
+          "name": "4. Get Dashboard KPIs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/dashboard/kpis",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "dashboard", "kpis"]
+            }
+          }
+        },
+        {
+          "name": "5. Get All Candidates",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/candidates",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "candidates"]
+            }
+          }
+        },
+        {
+          "name": "6. Get All Job Requisitions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/jobs",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "jobs"]
+            }
+          }
+        },
+        {
+          "name": "7. Get Applications Pipeline",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/applications",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "applications"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Machine Learning (Subject 1)",
+      "item": [
+        {
+          "name": "8. Salary Prediction (Linear Regression vs Random Forest)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"experience_years\": 4.5,\n  \"education_level\": \"MCA\",\n  \"job_role\": \"Data Scientist\",\n  \"location\": \"Bengaluru\",\n  \"company_size\": \"LARGE_ENTERPRISE\",\n  \"skills\": [\"Python\", \"Machine Learning\", \"Docker\", \"SQL\"]\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/ml/predict-salary",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "ml", "predict-salary"]
+            }
+          }
+        },
+        {
+          "name": "9. NLP Resume Parser (Extract Skills & Education)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"resume_text\": \"Experienced MCA graduate with 4 years in Python, React, PostgreSQL, Docker, and AWS. Contact: aishwarya.shree@talentcorp.com\"\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/ml/parse-resume",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "ml", "parse-resume"]
+            }
+          }
+        },
+        {
+          "name": "10. AI Candidate Ranking for Job",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"job_id\": 1,\n  \"job_title\": \"Senior Full Stack Engineer\",\n  \"required_skills\": [\"Python\", \"React.js\", \"Node.js\", \"MySQL\", \"Docker\"],\n  \"min_experience\": 3.0,\n  \"max_experience\": 7.0\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/ml/rank-candidates",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "ml", "rank-candidates"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Statistics Engine (Subject 3)",
+      "item": [
+        {
+          "name": "11. Descriptive Statistics (Mean, Median, Mode, IQR)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/analytics/statistics-summary",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "analytics", "statistics-summary"]
+            }
+          }
+        },
+        {
+          "name": "12. Experience vs Salary Correlation (Pearson r)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5005/api/analytics/correlation",
+              "protocol": "http",
+              "host": ["127", "0", "0", "1"],
+              "port": "5005",
+              "path": ["api", "analytics", "correlation"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

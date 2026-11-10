@@ -1,0 +1,1501 @@
+experience_years,education_level,job_role,technical_skills_count,location,company_size,salary_inr,salary_lpa
+10.4,BTECH,Frontend Developer,7,Bengaluru,ENTERPRISE,2698000,26.98
+1.0,BSC_CS,Frontend Developer,4,Pune,MID_SIZE,546000,5.46
+9.6,BCA,ML Engineer,8,Delhi NCR,MID_SIZE,2416000,24.16
+3.8,BCA,ML Engineer,5,Hyderabad,MID_SIZE,1492000,14.92
+13.0,BTECH,ML Engineer,10,Chennai,MID_SIZE,3540000,35.4
+10.1,BTECH,DevOps Engineer,8,Mumbai,STARTUP,2899000,28.99
+15.8,MTECH,DevOps Engineer,10,Hyderabad,MID_SIZE,4147000,41.47
+6.0,MCA,Data Analyst,5,Pune,STARTUP,1305000,13.05
+4.3,BTECH,Full Stack Developer,4,Chennai,MID_SIZE,1413000,14.13
+13.6,BSC_CS,ML Engineer,10,Bengaluru,MID_SIZE,3182000,31.82
+14.7,MCA,Full Stack Developer,10,Bengaluru,MID_SIZE,3465000,34.65
+2.7,BTECH,ML Engineer,5,Mumbai,MID_SIZE,1480000,14.8
+16.0,BTECH,Frontend Developer,10,Mumbai,ENTERPRISE,3550000,35.5
+12.8,BCA,Full Stack Developer,10,Hyderabad,ENTERPRISE,3413000,34.13
+13.8,MCA,Frontend Developer,10,Pune,MID_SIZE,2523000,25.23
+5.8,BSC_CS,Java Developer,6,Bengaluru,ENTERPRISE,1922000,19.22
+12.3,BCA,Full Stack Developer,9,Pune,ENTERPRISE,2717000,27.17
+12.3,MCA,Full Stack Developer,10,Pune,STARTUP,2703000,27.03
+2.2,PHD,Java Developer,3,Delhi NCR,STARTUP,1288000,12.88
+15.2,BTECH,Frontend Developer,10,Bengaluru,ENTERPRISE,3295000,32.95
+7.9,BTECH,Full Stack Developer,6,Delhi NCR,MID_SIZE,2264000,22.64
+12.2,MCA,ML Engineer,10,Hyderabad,MID_SIZE,3602000,36.02
+8.5,BSC_CS,Frontend Developer,7,Hyderabad,MID_SIZE,1525000,15.25
+0.6,BCA,ML Engineer,3,Bengaluru,STARTUP,765000,7.65
+4.2,BSC_CS,Data Analyst,6,Bengaluru,ENTERPRISE,1274000,12.74
+7.8,BCA,Full Stack Developer,8,Pune,MID_SIZE,1745000,17.45
+11.8,PHD,Data Analyst,10,Bengaluru,MID_SIZE,3169000,31.69
+2.2,BTECH,Java Developer,5,Bengaluru,STARTUP,1028000,10.28
+14.8,MTECH,Full Stack Developer,9,Pune,STARTUP,3583000,35.83
+14.9,BSC_CS,DevOps Engineer,10,Hyderabad,STARTUP,3173000,31.73
+3.1,BTECH,Frontend Developer,4,Chennai,ENTERPRISE,1130000,11.3
+15.3,BTECH,Cloud Architect,10,Mumbai,STARTUP,4342000,43.42
+1.4,BCA,ML Engineer,4,Hyderabad,STARTUP,943000,9.43
+13.7,MTECH,Frontend Developer,9,Bengaluru,STARTUP,2915000,29.15
+4.1,MTECH,Frontend Developer,3,Bengaluru,MID_SIZE,1365000,13.65
+9.5,MTECH,Full Stack Developer,7,Bengaluru,ENTERPRISE,3451000,34.51
+2.5,BTECH,Data Analyst,2,Chennai,ENTERPRISE,1017000,10.17
+16.0,BCA,Cloud Architect,10,Bengaluru,MID_SIZE,4685000,46.85
+14.1,BSC_CS,Java Developer,9,Delhi NCR,ENTERPRISE,2979000,29.79
+9.1,BCA,Cloud Architect,6,Delhi NCR,MID_SIZE,2816000,28.16
+2.9,BSC_CS,Java Developer,4,Hyderabad,MID_SIZE,960000,9.6
+4.4,BCA,DevOps Engineer,3,Pune,ENTERPRISE,1510000,15.1
+12.5,BTECH,Data Analyst,10,Mumbai,MID_SIZE,2360000,23.6
+2.2,MCA,Cloud Architect,4,Bengaluru,STARTUP,1685000,16.85
+2.8,BTECH,Frontend Developer,2,Delhi NCR,ENTERPRISE,1215000,12.15
+3.8,BCA,Java Developer,6,Mumbai,ENTERPRISE,1531000,15.31
+12.1,BSC_CS,DevOps Engineer,9,Bengaluru,ENTERPRISE,3752000,37.52
+0.9,BTECH,ML Engineer,2,Chennai,ENTERPRISE,1059000,10.59
+12.7,MTECH,Frontend Developer,10,Delhi NCR,STARTUP,2428000,24.28
+13.2,BSC_CS,DevOps Engineer,10,Pune,MID_SIZE,2866000,28.66
+15.5,MCA,Java Developer,10,Hyderabad,ENTERPRISE,4169000,41.69
+2.3,BSC_CS,Cloud Architect,2,Chennai,MID_SIZE,1202000,12.02
+5.9,BTECH,ML Engineer,5,Chennai,STARTUP,1790000,17.9
+11.5,MTECH,Frontend Developer,8,Pune,ENTERPRISE,2753000,27.53
+1.6,BTECH,Data Analyst,3,Hyderabad,ENTERPRISE,1002000,10.02
+10.8,MCA,Java Developer,10,Pune,STARTUP,2300000,23.0
+14.5,BTECH,Data Analyst,10,Pune,STARTUP,2127000,21.27
+12.7,BTECH,Data Analyst,10,Hyderabad,MID_SIZE,2407000,24.07
+15.4,MCA,ML Engineer,10,Bengaluru,MID_SIZE,4280000,42.8
+15.3,BTECH,Java Developer,10,Delhi NCR,STARTUP,2753000,27.53
+7.9,BCA,DevOps Engineer,6,Hyderabad,MID_SIZE,2129000,21.29
+6.5,BCA,Full Stack Developer,4,Pune,ENTERPRISE,1927000,19.27
+3.9,MCA,ML Engineer,3,Hyderabad,MID_SIZE,1721000,17.21
+12.9,PHD,Data Analyst,10,Pune,ENTERPRISE,3476000,34.76
+11.6,MCA,Full Stack Developer,10,Pune,ENTERPRISE,3319000,33.19
+12.2,BTECH,DevOps Engineer,9,Mumbai,MID_SIZE,3213000,32.13
+1.7,BTECH,Java Developer,3,Hyderabad,MID_SIZE,878000,8.78
+6.4,BSC_CS,Frontend Developer,7,Hyderabad,MID_SIZE,1259000,12.59
+3.7,MTECH,Full Stack Developer,6,Pune,MID_SIZE,1517000,15.17
+15.1,BTECH,Java Developer,10,Delhi NCR,ENTERPRISE,3646000,36.46
+4.7,BTECH,Full Stack Developer,4,Pune,ENTERPRISE,1901000,19.01
+14.8,BTECH,Cloud Architect,9,Delhi NCR,MID_SIZE,4150000,41.5
+7.1,BSC_CS,DevOps Engineer,8,Bengaluru,MID_SIZE,2009000,20.09
+12.3,MCA,Full Stack Developer,8,Delhi NCR,MID_SIZE,2929000,29.29
+12.1,MTECH,Frontend Developer,8,Bengaluru,STARTUP,2695000,26.95
+15.2,BCA,Java Developer,10,Bengaluru,STARTUP,2699000,26.99
+3.9,MCA,ML Engineer,3,Bengaluru,MID_SIZE,1939000,19.39
+3.0,BTECH,Java Developer,5,Chennai,MID_SIZE,1057000,10.57
+11.6,MCA,Frontend Developer,9,Pune,STARTUP,2147000,21.47
+9.8,PHD,Frontend Developer,9,Mumbai,MID_SIZE,2700000,27.0
+1.6,BCA,Data Analyst,4,Hyderabad,MID_SIZE,772000,7.72
+10.4,MCA,DevOps Engineer,9,Hyderabad,ENTERPRISE,3739000,37.39
+14.8,BTECH,ML Engineer,10,Delhi NCR,MID_SIZE,4190000,41.9
+13.4,MTECH,Frontend Developer,10,Bengaluru,MID_SIZE,2884000,28.84
+8.2,BTECH,Java Developer,7,Hyderabad,MID_SIZE,2129000,21.29
+11.4,BCA,Java Developer,10,Chennai,STARTUP,1871000,18.71
+12.3,MCA,ML Engineer,8,Hyderabad,ENTERPRISE,4255000,42.55
+6.8,MCA,Java Developer,7,Hyderabad,MID_SIZE,1830000,18.3
+12.1,MCA,Java Developer,8,Bengaluru,MID_SIZE,2953000,29.53
+5.4,MTECH,ML Engineer,7,Pune,STARTUP,2026000,20.26
+9.6,BTECH,ML Engineer,8,Chennai,ENTERPRISE,3162000,31.62
+3.3,BTECH,Frontend Developer,4,Bengaluru,ENTERPRISE,1425000,14.25
+2.5,BTECH,DevOps Engineer,5,Delhi NCR,MID_SIZE,1319000,13.19
+5.8,BTECH,Cloud Architect,4,Delhi NCR,STARTUP,2229000,22.29
+1.6,BCA,Data Analyst,3,Bengaluru,MID_SIZE,703000,7.03
+4.3,BTECH,Full Stack Developer,6,Pune,MID_SIZE,1442000,14.42
+7.4,PHD,DevOps Engineer,5,Hyderabad,MID_SIZE,3147000,31.47
+3.7,MCA,Java Developer,3,Bengaluru,STARTUP,1238000,12.38
+6.8,BTECH,ML Engineer,7,Bengaluru,MID_SIZE,2641000,26.41
+7.5,MTECH,ML Engineer,6,Mumbai,MID_SIZE,2856000,28.56
+8.9,MTECH,Data Analyst,7,Delhi NCR,STARTUP,1977000,19.77
+9.7,MTECH,DevOps Engineer,8,Hyderabad,MID_SIZE,3219000,32.19
+15.1,BTECH,Full Stack Developer,10,Bengaluru,STARTUP,3588000,35.88
+9.9,BSC_CS,Frontend Developer,6,Pune,ENTERPRISE,2023000,20.23
+10.9,BCA,Java Developer,10,Mumbai,MID_SIZE,2306000,23.06
+3.3,MCA,Data Analyst,4,Hyderabad,STARTUP,1022000,10.22
+5.5,BSC_CS,Frontend Developer,7,Hyderabad,MID_SIZE,1237000,12.37
+9.0,BTECH,Full Stack Developer,9,Hyderabad,ENTERPRISE,3102000,31.02
+13.3,MTECH,Frontend Developer,10,Hyderabad,STARTUP,2664000,26.64
+8.2,BCA,Full Stack Developer,7,Bengaluru,STARTUP,1925000,19.25
+11.3,PHD,Frontend Developer,8,Pune,STARTUP,2404000,24.04
+0.7,BSC_CS,Full Stack Developer,2,Delhi NCR,STARTUP,646000,6.46
+2.9,BTECH,Cloud Architect,5,Mumbai,MID_SIZE,1977000,19.77
+4.3,BTECH,Full Stack Developer,4,Chennai,MID_SIZE,1452000,14.52
+4.8,BTECH,ML Engineer,3,Chennai,MID_SIZE,1648000,16.48
+5.1,PHD,Data Analyst,7,Hyderabad,STARTUP,1600000,16.0
+9.1,BTECH,Full Stack Developer,7,Hyderabad,STARTUP,2283000,22.83
+4.1,BCA,ML Engineer,6,Mumbai,ENTERPRISE,1899000,18.99
+10.8,PHD,DevOps Engineer,9,Hyderabad,STARTUP,3877000,38.77
+14.0,BTECH,Full Stack Developer,10,Hyderabad,ENTERPRISE,4168000,41.68
+15.5,MCA,Frontend Developer,10,Bengaluru,MID_SIZE,3065000,30.65
+13.7,MTECH,DevOps Engineer,10,Hyderabad,MID_SIZE,4209000,42.09
+1.1,MCA,Frontend Developer,2,Chennai,ENTERPRISE,801000,8.01
+2.0,MTECH,Data Analyst,2,Hyderabad,MID_SIZE,892000,8.92
+12.8,BTECH,Java Developer,9,Bengaluru,MID_SIZE,2747000,27.47
+1.7,MCA,DevOps Engineer,3,Bengaluru,ENTERPRISE,1463000,14.63
+10.4,MCA,Full Stack Developer,9,Delhi NCR,MID_SIZE,2732000,27.32
+2.9,BTECH,Full Stack Developer,5,Pune,MID_SIZE,1239000,12.39
+7.6,PHD,Java Developer,8,Delhi NCR,STARTUP,2352000,23.52
+9.4,BTECH,Cloud Architect,8,Chennai,MID_SIZE,2808000,28.08
+13.9,PHD,ML Engineer,10,Delhi NCR,ENTERPRISE,5000000,50.0
+4.1,BSC_CS,ML Engineer,4,Bengaluru,MID_SIZE,1605000,16.05
+14.5,BTECH,Data Analyst,10,Hyderabad,MID_SIZE,2340000,23.4
+5.1,BSC_CS,ML Engineer,6,Bengaluru,MID_SIZE,1816000,18.16
+14.7,BTECH,DevOps Engineer,10,Delhi NCR,MID_SIZE,3787000,37.87
+5.8,MTECH,Frontend Developer,7,Bengaluru,ENTERPRISE,2281000,22.81
+13.0,MCA,Java Developer,10,Bengaluru,MID_SIZE,2972000,29.72
+12.1,BTECH,Java Developer,9,Pune,MID_SIZE,2433000,24.33
+10.1,BTECH,Cloud Architect,10,Pune,MID_SIZE,3556000,35.56
+5.2,BCA,Full Stack Developer,7,Chennai,MID_SIZE,1265000,12.65
+4.1,BTECH,Full Stack Developer,6,Hyderabad,ENTERPRISE,1874000,18.74
+11.8,MCA,DevOps Engineer,10,Delhi NCR,MID_SIZE,2990000,29.9
+6.2,MTECH,Full Stack Developer,6,Delhi NCR,STARTUP,1979000,19.79
+15.7,BTECH,Java Developer,10,Bengaluru,STARTUP,2980000,29.8
+3.8,PHD,Data Analyst,4,Bengaluru,MID_SIZE,1621000,16.21
+3.7,BTECH,DevOps Engineer,4,Pune,ENTERPRISE,1737000,17.37
+2.8,BCA,DevOps Engineer,3,Delhi NCR,STARTUP,1095000,10.95
+12.9,MTECH,Frontend Developer,9,Bengaluru,MID_SIZE,2907000,29.07
+0.7,BCA,Java Developer,2,Hyderabad,STARTUP,600000,6.0
+12.6,BCA,Full Stack Developer,8,Hyderabad,ENTERPRISE,3208000,32.08
+14.6,BTECH,Data Analyst,10,Pune,STARTUP,2365000,23.65
+7.1,MCA,Frontend Developer,7,Hyderabad,ENTERPRISE,2061000,20.61
+1.5,MCA,Java Developer,3,Pune,MID_SIZE,859000,8.59
+9.9,MCA,Frontend Developer,7,Delhi NCR,MID_SIZE,1970000,19.7
+14.3,MCA,Full Stack Developer,10,Hyderabad,ENTERPRISE,4058000,40.58
+10.8,BSC_CS,Full Stack Developer,7,Chennai,STARTUP,1797000,17.97
+2.0,MCA,ML Engineer,4,Pune,MID_SIZE,1282000,12.82
+6.9,MTECH,DevOps Engineer,5,Hyderabad,ENTERPRISE,3231000,32.31
+9.8,BTECH,Java Developer,7,Bengaluru,MID_SIZE,2532000,25.32
+5.9,BCA,Full Stack Developer,7,Bengaluru,STARTUP,1698000,16.98
+15.6,MCA,DevOps Engineer,10,Pune,STARTUP,3275000,32.75
+4.7,MTECH,ML Engineer,4,Hyderabad,STARTUP,2027000,20.27
+6.7,MCA,Frontend Developer,6,Bengaluru,ENTERPRISE,2036000,20.36
+7.5,BTECH,Frontend Developer,5,Hyderabad,ENTERPRISE,2112000,21.12
+2.9,BCA,ML Engineer,5,Bengaluru,MID_SIZE,1391000,13.91
+7.4,MCA,Java Developer,7,Bengaluru,MID_SIZE,2141000,21.41
+9.7,BTECH,Full Stack Developer,6,Bengaluru,ENTERPRISE,2953000,29.53
+5.2,BCA,Java Developer,4,Bengaluru,MID_SIZE,1378000,13.78
+7.2,BTECH,Frontend Developer,7,Bengaluru,MID_SIZE,1624000,16.24
+13.9,BCA,Frontend Developer,10,Chennai,ENTERPRISE,2429000,24.29
+11.5,BCA,Full Stack Developer,10,Bengaluru,MID_SIZE,2735000,27.35
+14.8,MCA,Frontend Developer,9,Bengaluru,MID_SIZE,2832000,28.32
+5.3,BTECH,Java Developer,4,Bengaluru,MID_SIZE,1632000,16.32
+3.5,BTECH,ML Engineer,4,Chennai,MID_SIZE,1416000,14.16
+2.8,MCA,Java Developer,3,Mumbai,MID_SIZE,1256000,12.56
+10.2,BTECH,Full Stack Developer,9,Pune,MID_SIZE,2577000,25.77
+10.2,BCA,Frontend Developer,9,Hyderabad,MID_SIZE,1778000,17.78
+6.0,BTECH,Frontend Developer,6,Bengaluru,MID_SIZE,1452000,14.52
+13.9,MCA,DevOps Engineer,9,Hyderabad,MID_SIZE,3617000,36.17
+13.1,BTECH,Data Analyst,8,Hyderabad,STARTUP,2175000,21.75
+13.1,PHD,DevOps Engineer,8,Bengaluru,MID_SIZE,4470000,44.7
+7.3,BTECH,Full Stack Developer,7,Bengaluru,MID_SIZE,2188000,21.88
+12.5,BCA,Data Analyst,10,Pune,MID_SIZE,1710000,17.1
+11.0,MCA,Java Developer,8,Pune,ENTERPRISE,2784000,27.84
+9.5,BTECH,Frontend Developer,9,Chennai,MID_SIZE,1675000,16.75
+11.5,BTECH,Frontend Developer,8,Pune,MID_SIZE,2109000,21.09
+13.3,MCA,ML Engineer,10,Pune,MID_SIZE,3621000,36.21
+0.8,MTECH,Java Developer,2,Hyderabad,ENTERPRISE,993000,9.93
+2.6,MCA,Frontend Developer,2,Bengaluru,ENTERPRISE,1276000,12.76
+14.1,BTECH,Data Analyst,10,Bengaluru,STARTUP,2591000,25.91
+1.2,MCA,Java Developer,4,Chennai,MID_SIZE,777000,7.77
+4.2,MCA,Cloud Architect,6,Delhi NCR,STARTUP,2026000,20.26
+4.9,BTECH,Full Stack Developer,4,Chennai,ENTERPRISE,1896000,18.96
+1.3,BTECH,Full Stack Developer,2,Chennai,ENTERPRISE,991000,9.91
+12.3,MTECH,Java Developer,9,Bengaluru,MID_SIZE,3334000,33.34
+14.2,BTECH,Cloud Architect,10,Hyderabad,MID_SIZE,4783000,47.83
+6.3,MTECH,Frontend Developer,5,Delhi NCR,MID_SIZE,1534000,15.34
+4.9,MCA,DevOps Engineer,6,Bengaluru,ENTERPRISE,2520000,25.2
+14.5,BSC_CS,Frontend Developer,10,Bengaluru,ENTERPRISE,2665000,26.65
+5.0,BCA,Java Developer,7,Hyderabad,ENTERPRISE,1488000,14.88
+13.5,BTECH,Full Stack Developer,10,Pune,MID_SIZE,2851000,28.51
+0.5,BTECH,Java Developer,3,Bengaluru,MID_SIZE,721000,7.21
+8.7,PHD,Full Stack Developer,9,Pune,MID_SIZE,2629000,26.29
+6.5,MCA,Full Stack Developer,5,Hyderabad,STARTUP,1929000,19.29
+10.2,MCA,ML Engineer,9,Hyderabad,STARTUP,3201000,32.01
+3.2,BTECH,ML Engineer,3,Pune,MID_SIZE,1338000,13.38
+12.5,BTECH,Full Stack Developer,8,Bengaluru,STARTUP,2909000,29.09
+5.3,MCA,Full Stack Developer,5,Hyderabad,STARTUP,1605000,16.05
+13.9,MCA,Frontend Developer,10,Bengaluru,ENTERPRISE,3600000,36.0
+12.0,BTECH,DevOps Engineer,10,Chennai,MID_SIZE,2883000,28.83
+12.9,BCA,Java Developer,9,Hyderabad,MID_SIZE,2349000,23.49
+5.5,MCA,Frontend Developer,7,Hyderabad,MID_SIZE,1368000,13.68
+7.4,MCA,Full Stack Developer,8,Delhi NCR,MID_SIZE,2062000,20.62
+15.7,BCA,Cloud Architect,10,Pune,MID_SIZE,4090000,40.9
+2.7,MCA,Data Analyst,4,Bengaluru,STARTUP,1008000,10.08
+15.2,BSC_CS,Frontend Developer,10,Hyderabad,MID_SIZE,2340000,23.4
+9.4,BTECH,Full Stack Developer,6,Pune,STARTUP,1978000,19.78
+3.4,MTECH,Full Stack Developer,6,Bengaluru,ENTERPRISE,1952000,19.52
+10.0,PHD,ML Engineer,7,Bengaluru,STARTUP,3935000,39.35
+14.4,BCA,Full Stack Developer,10,Pune,ENTERPRISE,3310000,33.1
+11.5,BTECH,Full Stack Developer,8,Bengaluru,STARTUP,2968000,29.68
+8.4,BSC_CS,Frontend Developer,6,Bengaluru,ENTERPRISE,1890000,18.9
+9.4,PHD,Full Stack Developer,6,Bengaluru,ENTERPRISE,3916000,39.16
+16.0,BTECH,ML Engineer,10,Mumbai,ENTERPRISE,5000000,50.0
+5.4,BTECH,Frontend Developer,5,Hyderabad,STARTUP,1345000,13.45
+2.5,MTECH,Full Stack Developer,4,Delhi NCR,MID_SIZE,1242000,12.42
+5.5,BTECH,ML Engineer,4,Chennai,ENTERPRISE,2182000,21.82
+10.3,BCA,Full Stack Developer,8,Hyderabad,MID_SIZE,2254000,22.54
+9.5,MCA,Frontend Developer,6,Delhi NCR,MID_SIZE,2023000,20.23
+0.9,MCA,Frontend Developer,4,Pune,MID_SIZE,700000,7.0
+1.0,BTECH,DevOps Engineer,2,Pune,MID_SIZE,949000,9.49
+11.1,BCA,Java Developer,10,Bengaluru,MID_SIZE,2269000,22.69
+5.8,MTECH,Frontend Developer,6,Hyderabad,ENTERPRISE,2106000,21.06
+2.5,BTECH,Full Stack Developer,4,Hyderabad,MID_SIZE,1179000,11.79
+2.7,MTECH,Frontend Developer,3,Delhi NCR,MID_SIZE,1109000,11.09
+15.0,BSC_CS,ML Engineer,10,Bengaluru,ENTERPRISE,4466000,44.66
+5.3,MTECH,Frontend Developer,5,Hyderabad,ENTERPRISE,1867000,18.67
+1.3,BTECH,Java Developer,3,Delhi NCR,MID_SIZE,853000,8.53
+13.6,MTECH,Full Stack Developer,10,Mumbai,ENTERPRISE,4127000,41.27
+1.3,BTECH,Full Stack Developer,4,Bengaluru,MID_SIZE,1079000,10.79
+4.8,MCA,Cloud Architect,6,Bengaluru,ENTERPRISE,2980000,29.8
+15.8,BTECH,Full Stack Developer,10,Bengaluru,MID_SIZE,3758000,37.58
+1.2,BTECH,Frontend Developer,2,Hyderabad,MID_SIZE,703000,7.03
+10.0,PHD,Frontend Developer,9,Mumbai,MID_SIZE,2668000,26.68
+8.4,BTECH,Full Stack Developer,8,Hyderabad,STARTUP,2229000,22.29
+15.7,MCA,Data Analyst,10,Mumbai,MID_SIZE,2831000,28.31
+4.6,PHD,Data Analyst,3,Pune,STARTUP,1401000,14.01
+3.1,MCA,Data Analyst,3,Delhi NCR,STARTUP,903000,9.03
+15.2,BCA,Frontend Developer,10,Hyderabad,STARTUP,2151000,21.51
+12.5,MTECH,DevOps Engineer,9,Mumbai,STARTUP,3627000,36.27
+9.2,BTECH,Cloud Architect,9,Hyderabad,ENTERPRISE,4336000,43.36
+5.8,MCA,Java Developer,6,Mumbai,MID_SIZE,1753000,17.53
+3.5,BTECH,Java Developer,5,Bengaluru,ENTERPRISE,1717000,17.17
+11.4,BTECH,ML Engineer,9,Hyderabad,MID_SIZE,3242000,32.42
+9.4,MTECH,Full Stack Developer,7,Hyderabad,MID_SIZE,2633000,26.33
+5.0,BTECH,ML Engineer,7,Hyderabad,MID_SIZE,1924000,19.24
+13.3,BTECH,Java Developer,9,Bengaluru,STARTUP,2710000,27.1
+10.9,MCA,Full Stack Developer,10,Bengaluru,MID_SIZE,2818000,28.18
+12.4,BTECH,Frontend Developer,10,Chennai,MID_SIZE,2120000,21.2
+3.6,BTECH,Cloud Architect,3,Pune,ENTERPRISE,2216000,22.16
+4.1,MTECH,ML Engineer,6,Bengaluru,ENTERPRISE,2808000,28.08
+3.2,PHD,DevOps Engineer,4,Hyderabad,MID_SIZE,1995000,19.95
+0.6,BCA,Full Stack Developer,4,Chennai,MID_SIZE,688000,6.88
+2.6,BTECH,Full Stack Developer,5,Delhi NCR,MID_SIZE,1235000,12.35
+11.6,BTECH,Frontend Developer,8,Bengaluru,MID_SIZE,2237000,22.37
+13.8,MCA,DevOps Engineer,9,Hyderabad,STARTUP,3273000,32.73
+2.7,BSC_CS,Java Developer,4,Bengaluru,STARTUP,1018000,10.18
+5.2,BCA,ML Engineer,4,Pune,MID_SIZE,1637000,16.37
+7.7,MCA,Frontend Developer,7,Chennai,ENTERPRISE,1992000,19.92
+10.4,BTECH,Cloud Architect,10,Bengaluru,ENTERPRISE,4475000,44.75
+12.1,BTECH,Data Analyst,9,Pune,MID_SIZE,2160000,21.6
+11.0,MCA,Data Analyst,9,Pune,MID_SIZE,1874000,18.74
+9.2,BTECH,Frontend Developer,7,Hyderabad,MID_SIZE,1782000,17.82
+13.7,MCA,Full Stack Developer,10,Mumbai,MID_SIZE,3522000,35.22
+7.5,BTECH,Full Stack Developer,7,Bengaluru,MID_SIZE,2344000,23.44
+6.6,MCA,DevOps Engineer,6,Pune,STARTUP,2042000,20.42
+8.9,MTECH,Frontend Developer,8,Chennai,MID_SIZE,1878000,18.78
+12.4,PHD,ML Engineer,10,Pune,MID_SIZE,4274000,42.74
+14.7,BCA,Full Stack Developer,10,Chennai,ENTERPRISE,3254000,32.54
+5.9,BTECH,Frontend Developer,5,Pune,ENTERPRISE,1715000,17.15
+12.2,BTECH,Cloud Architect,10,Mumbai,MID_SIZE,4330000,43.3
+4.3,BTECH,Java Developer,3,Chennai,ENTERPRISE,1381000,13.81
+10.7,MTECH,Data Analyst,7,Delhi NCR,STARTUP,1975000,19.75
+1.0,MCA,Data Analyst,4,Bengaluru,ENTERPRISE,1007000,10.07
+8.9,MCA,ML Engineer,7,Bengaluru,ENTERPRISE,3971000,39.71
+11.8,BTECH,Java Developer,10,Pune,MID_SIZE,2569000,25.69
+15.8,BTECH,Full Stack Developer,10,Bengaluru,MID_SIZE,3834000,38.34
+7.1,PHD,Full Stack Developer,7,Chennai,MID_SIZE,2471000,24.71
+6.8,BSC_CS,Java Developer,6,Pune,STARTUP,1287000,12.87
+11.5,MTECH,ML Engineer,8,Pune,ENTERPRISE,4230000,42.3
+4.5,BCA,Java Developer,4,Hyderabad,MID_SIZE,1109000,11.09
+6.3,BCA,Data Analyst,5,Bengaluru,ENTERPRISE,1623000,16.23
+14.0,MTECH,Java Developer,9,Bengaluru,ENTERPRISE,4390000,43.9
+12.2,MCA,DevOps Engineer,9,Mumbai,MID_SIZE,3457000,34.57
+12.5,BTECH,Full Stack Developer,10,Hyderabad,MID_SIZE,2971000,29.71
+12.9,MCA,ML Engineer,10,Hyderabad,STARTUP,3539000,35.39
+9.2,BCA,Java Developer,9,Bengaluru,ENTERPRISE,2375000,23.75
+3.5,BTECH,Java Developer,5,Bengaluru,MID_SIZE,1297000,12.97
+13.2,MCA,Cloud Architect,10,Hyderabad,STARTUP,3907000,39.07
+11.7,MTECH,Full Stack Developer,8,Pune,MID_SIZE,2979000,29.79
+13.5,MCA,Frontend Developer,10,Bengaluru,STARTUP,2729000,27.29
+4.1,BCA,ML Engineer,6,Hyderabad,MID_SIZE,1583000,15.83
+0.7,BTECH,Full Stack Developer,3,Bengaluru,ENTERPRISE,999000,9.99
+13.1,MCA,Data Analyst,8,Delhi NCR,STARTUP,2223000,22.23
+4.2,BTECH,Data Analyst,3,Hyderabad,ENTERPRISE,1383000,13.83
+6.8,PHD,Full Stack Developer,5,Bengaluru,MID_SIZE,2757000,27.57
+13.8,BCA,ML Engineer,9,Hyderabad,MID_SIZE,3348000,33.48
+11.4,MCA,Frontend Developer,7,Pune,MID_SIZE,2214000,22.14
+14.7,MTECH,Java Developer,10,Pune,MID_SIZE,2924000,29.24
+1.7,MTECH,DevOps Engineer,4,Pune,STARTUP,1072000,10.72
+3.7,MCA,Frontend Developer,5,Delhi NCR,ENTERPRISE,1316000,13.16
+4.2,BTECH,DevOps Engineer,4,Delhi NCR,MID_SIZE,1704000,17.04
+11.2,MCA,Frontend Developer,8,Hyderabad,STARTUP,2217000,22.17
+5.8,MTECH,ML Engineer,4,Hyderabad,ENTERPRISE,2952000,29.52
+12.6,BSC_CS,Full Stack Developer,9,Pune,MID_SIZE,2410000,24.1
+10.7,MCA,Frontend Developer,7,Mumbai,ENTERPRISE,2571000,25.71
+6.4,BSC_CS,ML Engineer,4,Hyderabad,MID_SIZE,1722000,17.22
+5.3,BTECH,Java Developer,7,Bengaluru,STARTUP,1618000,16.18
+8.4,BCA,Frontend Developer,8,Pune,MID_SIZE,1529000,15.29
+0.7,MCA,Full Stack Developer,2,Mumbai,MID_SIZE,862000,8.62
+3.1,BCA,Full Stack Developer,2,Hyderabad,MID_SIZE,1017000,10.17
+4.8,MCA,Java Developer,6,Hyderabad,ENTERPRISE,1885000,18.85
+3.5,BTECH,Frontend Developer,6,Chennai,MID_SIZE,1069000,10.69
+5.6,MCA,Java Developer,5,Delhi NCR,ENTERPRISE,1887000,18.87
+9.8,BTECH,ML Engineer,8,Bengaluru,MID_SIZE,3123000,31.23
+11.3,BTECH,Full Stack Developer,10,Bengaluru,MID_SIZE,2931000,29.31
+14.9,PHD,Java Developer,9,Bengaluru,ENTERPRISE,5000000,50.0
+7.7,BTECH,ML Engineer,8,Bengaluru,MID_SIZE,2857000,28.57
+2.7,BTECH,Java Developer,5,Bengaluru,MID_SIZE,1131000,11.31
+15.9,BTECH,Full Stack Developer,10,Hyderabad,ENTERPRISE,4328000,43.28
+12.8,MTECH,Java Developer,8,Pune,MID_SIZE,2654000,26.54
+4.3,BSC_CS,Data Analyst,6,Pune,MID_SIZE,1035000,10.35
+5.6,BCA,ML Engineer,5,Bengaluru,STARTUP,1809000,18.09
+6.6,BTECH,ML Engineer,4,Hyderabad,MID_SIZE,2266000,22.66
+5.1,BCA,DevOps Engineer,6,Delhi NCR,ENTERPRISE,1871000,18.71
+7.6,BTECH,Java Developer,8,Hyderabad,MID_SIZE,1882000,18.82
+5.2,BCA,ML Engineer,5,Delhi NCR,MID_SIZE,1807000,18.07
+12.0,BTECH,Full Stack Developer,10,Hyderabad,MID_SIZE,2783000,27.83
+6.8,MCA,Frontend Developer,6,Hyderabad,STARTUP,1510000,15.1
+7.2,BSC_CS,Frontend Developer,5,Bengaluru,ENTERPRISE,1766000,17.66
+12.9,BTECH,Full Stack Developer,10,Bengaluru,STARTUP,3119000,31.19
+10.4,MCA,Data Analyst,10,Pune,MID_SIZE,1997000,19.97
+13.1,BTECH,ML Engineer,9,Pune,STARTUP,3185000,31.85
+4.2,BTECH,Frontend Developer,4,Bengaluru,MID_SIZE,1279000,12.79
+7.1,BTECH,Full Stack Developer,6,Delhi NCR,ENTERPRISE,2447000,24.47
+8.1,BTECH,Frontend Developer,7,Hyderabad,STARTUP,1776000,17.76
+8.0,BTECH,Java Developer,8,Pune,MID_SIZE,1928000,19.28
+6.9,BTECH,DevOps Engineer,6,Bengaluru,STARTUP,2180000,21.8
+4.8,BSC_CS,Full Stack Developer,6,Hyderabad,ENTERPRISE,1686000,16.86
+2.3,MCA,Frontend Developer,2,Delhi NCR,MID_SIZE,929000,9.29
+7.3,BTECH,Java Developer,6,Mumbai,MID_SIZE,1843000,18.43
+16.0,BTECH,Full Stack Developer,10,Delhi NCR,MID_SIZE,3629000,36.29
+4.2,BTECH,ML Engineer,6,Hyderabad,ENTERPRISE,2105000,21.05
+2.7,BSC_CS,Java Developer,4,Bengaluru,MID_SIZE,1015000,10.15
+3.1,BTECH,Cloud Architect,2,Pune,ENTERPRISE,1877000,18.77
+12.1,BCA,Full Stack Developer,9,Bengaluru,MID_SIZE,2559000,25.59
+11.5,MCA,DevOps Engineer,9,Pune,MID_SIZE,3072000,30.72
+6.3,MCA,Frontend Developer,6,Mumbai,MID_SIZE,1626000,16.26
+14.1,BTECH,Full Stack Developer,9,Pune,ENTERPRISE,3818000,38.18
+7.6,BTECH,Data Analyst,6,Bengaluru,MID_SIZE,1875000,18.75
+13.3,BTECH,Full Stack Developer,9,Bengaluru,MID_SIZE,3349000,33.49
+8.0,MCA,Java Developer,8,Bengaluru,STARTUP,1929000,19.29
+14.9,BTECH,Frontend Developer,10,Chennai,MID_SIZE,2554000,25.54
+5.2,MTECH,DevOps Engineer,4,Bengaluru,MID_SIZE,2181000,21.81
+14.5,BTECH,Frontend Developer,10,Hyderabad,MID_SIZE,2565000,25.65
+1.9,BSC_CS,Frontend Developer,5,Bengaluru,MID_SIZE,726000,7.26
+11.3,PHD,DevOps Engineer,7,Hyderabad,STARTUP,3550000,35.5
+1.9,BCA,ML Engineer,5,Hyderabad,MID_SIZE,1160000,11.6
+12.2,PHD,Frontend Developer,8,Bengaluru,MID_SIZE,3191000,31.91
+3.0,BSC_CS,Java Developer,5,Mumbai,ENTERPRISE,1310000,13.1
+1.8,MCA,Frontend Developer,5,Pune,MID_SIZE,808000,8.08
+2.7,BCA,Java Developer,4,Pune,MID_SIZE,934000,9.34
+11.2,MCA,DevOps Engineer,8,Hyderabad,MID_SIZE,3256000,32.56
+5.1,MTECH,Frontend Developer,4,Chennai,MID_SIZE,1276000,12.76
+10.4,MTECH,Frontend Developer,9,Bengaluru,MID_SIZE,2345000,23.45
+13.8,BTECH,Full Stack Developer,9,Pune,ENTERPRISE,3348000,33.48
+1.5,BCA,Java Developer,3,Bengaluru,ENTERPRISE,1026000,10.26
+8.3,MCA,Full Stack Developer,6,Bengaluru,MID_SIZE,2363000,23.63
+5.3,BSC_CS,Full Stack Developer,7,Delhi NCR,MID_SIZE,1455000,14.55
+12.3,MCA,Data Analyst,9,Hyderabad,MID_SIZE,2136000,21.36
+1.8,BTECH,Full Stack Developer,3,Pune,MID_SIZE,915000,9.15
+11.5,BSC_CS,ML Engineer,9,Chennai,MID_SIZE,2439000,24.39
+2.5,BTECH,ML Engineer,2,Delhi NCR,ENTERPRISE,1582000,15.82
+7.2,BTECH,Full Stack Developer,8,Chennai,MID_SIZE,1884000,18.84
+6.1,BTECH,Full Stack Developer,4,Hyderabad,MID_SIZE,1929000,19.29
+10.9,MCA,Frontend Developer,7,Bengaluru,ENTERPRISE,2705000,27.05
+7.8,BSC_CS,Full Stack Developer,8,Chennai,ENTERPRISE,1944000,19.44
+4.3,BTECH,DevOps Engineer,3,Delhi NCR,MID_SIZE,1625000,16.25
+14.5,MCA,Frontend Developer,9,Chennai,ENTERPRISE,3123000,31.23
+13.9,BTECH,ML Engineer,10,Bengaluru,MID_SIZE,3944000,39.44
+9.2,MCA,Java Developer,9,Hyderabad,MID_SIZE,2434000,24.34
+12.5,BTECH,ML Engineer,10,Mumbai,STARTUP,3240000,32.4
+8.9,MCA,Data Analyst,9,Bengaluru,MID_SIZE,2139000,21.39
+11.8,BTECH,Frontend Developer,8,Bengaluru,MID_SIZE,2566000,25.66
+2.7,BCA,Java Developer,5,Bengaluru,ENTERPRISE,1310000,13.1
+6.3,BCA,Cloud Architect,7,Bengaluru,STARTUP,2141000,21.41
+9.3,MTECH,Full Stack Developer,8,Bengaluru,MID_SIZE,3125000,31.25
+6.6,BTECH,DevOps Engineer,5,Hyderabad,STARTUP,1911000,19.11
+12.4,BCA,Frontend Developer,8,Hyderabad,MID_SIZE,1984000,19.84
+15.5,BTECH,Java Developer,10,Bengaluru,STARTUP,3315000,33.15
+5.2,MCA,ML Engineer,5,Bengaluru,ENTERPRISE,2523000,25.23
+4.3,BTECH,Java Developer,4,Pune,MID_SIZE,1182000,11.82
+6.8,MCA,Full Stack Developer,6,Bengaluru,MID_SIZE,2044000,20.44
+1.5,BSC_CS,ML Engineer,2,Bengaluru,MID_SIZE,1029000,10.29
+4.5,BCA,ML Engineer,6,Bengaluru,ENTERPRISE,2218000,22.18
+1.9,MCA,DevOps Engineer,2,Bengaluru,ENTERPRISE,1470000,14.7
+9.4,BTECH,DevOps Engineer,7,Bengaluru,MID_SIZE,2822000,28.22
+14.6,BTECH,Java Developer,10,Bengaluru,MID_SIZE,3267000,32.67
+8.2,BTECH,DevOps Engineer,8,Bengaluru,MID_SIZE,2553000,25.53
+14.2,MCA,Full Stack Developer,10,Delhi NCR,ENTERPRISE,4195000,41.95
+6.1,BTECH,Full Stack Developer,7,Delhi NCR,MID_SIZE,1777000,17.77
+0.9,BCA,Data Analyst,4,Delhi NCR,MID_SIZE,628000,6.28
+12.4,PHD,Cloud Architect,10,Bengaluru,MID_SIZE,5000000,50.0
+12.8,MCA,ML Engineer,10,Chennai,MID_SIZE,3343000,33.43
+13.5,BSC_CS,DevOps Engineer,10,Pune,ENTERPRISE,3576000,35.76
+0.9,MTECH,ML Engineer,2,Pune,MID_SIZE,1099000,10.99
+13.1,BTECH,Cloud Architect,8,Bengaluru,STARTUP,4032000,40.32
+3.9,BCA,Full Stack Developer,4,Delhi NCR,STARTUP,1120000,11.2
+3.3,MTECH,ML Engineer,3,Bengaluru,STARTUP,1858000,18.58
+13.6,MTECH,DevOps Engineer,10,Hyderabad,ENTERPRISE,4888000,48.88
+5.7,PHD,Java Developer,7,Mumbai,MID_SIZE,2211000,22.11
+3.2,MCA,Cloud Architect,3,Chennai,ENTERPRISE,2109000,21.09
+13.1,MCA,Full Stack Developer,8,Bengaluru,STARTUP,3411000,34.11
+15.2,PHD,Full Stack Developer,10,Chennai,STARTUP,4053000,40.53
+15.5,BTECH,Java Developer,10,Chennai,STARTUP,2573000,25.73
+15.7,MTECH,Frontend Developer,10,Bengaluru,ENTERPRISE,3991000,39.91
+4.6,BCA,Java Developer,3,Bengaluru,STARTUP,1125000,11.25
+7.3,BSC_CS,Full Stack Developer,7,Hyderabad,ENTERPRISE,2142000,21.42
+2.1,MTECH,Full Stack Developer,3,Pune,MID_SIZE,1144000,11.44
+12.9,BCA,Frontend Developer,10,Bengaluru,STARTUP,1981000,19.81
+6.3,BTECH,ML Engineer,7,Delhi NCR,STARTUP,2202000,22.02
+7.2,MCA,Data Analyst,7,Hyderabad,STARTUP,1489000,14.89
+3.4,MCA,ML Engineer,5,Mumbai,MID_SIZE,1662000,16.62
+2.0,BTECH,Full Stack Developer,2,Hyderabad,STARTUP,990000,9.9
+5.1,MCA,Data Analyst,5,Bengaluru,STARTUP,1398000,13.98
+15.6,BCA,Full Stack Developer,10,Mumbai,MID_SIZE,2859000,28.59
+8.9,MTECH,Frontend Developer,8,Hyderabad,MID_SIZE,2073000,20.73
+4.6,BTECH,DevOps Engineer,3,Bengaluru,MID_SIZE,1712000,17.12
+5.8,PHD,Full Stack Developer,7,Pune,MID_SIZE,2316000,23.16
+7.0,MTECH,Full Stack Developer,8,Hyderabad,ENTERPRISE,2721000,27.21
+6.6,BCA,DevOps Engineer,5,Pune,MID_SIZE,1612000,16.12
+12.2,PHD,Frontend Developer,9,Chennai,ENTERPRISE,3037000,30.37
+1.7,BSC_CS,Data Analyst,4,Delhi NCR,STARTUP,647000,6.47
+11.8,BCA,ML Engineer,10,Pune,MID_SIZE,2788000,27.88
+14.7,MCA,Frontend Developer,9,Pune,ENTERPRISE,3019000,30.19
+2.8,MCA,Data Analyst,2,Chennai,ENTERPRISE,1148000,11.48
+13.9,MTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,3980000,39.8
+4.8,MCA,Frontend Developer,5,Pune,STARTUP,1206000,12.06
+1.3,BTECH,Full Stack Developer,3,Hyderabad,MID_SIZE,917000,9.17
+13.6,MCA,DevOps Engineer,10,Chennai,STARTUP,3367000,33.67
+7.4,BTECH,DevOps Engineer,6,Hyderabad,MID_SIZE,2287000,22.87
+14.7,BTECH,Full Stack Developer,9,Hyderabad,MID_SIZE,3322000,33.22
+3.0,BTECH,Java Developer,2,Bengaluru,ENTERPRISE,1389000,13.89
+14.1,BCA,Java Developer,10,Bengaluru,STARTUP,2621000,26.21
+4.7,BTECH,DevOps Engineer,3,Pune,STARTUP,1478000,14.78
+8.1,MTECH,Full Stack Developer,7,Hyderabad,MID_SIZE,2352000,23.52
+14.4,MCA,ML Engineer,10,Bengaluru,MID_SIZE,4614000,46.14
+12.6,BSC_CS,Java Developer,10,Bengaluru,STARTUP,2306000,23.06
+13.9,MCA,Cloud Architect,10,Hyderabad,STARTUP,4338000,43.38
+0.6,MCA,Java Developer,3,Hyderabad,ENTERPRISE,919000,9.19
+6.3,BTECH,Java Developer,7,Hyderabad,MID_SIZE,1749000,17.49
+0.6,MTECH,Cloud Architect,3,Delhi NCR,MID_SIZE,1229000,12.29
+2.2,PHD,Frontend Developer,4,Pune,ENTERPRISE,1361000,13.61
+15.3,BSC_CS,Data Analyst,10,Hyderabad,STARTUP,2167000,21.67
+12.9,MCA,Data Analyst,10,Pune,ENTERPRISE,2949000,29.49
+4.5,BTECH,Full Stack Developer,4,Bengaluru,ENTERPRISE,1965000,19.65
+11.6,MCA,ML Engineer,9,Hyderabad,ENTERPRISE,4265000,42.65
+13.6,MTECH,DevOps Engineer,10,Bengaluru,STARTUP,4178000,41.78
+11.7,MTECH,Full Stack Developer,8,Chennai,ENTERPRISE,3361000,33.61
+4.0,BTECH,DevOps Engineer,5,Delhi NCR,MID_SIZE,1605000,16.05
+2.3,MCA,Frontend Developer,5,Pune,MID_SIZE,957000,9.57
+8.3,BTECH,DevOps Engineer,6,Bengaluru,STARTUP,2372000,23.72
+3.6,BTECH,Full Stack Developer,5,Delhi NCR,MID_SIZE,1461000,14.61
+3.3,BTECH,Frontend Developer,2,Chennai,MID_SIZE,857000,8.57
+4.7,BSC_CS,ML Engineer,3,Mumbai,MID_SIZE,1501000,15.01
+7.2,BTECH,Full Stack Developer,6,Hyderabad,STARTUP,2011000,20.11
+15.2,MCA,DevOps Engineer,10,Pune,STARTUP,3548000,35.48
+4.4,BTECH,ML Engineer,5,Bengaluru,MID_SIZE,1867000,18.67
+13.3,BTECH,Java Developer,10,Mumbai,MID_SIZE,2841000,28.41
+11.1,PHD,Frontend Developer,8,Hyderabad,ENTERPRISE,3597000,35.97
+14.7,BSC_CS,Full Stack Developer,9,Mumbai,STARTUP,2748000,27.48
+3.1,MCA,Java Developer,4,Bengaluru,ENTERPRISE,1650000,16.5
+10.2,BCA,Data Analyst,7,Bengaluru,ENTERPRISE,2256000,22.56
+7.0,BTECH,Full Stack Developer,5,Hyderabad,STARTUP,1827000,18.27
+10.8,BTECH,Data Analyst,7,Pune,STARTUP,1806000,18.06
+10.1,MCA,Java Developer,9,Hyderabad,MID_SIZE,2515000,25.15
+15.6,BTECH,Java Developer,10,Bengaluru,MID_SIZE,3442000,34.42
+8.0,BCA,Java Developer,8,Bengaluru,STARTUP,1645000,16.45
+1.9,MCA,Full Stack Developer,3,Bengaluru,MID_SIZE,1158000,11.58
+15.6,BCA,Java Developer,10,Delhi NCR,ENTERPRISE,3131000,31.31
+11.0,BCA,Full Stack Developer,7,Delhi NCR,ENTERPRISE,2911000,29.11
+10.8,BTECH,Frontend Developer,7,Hyderabad,MID_SIZE,2042000,20.42
+5.8,BTECH,Frontend Developer,7,Hyderabad,ENTERPRISE,1847000,18.47
+10.6,BCA,ML Engineer,8,Pune,STARTUP,2269000,22.69
+14.6,BTECH,Full Stack Developer,10,Hyderabad,MID_SIZE,3379000,33.79
+13.9,MCA,DevOps Engineer,10,Delhi NCR,MID_SIZE,3382000,33.82
+6.9,BTECH,Frontend Developer,6,Hyderabad,ENTERPRISE,2063000,20.63
+10.9,BTECH,Java Developer,8,Mumbai,STARTUP,2351000,23.51
+10.8,BCA,Data Analyst,7,Delhi NCR,ENTERPRISE,1916000,19.16
+15.0,BTECH,Full Stack Developer,10,Hyderabad,STARTUP,3121000,31.21
+5.6,BTECH,Java Developer,5,Pune,MID_SIZE,1383000,13.83
+7.4,BCA,Full Stack Developer,8,Hyderabad,MID_SIZE,1886000,18.86
+0.8,BCA,Full Stack Developer,3,Pune,ENTERPRISE,883000,8.83
+9.2,BTECH,Data Analyst,7,Hyderabad,ENTERPRISE,2364000,23.64
+5.6,BTECH,ML Engineer,7,Mumbai,MID_SIZE,2062000,20.62
+12.3,BTECH,Java Developer,10,Delhi NCR,ENTERPRISE,3206000,32.06
+6.3,MTECH,Frontend Developer,7,Hyderabad,ENTERPRISE,1940000,19.4
+10.0,MTECH,Java Developer,8,Hyderabad,MID_SIZE,2660000,26.6
+2.2,MTECH,Full Stack Developer,5,Delhi NCR,MID_SIZE,1267000,12.67
+9.6,MTECH,Full Stack Developer,9,Bengaluru,ENTERPRISE,3871000,38.71
+8.0,MTECH,Full Stack Developer,6,Bengaluru,MID_SIZE,2451000,24.51
+10.7,BTECH,Data Analyst,8,Delhi NCR,MID_SIZE,1922000,19.22
+15.4,BTECH,Cloud Architect,10,Bengaluru,MID_SIZE,5000000,50.0
+9.0,MCA,Java Developer,7,Pune,STARTUP,1984000,19.84
+5.0,MCA,Java Developer,5,Chennai,MID_SIZE,1397000,13.97
+11.3,BCA,Java Developer,10,Hyderabad,MID_SIZE,2214000,22.14
+14.4,MTECH,Full Stack Developer,9,Hyderabad,STARTUP,3223000,32.23
+2.8,BSC_CS,Data Analyst,4,Mumbai,STARTUP,839000,8.39
+2.8,MCA,Frontend Developer,4,Bengaluru,MID_SIZE,1143000,11.43
+2.1,MCA,DevOps Engineer,5,Delhi NCR,ENTERPRISE,1496000,14.96
+12.7,BTECH,ML Engineer,10,Pune,ENTERPRISE,4101000,41.01
+12.7,MTECH,Data Analyst,9,Bengaluru,ENTERPRISE,3414000,34.14
+12.6,MCA,DevOps Engineer,10,Delhi NCR,ENTERPRISE,4285000,42.85
+9.0,MCA,Data Analyst,7,Chennai,MID_SIZE,1830000,18.3
+1.7,MCA,Cloud Architect,4,Bengaluru,STARTUP,1548000,15.48
+2.5,BTECH,Data Analyst,3,Hyderabad,ENTERPRISE,1062000,10.62
+14.9,MCA,Data Analyst,10,Pune,ENTERPRISE,2995000,29.95
+9.4,MCA,Java Developer,7,Hyderabad,STARTUP,2138000,21.38
+12.7,BTECH,Frontend Developer,9,Hyderabad,MID_SIZE,2417000,24.17
+5.6,MTECH,Java Developer,4,Pune,MID_SIZE,1544000,15.44
+5.9,MCA,Java Developer,4,Delhi NCR,STARTUP,1587000,15.87
+5.5,MTECH,DevOps Engineer,6,Hyderabad,MID_SIZE,2029000,20.29
+8.5,BTECH,ML Engineer,8,Hyderabad,MID_SIZE,2932000,29.32
+3.5,MTECH,Full Stack Developer,3,Bengaluru,ENTERPRISE,2017000,20.17
+3.8,BSC_CS,Data Analyst,4,Pune,ENTERPRISE,1085000,10.85
+11.4,MCA,Cloud Architect,8,Pune,ENTERPRISE,4105000,41.05
+11.6,BCA,Frontend Developer,7,Bengaluru,MID_SIZE,2030000,20.3
+4.0,BTECH,Java Developer,3,Pune,MID_SIZE,1195000,11.95
+2.3,MCA,Frontend Developer,2,Bengaluru,ENTERPRISE,1225000,12.25
+1.6,BCA,Cloud Architect,2,Mumbai,MID_SIZE,1171000,11.71
+14.9,MCA,Full Stack Developer,10,Bengaluru,STARTUP,3320000,33.2
+6.6,BTECH,ML Engineer,6,Chennai,STARTUP,2156000,21.56
+0.7,BCA,DevOps Engineer,4,Bengaluru,MID_SIZE,875000,8.75
+15.2,MCA,Java Developer,10,Delhi NCR,MID_SIZE,3295000,32.95
+13.7,BSC_CS,Frontend Developer,9,Pune,MID_SIZE,1848000,18.48
+12.9,MTECH,DevOps Engineer,10,Chennai,ENTERPRISE,4335000,43.35
+1.6,BTECH,Data Analyst,3,Bengaluru,MID_SIZE,859000,8.59
+10.9,BTECH,Java Developer,10,Bengaluru,STARTUP,2480000,24.8
+10.1,BTECH,Java Developer,9,Pune,MID_SIZE,2336000,23.36
+3.1,MCA,Java Developer,4,Mumbai,MID_SIZE,1310000,13.1
+2.6,MTECH,ML Engineer,4,Hyderabad,MID_SIZE,1601000,16.01
+2.2,BCA,Data Analyst,3,Bengaluru,ENTERPRISE,971000,9.71
+14.2,BCA,Frontend Developer,9,Bengaluru,MID_SIZE,2450000,24.5
+9.5,BSC_CS,ML Engineer,9,Bengaluru,MID_SIZE,2742000,27.42
+2.8,MTECH,Full Stack Developer,3,Pune,ENTERPRISE,1561000,15.61
+8.4,BTECH,Full Stack Developer,7,Pune,ENTERPRISE,2693000,26.93
+2.7,BTECH,Frontend Developer,3,Pune,ENTERPRISE,1135000,11.35
+8.0,BSC_CS,Java Developer,7,Hyderabad,STARTUP,1507000,15.07
+10.9,MCA,Full Stack Developer,7,Hyderabad,ENTERPRISE,3101000,31.01
+10.6,MTECH,Frontend Developer,9,Pune,MID_SIZE,2234000,22.34
+9.3,BTECH,Full Stack Developer,6,Pune,ENTERPRISE,2737000,27.37
+6.3,BTECH,DevOps Engineer,7,Hyderabad,ENTERPRISE,2718000,27.18
+14.3,MTECH,Frontend Developer,10,Hyderabad,STARTUP,2617000,26.17
+3.4,MCA,Java Developer,5,Bengaluru,STARTUP,1348000,13.48
+8.0,BSC_CS,Full Stack Developer,5,Bengaluru,ENTERPRISE,2261000,22.61
+2.5,BCA,Data Analyst,3,Hyderabad,ENTERPRISE,913000,9.13
+4.5,MTECH,Frontend Developer,3,Pune,MID_SIZE,1344000,13.44
+11.8,MTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,4078000,40.78
+3.1,MCA,DevOps Engineer,3,Mumbai,ENTERPRISE,1865000,18.65
+8.4,MCA,Frontend Developer,6,Chennai,MID_SIZE,1581000,15.81
+6.5,BSC_CS,Frontend Developer,7,Delhi NCR,MID_SIZE,1331000,13.31
+9.9,MTECH,Frontend Developer,6,Pune,ENTERPRISE,2349000,23.49
+10.7,BTECH,DevOps Engineer,10,Bengaluru,ENTERPRISE,3939000,39.39
+6.2,BTECH,Frontend Developer,7,Bengaluru,ENTERPRISE,1910000,19.1
+13.0,MCA,DevOps Engineer,10,Pune,MID_SIZE,3277000,32.77
+4.1,BTECH,DevOps Engineer,4,Delhi NCR,MID_SIZE,1482000,14.82
+12.0,BTECH,Frontend Developer,9,Hyderabad,MID_SIZE,2337000,23.37
+5.4,BSC_CS,Java Developer,7,Pune,MID_SIZE,1263000,12.63
+10.0,BTECH,Cloud Architect,10,Bengaluru,MID_SIZE,3596000,35.96
+9.2,PHD,Full Stack Developer,9,Pune,ENTERPRISE,3716000,37.16
+13.8,MCA,Data Analyst,10,Hyderabad,MID_SIZE,2334000,23.34
+8.4,MCA,ML Engineer,6,Pune,MID_SIZE,2450000,24.5
+15.5,BCA,Frontend Developer,10,Bengaluru,ENTERPRISE,2843000,28.43
+4.6,MCA,Full Stack Developer,6,Mumbai,ENTERPRISE,2101000,21.01
+8.6,BTECH,ML Engineer,9,Chennai,ENTERPRISE,3082000,30.82
+3.6,MCA,Data Analyst,4,Bengaluru,STARTUP,1173000,11.73
+10.9,MCA,Java Developer,9,Chennai,STARTUP,2265000,22.65
+6.0,BTECH,Full Stack Developer,4,Hyderabad,ENTERPRISE,2340000,23.4
+9.0,BTECH,ML Engineer,8,Pune,MID_SIZE,2561000,25.61
+15.4,BTECH,Full Stack Developer,10,Bengaluru,STARTUP,3539000,35.39
+8.3,BCA,Java Developer,7,Hyderabad,MID_SIZE,1786000,17.86
+15.5,MCA,Full Stack Developer,10,Mumbai,ENTERPRISE,4588000,45.88
+14.4,BTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,4029000,40.29
+4.1,MTECH,Java Developer,5,Hyderabad,STARTUP,1386000,13.86
+1.9,MCA,Data Analyst,5,Bengaluru,ENTERPRISE,1171000,11.71
+3.9,BSC_CS,Full Stack Developer,4,Mumbai,ENTERPRISE,1509000,15.09
+3.6,MTECH,ML Engineer,4,Bengaluru,STARTUP,1983000,19.83
+6.0,BCA,ML Engineer,7,Bengaluru,ENTERPRISE,2537000,25.37
+12.3,BCA,Full Stack Developer,10,Hyderabad,MID_SIZE,2695000,26.95
+14.2,BTECH,Data Analyst,10,Bengaluru,ENTERPRISE,3176000,31.76
+12.1,BTECH,Frontend Developer,8,Hyderabad,ENTERPRISE,2763000,27.63
+6.6,BSC_CS,ML Engineer,7,Chennai,MID_SIZE,1738000,17.38
+0.6,BTECH,Data Analyst,3,Bengaluru,MID_SIZE,692000,6.92
+4.6,MTECH,Java Developer,6,Hyderabad,STARTUP,1475000,14.75
+11.4,MTECH,Full Stack Developer,8,Bengaluru,STARTUP,3410000,34.1
+11.1,MCA,ML Engineer,10,Delhi NCR,MID_SIZE,3192000,31.92
+12.9,BTECH,ML Engineer,9,Bengaluru,MID_SIZE,4218000,42.18
+13.7,MCA,Full Stack Developer,9,Mumbai,MID_SIZE,3279000,32.79
+11.2,MCA,Frontend Developer,10,Hyderabad,MID_SIZE,2337000,23.37
+4.5,BTECH,Java Developer,6,Delhi NCR,MID_SIZE,1323000,13.23
+13.9,BSC_CS,Cloud Architect,10,Pune,MID_SIZE,3696000,36.96
+4.9,BTECH,Java Developer,3,Mumbai,MID_SIZE,1446000,14.46
+4.9,BCA,Data Analyst,5,Bengaluru,ENTERPRISE,1418000,14.18
+10.0,MTECH,Full Stack Developer,9,Bengaluru,MID_SIZE,2998000,29.98
+5.0,MCA,Java Developer,6,Bengaluru,MID_SIZE,1730000,17.3
+8.6,BSC_CS,Full Stack Developer,7,Delhi NCR,STARTUP,1840000,18.4
+15.1,BCA,ML Engineer,10,Bengaluru,STARTUP,3824000,38.24
+7.8,MCA,Frontend Developer,5,Pune,ENTERPRISE,1890000,18.9
+2.9,MTECH,Data Analyst,4,Hyderabad,STARTUP,1069000,10.69
+2.5,BSC_CS,Full Stack Developer,4,Bengaluru,MID_SIZE,1130000,11.3
+7.7,MTECH,DevOps Engineer,6,Pune,STARTUP,2400000,24.0
+7.6,MTECH,ML Engineer,7,Hyderabad,MID_SIZE,3054000,30.54
+8.0,BCA,Java Developer,6,Hyderabad,MID_SIZE,1625000,16.25
+0.5,MCA,DevOps Engineer,2,Hyderabad,MID_SIZE,905000,9.05
+8.1,BTECH,ML Engineer,6,Mumbai,ENTERPRISE,3446000,34.46
+9.0,MTECH,Java Developer,9,Hyderabad,STARTUP,2430000,24.3
+3.9,MCA,Frontend Developer,5,Hyderabad,ENTERPRISE,1401000,14.01
+12.0,BTECH,ML Engineer,10,Delhi NCR,STARTUP,3060000,30.6
+7.6,MCA,Full Stack Developer,6,Hyderabad,MID_SIZE,2012000,20.12
+8.8,BCA,Java Developer,6,Bengaluru,ENTERPRISE,2225000,22.25
+2.8,BTECH,Full Stack Developer,4,Hyderabad,ENTERPRISE,1508000,15.08
+12.8,MCA,Java Developer,10,Chennai,STARTUP,2260000,22.6
+7.8,MCA,Java Developer,5,Delhi NCR,ENTERPRISE,2531000,25.31
+11.6,PHD,Full Stack Developer,8,Bengaluru,ENTERPRISE,4678000,46.78
+12.5,PHD,Full Stack Developer,10,Hyderabad,MID_SIZE,4109000,41.09
+3.0,MCA,ML Engineer,5,Pune,STARTUP,1442000,14.42
+3.6,MTECH,DevOps Engineer,6,Bengaluru,STARTUP,1767000,17.67
+3.1,BCA,Java Developer,2,Mumbai,STARTUP,963000,9.63
+11.2,BSC_CS,ML Engineer,10,Mumbai,STARTUP,2553000,25.53
+10.1,PHD,Cloud Architect,8,Pune,STARTUP,4135000,41.35
+12.8,BSC_CS,Frontend Developer,10,Chennai,ENTERPRISE,2330000,23.3
+7.3,MCA,Java Developer,5,Hyderabad,STARTUP,1789000,17.89
+7.3,MCA,Java Developer,7,Bengaluru,STARTUP,1907000,19.07
+7.8,BTECH,DevOps Engineer,6,Delhi NCR,STARTUP,2204000,22.04
+13.2,BTECH,Full Stack Developer,9,Mumbai,MID_SIZE,3353000,33.53
+10.1,MCA,Java Developer,10,Hyderabad,STARTUP,2174000,21.74
+11.1,BSC_CS,ML Engineer,9,Bengaluru,MID_SIZE,2776000,27.76
+8.6,MCA,Frontend Developer,7,Bengaluru,ENTERPRISE,2277000,22.77
+3.5,MCA,Frontend Developer,5,Hyderabad,MID_SIZE,1051000,10.51
+3.9,BCA,ML Engineer,3,Chennai,MID_SIZE,1308000,13.08
+10.4,MCA,Java Developer,7,Delhi NCR,ENTERPRISE,3014000,30.14
+4.6,BCA,Frontend Developer,3,Hyderabad,ENTERPRISE,1191000,11.91
+4.1,BSC_CS,Full Stack Developer,4,Pune,MID_SIZE,1168000,11.68
+9.2,MCA,ML Engineer,9,Pune,MID_SIZE,2989000,29.89
+3.1,BTECH,Frontend Developer,5,Hyderabad,STARTUP,1063000,10.63
+14.5,PHD,Full Stack Developer,10,Delhi NCR,MID_SIZE,4390000,43.9
+5.5,BTECH,Java Developer,6,Hyderabad,MID_SIZE,1550000,15.5
+7.5,BCA,Cloud Architect,5,Bengaluru,MID_SIZE,2614000,26.14
+15.9,BTECH,Java Developer,10,Bengaluru,ENTERPRISE,4310000,43.1
+15.1,MTECH,DevOps Engineer,10,Hyderabad,MID_SIZE,3971000,39.71
+7.6,BTECH,Frontend Developer,7,Delhi NCR,STARTUP,1644000,16.44
+1.9,MTECH,Full Stack Developer,5,Mumbai,ENTERPRISE,1468000,14.68
+13.3,BTECH,ML Engineer,10,Delhi NCR,MID_SIZE,3410000,34.1
+13.0,MCA,Full Stack Developer,10,Chennai,MID_SIZE,2834000,28.34
+14.0,BSC_CS,DevOps Engineer,9,Pune,MID_SIZE,2859000,28.59
+10.3,BTECH,Frontend Developer,9,Hyderabad,MID_SIZE,2057000,20.57
+3.9,MCA,Frontend Developer,3,Hyderabad,MID_SIZE,1102000,11.02
+5.0,BCA,Full Stack Developer,4,Bengaluru,MID_SIZE,1506000,15.06
+4.6,BTECH,Full Stack Developer,6,Pune,ENTERPRISE,1849000,18.49
+8.1,BSC_CS,Data Analyst,6,Pune,ENTERPRISE,1551000,15.51
+4.6,MCA,Full Stack Developer,6,Pune,STARTUP,1449000,14.49
+5.9,BTECH,Java Developer,6,Bengaluru,MID_SIZE,1797000,17.97
+15.8,BCA,Full Stack Developer,10,Bengaluru,ENTERPRISE,4046000,40.46
+2.9,BCA,ML Engineer,3,Mumbai,STARTUP,1300000,13.0
+13.2,MCA,Frontend Developer,8,Bengaluru,MID_SIZE,2574000,25.74
+12.0,BTECH,Java Developer,9,Mumbai,MID_SIZE,2746000,27.46
+10.9,MTECH,Full Stack Developer,7,Pune,MID_SIZE,2713000,27.13
+12.7,BCA,Data Analyst,10,Pune,STARTUP,1800000,18.0
+10.8,BTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,3097000,30.97
+6.4,BCA,Cloud Architect,4,Hyderabad,ENTERPRISE,2545000,25.45
+8.3,MTECH,Full Stack Developer,7,Bengaluru,STARTUP,2499000,24.99
+6.6,BTECH,Frontend Developer,5,Hyderabad,MID_SIZE,1635000,16.35
+15.7,BCA,Java Developer,10,Bengaluru,MID_SIZE,3081000,30.81
+15.2,BTECH,Java Developer,10,Hyderabad,STARTUP,2919000,29.19
+11.0,MCA,DevOps Engineer,10,Hyderabad,MID_SIZE,3380000,33.8
+14.6,BTECH,Java Developer,10,Bengaluru,STARTUP,3208000,32.08
+5.3,BTECH,ML Engineer,5,Bengaluru,ENTERPRISE,2719000,27.19
+9.3,BCA,Frontend Developer,7,Pune,ENTERPRISE,1804000,18.04
+14.1,MCA,ML Engineer,10,Delhi NCR,MID_SIZE,3820000,38.2
+12.1,MCA,DevOps Engineer,9,Mumbai,STARTUP,3035000,30.35
+3.4,MCA,ML Engineer,4,Bengaluru,MID_SIZE,1793000,17.93
+4.1,BCA,Frontend Developer,6,Mumbai,STARTUP,1038000,10.38
+6.3,BTECH,DevOps Engineer,4,Bengaluru,STARTUP,2063000,20.63
+15.5,MTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,4825000,48.25
+1.5,PHD,Cloud Architect,3,Delhi NCR,MID_SIZE,1851000,18.51
+14.3,MCA,Full Stack Developer,10,Pune,ENTERPRISE,3784000,37.84
+15.1,BTECH,Full Stack Developer,10,Pune,ENTERPRISE,3899000,38.99
+7.5,BCA,DevOps Engineer,8,Chennai,MID_SIZE,1997000,19.97
+1.1,MCA,Full Stack Developer,4,Chennai,STARTUP,813000,8.13
+5.2,BTECH,DevOps Engineer,4,Hyderabad,MID_SIZE,1906000,19.06
+14.5,MCA,Full Stack Developer,10,Bengaluru,MID_SIZE,3803000,38.03
+15.0,BCA,ML Engineer,10,Hyderabad,MID_SIZE,3469000,34.69
+14.4,MTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,4557000,45.57
+2.4,BTECH,Frontend Developer,5,Hyderabad,MID_SIZE,983000,9.83
+15.6,BSC_CS,Data Analyst,10,Pune,STARTUP,2092000,20.92
+9.3,BSC_CS,Data Analyst,6,Delhi NCR,STARTUP,1412000,14.12
+5.3,BTECH,ML Engineer,5,Pune,STARTUP,1940000,19.4
+0.6,BCA,ML Engineer,2,Hyderabad,MID_SIZE,799000,7.99
+8.1,MCA,Java Developer,5,Hyderabad,MID_SIZE,1926000,19.26
+9.0,BTECH,Data Analyst,7,Delhi NCR,STARTUP,1571000,15.71
+5.9,BCA,Frontend Developer,6,Pune,MID_SIZE,1235000,12.35
+1.3,BSC_CS,Full Stack Developer,2,Pune,MID_SIZE,780000,7.8
+12.1,BCA,Java Developer,10,Mumbai,MID_SIZE,2431000,24.31
+12.3,BCA,DevOps Engineer,10,Hyderabad,STARTUP,2604000,26.04
+6.9,BSC_CS,Java Developer,5,Bengaluru,MID_SIZE,1590000,15.9
+11.2,PHD,Cloud Architect,9,Bengaluru,MID_SIZE,4988000,49.88
+9.4,MTECH,Data Analyst,9,Pune,MID_SIZE,1996000,19.96
+3.3,MCA,Data Analyst,2,Chennai,STARTUP,907000,9.07
+12.8,BSC_CS,ML Engineer,8,Pune,MID_SIZE,2756000,27.56
+9.2,BCA,Data Analyst,6,Bengaluru,MID_SIZE,1618000,16.18
+8.4,BCA,Java Developer,6,Pune,MID_SIZE,1706000,17.06
+3.5,MTECH,DevOps Engineer,3,Hyderabad,MID_SIZE,1723000,17.23
+8.0,MTECH,Data Analyst,8,Pune,MID_SIZE,1928000,19.28
+1.4,BTECH,Full Stack Developer,2,Pune,MID_SIZE,843000,8.43
+11.1,MTECH,ML Engineer,9,Hyderabad,ENTERPRISE,4766000,47.66
+5.8,BTECH,Full Stack Developer,5,Bengaluru,MID_SIZE,1942000,19.42
+13.9,MCA,ML Engineer,10,Hyderabad,STARTUP,3528000,35.28
+14.1,MCA,Full Stack Developer,10,Hyderabad,MID_SIZE,3127000,31.27
+12.7,MTECH,ML Engineer,10,Hyderabad,STARTUP,4131000,41.31
+2.9,BTECH,Java Developer,4,Delhi NCR,MID_SIZE,1060000,10.6
+14.0,MTECH,DevOps Engineer,9,Pune,STARTUP,3543000,35.43
+11.6,BCA,Full Stack Developer,7,Chennai,MID_SIZE,2112000,21.12
+14.3,MCA,Frontend Developer,10,Mumbai,STARTUP,2636000,26.36
+3.8,BTECH,Java Developer,3,Pune,ENTERPRISE,1396000,13.96
+2.9,MTECH,Frontend Developer,4,Pune,STARTUP,1010000,10.1
+4.7,MCA,Cloud Architect,5,Pune,STARTUP,2060000,20.6
+5.8,BCA,Full Stack Developer,4,Hyderabad,MID_SIZE,1484000,14.84
+1.8,MCA,Full Stack Developer,5,Delhi NCR,MID_SIZE,1113000,11.13
+5.3,MCA,DevOps Engineer,7,Pune,MID_SIZE,1891000,18.91
+1.9,MCA,ML Engineer,5,Bengaluru,MID_SIZE,1422000,14.22
+15.2,MTECH,Frontend Developer,10,Bengaluru,MID_SIZE,3330000,33.3
+10.8,MTECH,ML Engineer,10,Hyderabad,STARTUP,3267000,32.67
+7.9,BTECH,DevOps Engineer,5,Hyderabad,MID_SIZE,2340000,23.4
+11.6,BTECH,Frontend Developer,10,Bengaluru,MID_SIZE,2358000,23.58
+6.9,BTECH,Data Analyst,7,Chennai,MID_SIZE,1357000,13.57
+11.3,PHD,Full Stack Developer,8,Pune,MID_SIZE,3145000,31.45
+10.9,MCA,ML Engineer,10,Delhi NCR,STARTUP,3062000,30.62
+2.0,BTECH,Full Stack Developer,5,Hyderabad,MID_SIZE,1088000,10.88
+10.5,BSC_CS,Frontend Developer,7,Bengaluru,MID_SIZE,1914000,19.14
+10.7,BTECH,Full Stack Developer,8,Pune,MID_SIZE,2563000,25.63
+5.4,MTECH,Full Stack Developer,7,Hyderabad,ENTERPRISE,2497000,24.97
+14.7,BTECH,Cloud Architect,10,Pune,MID_SIZE,4493000,44.93
+1.5,MTECH,DevOps Engineer,3,Bengaluru,MID_SIZE,1236000,12.36
+4.9,BTECH,Frontend Developer,6,Pune,MID_SIZE,1208000,12.08
+7.2,BSC_CS,Java Developer,7,Bengaluru,MID_SIZE,1761000,17.61
+2.9,MCA,Cloud Architect,2,Bengaluru,STARTUP,1674000,16.74
+14.2,PHD,Data Analyst,10,Bengaluru,STARTUP,3419000,34.19
+14.4,MTECH,ML Engineer,10,Pune,MID_SIZE,4209000,42.09
+7.5,BSC_CS,Java Developer,6,Pune,MID_SIZE,1531000,15.31
+4.7,BTECH,Cloud Architect,6,Bengaluru,STARTUP,2354000,23.54
+2.3,MCA,Full Stack Developer,4,Bengaluru,ENTERPRISE,1541000,15.41
+1.7,BCA,DevOps Engineer,2,Hyderabad,ENTERPRISE,1198000,11.98
+8.9,MCA,Data Analyst,6,Delhi NCR,MID_SIZE,1792000,17.92
+8.4,MCA,Full Stack Developer,8,Hyderabad,ENTERPRISE,2768000,27.68
+1.0,MCA,DevOps Engineer,2,Mumbai,MID_SIZE,1040000,10.4
+9.5,MCA,Full Stack Developer,6,Bengaluru,ENTERPRISE,3142000,31.42
+1.8,MTECH,Full Stack Developer,4,Bengaluru,STARTUP,1170000,11.7
+4.5,MCA,ML Engineer,6,Delhi NCR,ENTERPRISE,2276000,22.76
+3.2,BSC_CS,ML Engineer,2,Bengaluru,MID_SIZE,1321000,13.21
+1.8,MTECH,Frontend Developer,5,Bengaluru,MID_SIZE,1084000,10.84
+4.2,MCA,Full Stack Developer,5,Bengaluru,ENTERPRISE,1887000,18.87
+4.6,BCA,DevOps Engineer,6,Hyderabad,MID_SIZE,1588000,15.88
+12.2,BTECH,Full Stack Developer,9,Mumbai,MID_SIZE,3011000,30.11
+7.2,MCA,Java Developer,5,Hyderabad,MID_SIZE,1752000,17.52
+8.7,MCA,Java Developer,8,Pune,MID_SIZE,1971000,19.71
+4.6,MCA,Frontend Developer,4,Hyderabad,ENTERPRISE,1606000,16.06
+9.6,BTECH,Java Developer,6,Pune,STARTUP,2005000,20.05
+13.4,BCA,Frontend Developer,10,Bengaluru,MID_SIZE,2340000,23.4
+4.4,MCA,Frontend Developer,4,Bengaluru,MID_SIZE,1425000,14.25
+10.4,BCA,ML Engineer,8,Delhi NCR,STARTUP,2665000,26.65
+11.3,BTECH,Java Developer,9,Chennai,MID_SIZE,2369000,23.69
+11.2,MCA,Data Analyst,9,Bengaluru,ENTERPRISE,2959000,29.59
+6.4,BCA,Java Developer,7,Chennai,MID_SIZE,1265000,12.65
+15.7,BTECH,Java Developer,10,Pune,STARTUP,2664000,26.64
+10.5,MCA,DevOps Engineer,9,Bengaluru,STARTUP,3218000,32.18
+0.8,MCA,Full Stack Developer,4,Bengaluru,STARTUP,876000,8.76
+11.4,BTECH,DevOps Engineer,10,Hyderabad,ENTERPRISE,3803000,38.03
+6.8,MCA,ML Engineer,8,Bengaluru,STARTUP,2709000,27.09
+13.2,BTECH,Full Stack Developer,10,Chennai,MID_SIZE,2777000,27.77
+10.3,BCA,Cloud Architect,7,Pune,ENTERPRISE,3629000,36.29
+12.3,BSC_CS,Java Developer,9,Pune,ENTERPRISE,2445000,24.45
+6.5,MCA,Frontend Developer,7,Hyderabad,ENTERPRISE,2000000,20.0
+2.7,MCA,Java Developer,2,Pune,MID_SIZE,1083000,10.83
+10.5,MTECH,Full Stack Developer,7,Delhi NCR,ENTERPRISE,3245000,32.45
+1.4,BCA,ML Engineer,4,Bengaluru,ENTERPRISE,1388000,13.88
+14.0,MCA,Full Stack Developer,10,Bengaluru,STARTUP,3370000,33.7
+0.8,MCA,DevOps Engineer,2,Bengaluru,MID_SIZE,962000,9.62
+1.3,MCA,Java Developer,2,Hyderabad,STARTUP,866000,8.66
+2.1,MCA,Full Stack Developer,5,Bengaluru,ENTERPRISE,1489000,14.89
+13.5,BTECH,ML Engineer,10,Bengaluru,MID_SIZE,3944000,39.44
+15.5,BCA,Java Developer,10,Bengaluru,STARTUP,2553000,25.53
+6.9,BTECH,ML Engineer,5,Hyderabad,ENTERPRISE,2709000,27.09
+12.8,BTECH,Data Analyst,8,Bengaluru,ENTERPRISE,2737000,27.37
+3.3,MCA,Frontend Developer,5,Delhi NCR,MID_SIZE,1119000,11.19
+3.7,BTECH,Data Analyst,3,Hyderabad,ENTERPRISE,1355000,13.55
+11.6,BCA,Data Analyst,10,Delhi NCR,MID_SIZE,1684000,16.84
+4.2,BTECH,Frontend Developer,4,Bengaluru,MID_SIZE,1257000,12.57
+10.2,BCA,Java Developer,10,Bengaluru,STARTUP,2055000,20.55
+3.0,BCA,DevOps Engineer,4,Hyderabad,STARTUP,1129000,11.29
+13.0,BCA,ML Engineer,9,Mumbai,ENTERPRISE,3722000,37.22
+1.0,BCA,Full Stack Developer,3,Bengaluru,MID_SIZE,804000,8.04
+12.1,BSC_CS,DevOps Engineer,9,Bengaluru,STARTUP,2859000,28.59
+14.0,BSC_CS,Full Stack Developer,10,Hyderabad,MID_SIZE,2549000,25.49
+14.9,BTECH,Full Stack Developer,10,Bengaluru,ENTERPRISE,4735000,47.35
+3.6,MCA,Frontend Developer,6,Bengaluru,STARTUP,1178000,11.78
+3.2,MTECH,Java Developer,3,Pune,ENTERPRISE,1526000,15.26
+9.1,BTECH,Java Developer,7,Pune,ENTERPRISE,2481000,24.81
+13.5,MCA,Java Developer,10,Mumbai,STARTUP,2804000,28.04
+3.9,MTECH,Cloud Architect,6,Delhi NCR,ENTERPRISE,2979000,29.79
+1.1,MCA,Full Stack Developer,4,Bengaluru,MID_SIZE,1074000,10.74
+11.3,BTECH,Frontend Developer,10,Bengaluru,ENTERPRISE,3082000,30.82
+2.6,MCA,Java Developer,4,Bengaluru,MID_SIZE,1143000,11.43
+7.6,BTECH,Full Stack Developer,6,Chennai,MID_SIZE,2034000,20.34
+6.8,BTECH,ML Engineer,5,Hyderabad,MID_SIZE,2295000,22.95
+11.2,BTECH,Full Stack Developer,8,Mumbai,MID_SIZE,2940000,29.4
+1.8,MCA,DevOps Engineer,4,Bengaluru,ENTERPRISE,1687000,16.87
+2.2,MCA,Java Developer,2,Hyderabad,STARTUP,979000,9.79
+12.5,BTECH,Frontend Developer,9,Pune,MID_SIZE,2274000,22.74
+12.3,MTECH,Java Developer,8,Hyderabad,MID_SIZE,2734000,27.34
+5.9,BTECH,Full Stack Developer,6,Bengaluru,ENTERPRISE,2365000,23.65
+6.2,MCA,Data Analyst,5,Chennai,ENTERPRISE,1750000,17.5
+7.6,MTECH,Frontend Developer,5,Bengaluru,ENTERPRISE,2286000,22.86
+2.2,BSC_CS,Frontend Developer,2,Bengaluru,ENTERPRISE,920000,9.2
+15.5,BCA,Full Stack Developer,10,Hyderabad,MID_SIZE,2867000,28.67
+1.5,BSC_CS,DevOps Engineer,4,Chennai,MID_SIZE,865000,8.65
+10.7,BTECH,ML Engineer,10,Pune,MID_SIZE,3020000,30.2
+9.3,BTECH,DevOps Engineer,8,Mumbai,STARTUP,2835000,28.35
+12.4,BTECH,Frontend Developer,9,Hyderabad,STARTUP,2277000,22.77
+4.9,MCA,Cloud Architect,4,Pune,MID_SIZE,2028000,20.28
+2.3,BTECH,Cloud Architect,3,Hyderabad,MID_SIZE,1598000,15.98
+1.0,BTECH,Java Developer,2,Hyderabad,MID_SIZE,796000,7.96
+2.4,MTECH,Frontend Developer,4,Mumbai,ENTERPRISE,1239000,12.39
+15.5,BTECH,Full Stack Developer,10,Pune,MID_SIZE,3488000,34.88
+12.2,MCA,Cloud Architect,10,Mumbai,ENTERPRISE,5000000,50.0
+2.2,BCA,Full Stack Developer,2,Pune,STARTUP,820000,8.2
+13.5,BCA,Full Stack Developer,10,Bengaluru,MID_SIZE,3019000,30.19
+12.4,BCA,Java Developer,8,Delhi NCR,MID_SIZE,2383000,23.83
+6.6,MCA,Full Stack Developer,6,Hyderabad,STARTUP,1866000,18.66
+11.6,BTECH,Full Stack Developer,9,Bengaluru,MID_SIZE,3255000,32.55
+14.1,MCA,Frontend Developer,10,Hyderabad,ENTERPRISE,3086000,30.86
+13.0,BTECH,Cloud Architect,8,Delhi NCR,STARTUP,3623000,36.23
+5.2,BTECH,Cloud Architect,7,Hyderabad,ENTERPRISE,2717000,27.17
+6.8,BTECH,DevOps Engineer,6,Pune,ENTERPRISE,2392000,23.92
+13.4,BTECH,Java Developer,10,Delhi NCR,MID_SIZE,2758000,27.58
+12.0,MCA,Java Developer,10,Bengaluru,MID_SIZE,2706000,27.06
+10.8,BSC_CS,Java Developer,7,Delhi NCR,MID_SIZE,1842000,18.42
+4.8,BCA,Cloud Architect,6,Mumbai,MID_SIZE,2108000,21.08
+10.2,MCA,Full Stack Developer,7,Bengaluru,MID_SIZE,2971000,29.71
+3.0,BTECH,Frontend Developer,3,Delhi NCR,STARTUP,865000,8.65
+6.1,MTECH,Data Analyst,4,Bengaluru,MID_SIZE,1702000,17.02
+12.4,BCA,Frontend Developer,10,Mumbai,MID_SIZE,2163000,21.63
+11.1,MCA,Java Developer,9,Pune,STARTUP,2375000,23.75
+0.7,BTECH,Full Stack Developer,2,Hyderabad,MID_SIZE,755000,7.55
+2.9,BSC_CS,Java Developer,2,Delhi NCR,MID_SIZE,898000,8.98
+14.7,BCA,Frontend Developer,10,Bengaluru,MID_SIZE,2266000,22.66
+7.4,BTECH,Cloud Architect,7,Chennai,STARTUP,2302000,23.02
+13.1,MTECH,Java Developer,9,Bengaluru,STARTUP,2998000,29.98
+15.7,MCA,Full Stack Developer,10,Bengaluru,STARTUP,3806000,38.06
+1.2,MCA,Frontend Developer,2,Hyderabad,STARTUP,753000,7.53
+1.2,BCA,Java Developer,2,Bengaluru,STARTUP,731000,7.31
+3.6,BCA,Data Analyst,5,Bengaluru,ENTERPRISE,1343000,13.43
+5.9,BTECH,Frontend Developer,4,Mumbai,STARTUP,1283000,12.83
+9.5,BSC_CS,Frontend Developer,6,Bengaluru,MID_SIZE,1839000,18.39
+2.0,BTECH,Java Developer,3,Mumbai,MID_SIZE,996000,9.96
+15.3,BTECH,Frontend Developer,10,Hyderabad,STARTUP,2520000,25.2
+12.3,BTECH,Java Developer,10,Hyderabad,MID_SIZE,2742000,27.42
+9.1,BTECH,Frontend Developer,8,Bengaluru,MID_SIZE,2083000,20.83
+13.5,BTECH,Java Developer,9,Chennai,MID_SIZE,2716000,27.16
+12.9,BTECH,Cloud Architect,8,Bengaluru,MID_SIZE,4316000,43.16
+8.6,BCA,Data Analyst,6,Hyderabad,MID_SIZE,1555000,15.55
+14.3,BTECH,Frontend Developer,10,Bengaluru,STARTUP,2458000,24.58
+13.5,BTECH,ML Engineer,10,Mumbai,MID_SIZE,4050000,40.5
+12.9,BTECH,Cloud Architect,10,Pune,ENTERPRISE,4764000,47.64
+2.8,BCA,Full Stack Developer,3,Hyderabad,STARTUP,920000,9.2
+11.9,BTECH,DevOps Engineer,10,Bengaluru,STARTUP,3092000,30.92
+10.1,BCA,Frontend Developer,10,Mumbai,ENTERPRISE,2095000,20.95
+10.8,BTECH,Full Stack Developer,7,Hyderabad,ENTERPRISE,3469000,34.69
+1.0,MTECH,Full Stack Developer,4,Hyderabad,MID_SIZE,1012000,10.12
+1.1,MCA,Frontend Developer,2,Mumbai,ENTERPRISE,911000,9.11
+2.6,BTECH,ML Engineer,5,Bengaluru,MID_SIZE,1550000,15.5
+13.7,BTECH,Full Stack Developer,10,Hyderabad,ENTERPRISE,4042000,40.42
+4.9,BTECH,Frontend Developer,3,Bengaluru,MID_SIZE,1403000,14.03
+10.2,BTECH,Full Stack Developer,7,Chennai,MID_SIZE,2386000,23.86
+4.3,BTECH,Data Analyst,5,Delhi NCR,STARTUP,1057000,10.57
+3.1,BCA,Full Stack Developer,5,Pune,MID_SIZE,1020000,10.2
+11.3,PHD,Data Analyst,7,Hyderabad,MID_SIZE,2809000,28.09
+2.1,BTECH,Data Analyst,4,Hyderabad,ENTERPRISE,1046000,10.46
+5.1,BSC_CS,Cloud Architect,4,Pune,ENTERPRISE,2293000,22.93
+8.8,BCA,Java Developer,7,Chennai,MID_SIZE,1667000,16.67
+15.3,BTECH,ML Engineer,10,Pune,MID_SIZE,3831000,38.31
+5.9,MCA,Frontend Developer,6,Hyderabad,MID_SIZE,1410000,14.1
+6.7,BTECH,Data Analyst,5,Mumbai,STARTUP,1495000,14.95
+8.5,BTECH,Java Developer,9,Pune,ENTERPRISE,2302000,23.02
+10.4,MTECH,ML Engineer,7,Delhi NCR,ENTERPRISE,4202000,42.02
+6.1,BSC_CS,Frontend Developer,7,Pune,MID_SIZE,1149000,11.49
+13.8,MCA,DevOps Engineer,10,Delhi NCR,MID_SIZE,3672000,36.72
+4.5,BTECH,Data Analyst,4,Bengaluru,STARTUP,1294000,12.94
+5.3,PHD,Full Stack Developer,5,Hyderabad,ENTERPRISE,2522000,25.22
+2.6,MCA,Java Developer,2,Pune,STARTUP,1040000,10.4
+8.0,MTECH,Frontend Developer,5,Bengaluru,MID_SIZE,2173000,21.73
+6.8,MCA,Java Developer,6,Bengaluru,ENTERPRISE,2293000,22.93
+9.4,BCA,Full Stack Developer,8,Pune,MID_SIZE,1964000,19.64
+1.9,MCA,Data Analyst,5,Hyderabad,ENTERPRISE,1182000,11.82
+12.0,BSC_CS,Cloud Architect,10,Bengaluru,STARTUP,3351000,33.51
+4.4,BTECH,Data Analyst,5,Hyderabad,ENTERPRISE,1498000,14.98
+7.9,BTECH,Java Developer,8,Mumbai,STARTUP,2001000,20.01
+13.2,MTECH,Frontend Developer,8,Pune,ENTERPRISE,3179000,31.79
+12.7,BTECH,Java Developer,10,Hyderabad,ENTERPRISE,3522000,35.22
+11.1,BSC_CS,Full Stack Developer,10,Hyderabad,STARTUP,2351000,23.51
+14.7,MTECH,Java Developer,10,Mumbai,MID_SIZE,3683000,36.83
+10.3,MCA,DevOps Engineer,7,Hyderabad,STARTUP,2939000,29.39
+15.1,BTECH,Full Stack Developer,10,Delhi NCR,ENTERPRISE,4283000,42.83
+11.3,BTECH,Full Stack Developer,9,Pune,ENTERPRISE,3149000,31.49
+0.9,MCA,Frontend Developer,2,Pune,ENTERPRISE,734000,7.34
+3.6,BTECH,Java Developer,4,Bengaluru,STARTUP,1348000,13.48
+11.1,BTECH,ML Engineer,9,Hyderabad,ENTERPRISE,3812000,38.12
+9.7,BTECH,Java Developer,9,Bengaluru,MID_SIZE,2572000,25.72
+15.1,BSC_CS,DevOps Engineer,10,Chennai,ENTERPRISE,3748000,37.48
+15.6,MCA,Java Developer,10,Bengaluru,MID_SIZE,3492000,34.92
+2.8,BSC_CS,Cloud Architect,5,Pune,STARTUP,1374000,13.74
+14.9,BTECH,DevOps Engineer,10,Bengaluru,STARTUP,3682000,36.82
+8.2,MTECH,Frontend Developer,7,Pune,ENTERPRISE,2339000,23.39
+3.4,MCA,Frontend Developer,4,Bengaluru,ENTERPRISE,1467000,14.67
+14.6,MCA,Java Developer,10,Hyderabad,STARTUP,3084000,30.84
+15.6,BSC_CS,Full Stack Developer,10,Hyderabad,MID_SIZE,2714000,27.14
+9.1,MTECH,Frontend Developer,6,Hyderabad,MID_SIZE,1918000,19.18
+8.3,PHD,Full Stack Developer,5,Pune,STARTUP,2554000,25.54
+4.5,MTECH,Full Stack Developer,5,Delhi NCR,STARTUP,1694000,16.94
+7.2,BTECH,Java Developer,7,Chennai,MID_SIZE,1761000,17.61
+14.9,MTECH,Java Developer,10,Pune,ENTERPRISE,3893000,38.93
+7.3,MCA,Frontend Developer,8,Hyderabad,ENTERPRISE,1931000,19.31
+2.8,BCA,Java Developer,5,Bengaluru,ENTERPRISE,1208000,12.08
+14.4,BTECH,Full Stack Developer,10,Chennai,MID_SIZE,2991000,29.91
+13.6,BCA,DevOps Engineer,10,Bengaluru,ENTERPRISE,4151000,41.51
+12.1,BTECH,DevOps Engineer,8,Pune,STARTUP,2866000,28.66
+9.3,BCA,Full Stack Developer,8,Mumbai,MID_SIZE,1976000,19.76
+11.1,BTECH,Data Analyst,9,Pune,ENTERPRISE,2264000,22.64
+1.8,MCA,DevOps Engineer,2,Hyderabad,ENTERPRISE,1384000,13.84
+1.2,BTECH,Data Analyst,2,Chennai,ENTERPRISE,792000,7.92
+1.3,BTECH,Data Analyst,4,Bengaluru,STARTUP,759000,7.59
+4.5,MCA,Java Developer,4,Hyderabad,STARTUP,1289000,12.89
+12.6,MCA,Java Developer,10,Pune,STARTUP,2591000,25.91
+11.9,MTECH,DevOps Engineer,8,Pune,MID_SIZE,3516000,35.16
+8.4,MTECH,Full Stack Developer,9,Hyderabad,MID_SIZE,2419000,24.19
+7.0,BSC_CS,Java Developer,7,Pune,STARTUP,1469000,14.69
+11.0,MCA,Data Analyst,7,Chennai,MID_SIZE,1853000,18.53
+7.3,BTECH,DevOps Engineer,7,Bengaluru,STARTUP,2484000,24.84
+8.6,BCA,Java Developer,6,Bengaluru,STARTUP,1787000,17.87
+6.9,MCA,Full Stack Developer,5,Delhi NCR,MID_SIZE,2076000,20.76
+0.8,BTECH,ML Engineer,2,Mumbai,ENTERPRISE,1129000,11.29
+14.1,BTECH,Java Developer,10,Hyderabad,MID_SIZE,2835000,28.35
+14.7,BSC_CS,ML Engineer,10,Bengaluru,ENTERPRISE,4666000,46.66
+2.1,BCA,Full Stack Developer,5,Bengaluru,STARTUP,986000,9.86
+6.8,MCA,Data Analyst,7,Mumbai,MID_SIZE,1688000,16.88
+15.4,MCA,Data Analyst,10,Bengaluru,STARTUP,2559000,25.59
+0.7,MTECH,Cloud Architect,2,Bengaluru,MID_SIZE,1367000,13.67
+10.2,BSC_CS,ML Engineer,10,Hyderabad,MID_SIZE,2602000,26.02
+2.3,MCA,DevOps Engineer,2,Hyderabad,MID_SIZE,1344000,13.44
+9.6,BTECH,Java Developer,6,Delhi NCR,STARTUP,1914000,19.14
+13.6,BTECH,Full Stack Developer,10,Hyderabad,MID_SIZE,2928000,29.28
+6.7,MCA,Full Stack Developer,8,Chennai,ENTERPRISE,2188000,21.88
+1.4,BTECH,Frontend Developer,4,Pune,MID_SIZE,784000,7.84
+2.3,MCA,Data Analyst,3,Hyderabad,MID_SIZE,908000,9.08
+3.5,BSC_CS,Java Developer,5,Bengaluru,ENTERPRISE,1472000,14.72
+13.7,BTECH,ML Engineer,10,Delhi NCR,ENTERPRISE,4923000,49.23
+13.4,MCA,Data Analyst,10,Mumbai,ENTERPRISE,3125000,31.25
+4.9,MCA,ML Engineer,6,Bengaluru,STARTUP,1931000,19.31
+6.9,BTECH,Cloud Architect,5,Bengaluru,STARTUP,2691000,26.91
+4.5,BSC_CS,Data Analyst,3,Delhi NCR,MID_SIZE,958000,9.58
+2.3,BTECH,Java Developer,4,Hyderabad,ENTERPRISE,1334000,13.34
+12.4,MTECH,Full Stack Developer,8,Delhi NCR,ENTERPRISE,4074000,40.74
+14.9,BTECH,Full Stack Developer,9,Delhi NCR,STARTUP,3262000,32.62
+9.9,BCA,DevOps Engineer,7,Pune,MID_SIZE,2287000,22.87
+14.0,BSC_CS,DevOps Engineer,10,Bengaluru,MID_SIZE,3341000,33.41
+2.0,BTECH,Data Analyst,5,Bengaluru,ENTERPRISE,1280000,12.8
+12.4,MCA,Frontend Developer,9,Hyderabad,MID_SIZE,2227000,22.27
+6.3,BTECH,ML Engineer,7,Pune,STARTUP,2129000,21.29
+2.6,MTECH,Full Stack Developer,4,Delhi NCR,ENTERPRISE,1741000,17.41
+7.4,MCA,ML Engineer,7,Hyderabad,STARTUP,2380000,23.8
+15.7,BCA,Frontend Developer,10,Mumbai,MID_SIZE,2567000,25.67
+1.4,MCA,Data Analyst,3,Pune,MID_SIZE,755000,7.55
+14.2,MTECH,ML Engineer,10,Mumbai,MID_SIZE,4171000,41.71
+4.8,MTECH,Full Stack Developer,4,Mumbai,MID_SIZE,1953000,19.53
+10.2,BTECH,Data Analyst,10,Hyderabad,ENTERPRISE,2559000,25.59
+14.2,BTECH,Frontend Developer,10,Hyderabad,ENTERPRISE,3130000,31.3
+8.9,BTECH,Java Developer,7,Hyderabad,MID_SIZE,1948000,19.48
+14.3,BTECH,Full Stack Developer,10,Delhi NCR,MID_SIZE,3464000,34.64
+2.2,BTECH,Frontend Developer,2,Pune,MID_SIZE,848000,8.48
+15.1,BTECH,Full Stack Developer,10,Bengaluru,MID_SIZE,3819000,38.19
+15.8,MTECH,Full Stack Developer,10,Pune,MID_SIZE,3607000,36.07
+4.9,MCA,ML Engineer,4,Pune,ENTERPRISE,2117000,21.17
+8.5,MCA,Java Developer,9,Hyderabad,STARTUP,2150000,21.5
+1.8,MTECH,Frontend Developer,4,Hyderabad,MID_SIZE,977000,9.77
+6.7,MCA,Full Stack Developer,8,Delhi NCR,MID_SIZE,2182000,21.82
+11.2,MCA,Cloud Architect,8,Hyderabad,STARTUP,3640000,36.4
+7.6,BTECH,Cloud Architect,8,Pune,MID_SIZE,2756000,27.56
+12.1,BTECH,Cloud Architect,10,Chennai,MID_SIZE,3406000,34.06
+6.2,BTECH,Java Developer,6,Bengaluru,MID_SIZE,1755000,17.55
+8.0,BCA,ML Engineer,7,Pune,STARTUP,2134000,21.34
+3.8,BTECH,DevOps Engineer,3,Bengaluru,MID_SIZE,1646000,16.46
+9.4,MTECH,Full Stack Developer,7,Mumbai,MID_SIZE,2915000,29.15
+8.3,BTECH,Full Stack Developer,7,Hyderabad,ENTERPRISE,2559000,25.59
+10.2,BTECH,Data Analyst,7,Delhi NCR,MID_SIZE,2060000,20.6
+14.3,MCA,ML Engineer,10,Delhi NCR,ENTERPRISE,4907000,49.07
+2.4,BSC_CS,Full Stack Developer,2,Pune,MID_SIZE,951000,9.51
+8.6,BTECH,ML Engineer,7,Bengaluru,MID_SIZE,3166000,31.66
+4.8,MCA,Java Developer,3,Delhi NCR,MID_SIZE,1505000,15.05
+9.9,BCA,Full Stack Developer,9,Delhi NCR,STARTUP,1934000,19.34
+0.9,BTECH,Full Stack Developer,2,Bengaluru,ENTERPRISE,1068000,10.68
+3.3,BSC_CS,ML Engineer,2,Chennai,MID_SIZE,1190000,11.9
+5.5,BCA,Frontend Developer,7,Hyderabad,MID_SIZE,1280000,12.8
+4.5,MTECH,Cloud Architect,4,Bengaluru,STARTUP,2436000,24.36
+12.2,BCA,Full Stack Developer,10,Bengaluru,MID_SIZE,2512000,25.12
+0.9,MTECH,Data Analyst,2,Bengaluru,MID_SIZE,814000,8.14
+9.1,BTECH,ML Engineer,7,Hyderabad,STARTUP,2832000,28.32
+2.7,BSC_CS,Full Stack Developer,5,Bengaluru,ENTERPRISE,1265000,12.65
+13.1,MCA,Cloud Architect,8,Pune,STARTUP,4054000,40.54
+8.0,MCA,Data Analyst,6,Hyderabad,MID_SIZE,1747000,17.47
+8.4,MCA,Frontend Developer,9,Pune,MID_SIZE,1807000,18.07
+13.4,PHD,ML Engineer,10,Delhi NCR,STARTUP,4800000,48.0
+15.2,PHD,Data Analyst,10,Mumbai,MID_SIZE,3324000,33.24
+7.6,BCA,Data Analyst,5,Pune,MID_SIZE,1316000,13.16
+0.6,BSC_CS,Frontend Developer,4,Pune,MID_SIZE,545000,5.45
+8.8,MCA,ML Engineer,9,Bengaluru,STARTUP,3056000,30.56
+6.0,MCA,ML Engineer,4,Hyderabad,STARTUP,1974000,19.74
+6.2,BCA,Java Developer,6,Mumbai,ENTERPRISE,1726000,17.26
+13.2,MCA,Data Analyst,10,Bengaluru,ENTERPRISE,2933000,29.33
+8.1,MCA,ML Engineer,8,Bengaluru,ENTERPRISE,3374000,33.74
+4.8,BSC_CS,Full Stack Developer,4,Bengaluru,ENTERPRISE,1624000,16.24
+2.5,BTECH,Frontend Developer,4,Pune,STARTUP,801000,8.01
+11.0,MCA,Cloud Architect,10,Pune,MID_SIZE,3331000,33.31
+7.1,MCA,Data Analyst,8,Delhi NCR,MID_SIZE,1563000,15.63
+11.0,BTECH,Full Stack Developer,8,Mumbai,ENTERPRISE,3143000,31.43
+14.7,BTECH,Full Stack Developer,9,Hyderabad,MID_SIZE,3574000,35.74
+4.0,MTECH,ML Engineer,5,Delhi NCR,STARTUP,1785000,17.85
+10.2,BTECH,Frontend Developer,9,Delhi NCR,MID_SIZE,2117000,21.17
+4.3,MTECH,Full Stack Developer,4,Delhi NCR,ENTERPRISE,2173000,21.73
+12.5,MCA,Data Analyst,8,Pune,MID_SIZE,2323000,23.23
+14.7,MTECH,Full Stack Developer,9,Pune,ENTERPRISE,4545000,45.45
+7.3,MCA,Java Developer,5,Bengaluru,MID_SIZE,1956000,19.56
+6.4,MCA,Frontend Developer,4,Bengaluru,MID_SIZE,1609000,16.09
+7.7,MCA,Full Stack Developer,5,Bengaluru,MID_SIZE,2300000,23.0
+5.6,BCA,Java Developer,5,Pune,STARTUP,1285000,12.85
+2.5,BTECH,Full Stack Developer,3,Hyderabad,MID_SIZE,1120000,11.2
+12.9,BTECH,Frontend Developer,10,Hyderabad,ENTERPRISE,2837000,28.37
+14.2,BCA,ML Engineer,10,Hyderabad,MID_SIZE,3616000,36.16
+8.5,BCA,Data Analyst,6,Bengaluru,ENTERPRISE,1920000,19.2
+3.5,MTECH,Java Developer,6,Mumbai,MID_SIZE,1522000,15.22
+15.7,BTECH,Data Analyst,10,Pune,ENTERPRISE,2980000,29.8
+3.0,MCA,Full Stack Developer,2,Bengaluru,STARTUP,1323000,13.23
+11.2,BSC_CS,Full Stack Developer,9,Hyderabad,ENTERPRISE,2959000,29.59
+6.3,MCA,Full Stack Developer,6,Bengaluru,STARTUP,1831000,18.31
+2.3,BSC_CS,Java Developer,2,Pune,ENTERPRISE,1041000,10.41
+3.6,BSC_CS,Java Developer,4,Bengaluru,STARTUP,1015000,10.15
+0.8,MTECH,DevOps Engineer,4,Bengaluru,MID_SIZE,1196000,11.96
+14.2,BSC_CS,Java Developer,10,Hyderabad,MID_SIZE,2513000,25.13
+15.1,PHD,Cloud Architect,10,Delhi NCR,ENTERPRISE,5000000,50.0
+14.2,BSC_CS,Frontend Developer,10,Pune,MID_SIZE,2042000,20.42
+15.6,BCA,Java Developer,10,Pune,STARTUP,2491000,24.91
+5.6,MCA,Frontend Developer,7,Delhi NCR,ENTERPRISE,1667000,16.67
+1.8,MCA,Full Stack Developer,4,Bengaluru,MID_SIZE,1169000,11.69
+7.7,BTECH,Java Developer,8,Pune,ENTERPRISE,2224000,22.24
+9.5,MCA,Data Analyst,7,Pune,STARTUP,1702000,17.02
+4.1,BTECH,Java Developer,5,Hyderabad,STARTUP,1234000,12.34
+1.8,BTECH,ML Engineer,2,Hyderabad,STARTUP,1133000,11.33
+10.1,BTECH,Full Stack Developer,9,Hyderabad,ENTERPRISE,3034000,30.34
+0.9,BTECH,Full Stack Developer,3,Bengaluru,ENTERPRISE,1197000,11.97
+8.4,MCA,Data Analyst,6,Chennai,STARTUP,1499000,14.99
+9.0,MCA,Java Developer,8,Bengaluru,ENTERPRISE,2739000,27.39
+9.9,MTECH,Frontend Developer,8,Mumbai,MID_SIZE,2115000,21.15
+5.1,MCA,DevOps Engineer,4,Hyderabad,MID_SIZE,1874000,18.74
+8.4,BCA,ML Engineer,7,Hyderabad,STARTUP,2199000,21.99
+8.5,MCA,ML Engineer,6,Mumbai,MID_SIZE,2773000,27.73
+3.4,MCA,ML Engineer,3,Bengaluru,MID_SIZE,1703000,17.03
+9.5,MTECH,Frontend Developer,8,Bengaluru,ENTERPRISE,2775000,27.75
+7.0,BTECH,ML Engineer,7,Mumbai,MID_SIZE,2528000,25.28
+9.3,BCA,Frontend Developer,9,Chennai,ENTERPRISE,1980000,19.8
+3.7,BTECH,Full Stack Developer,6,Bengaluru,STARTUP,1504000,15.04
+5.2,MCA,Frontend Developer,7,Bengaluru,ENTERPRISE,1697000,16.97
+3.6,BTECH,DevOps Engineer,3,Bengaluru,MID_SIZE,1615000,16.15
+6.2,BTECH,Frontend Developer,4,Delhi NCR,MID_SIZE,1335000,13.35
+7.0,BTECH,ML Engineer,6,Delhi NCR,STARTUP,2175000,21.75
+13.2,BSC_CS,Data Analyst,9,Pune,MID_SIZE,1837000,18.37
+11.1,BCA,Java Developer,10,Bengaluru,STARTUP,2204000,22.04
+4.3,BTECH,Java Developer,3,Hyderabad,MID_SIZE,1395000,13.95
+5.0,BTECH,DevOps Engineer,6,Mumbai,ENTERPRISE,2288000,22.88
+13.3,BTECH,DevOps Engineer,10,Bengaluru,MID_SIZE,3686000,36.86
+14.6,BTECH,Frontend Developer,10,Hyderabad,ENTERPRISE,3376000,33.76
+2.9,BTECH,DevOps Engineer,3,Pune,STARTUP,1310000,13.1
+6.9,BCA,ML Engineer,7,Hyderabad,ENTERPRISE,2482000,24.82
+3.1,BCA,Java Developer,5,Bengaluru,MID_SIZE,1078000,10.78
+12.1,BTECH,DevOps Engineer,9,Bengaluru,STARTUP,3195000,31.95
+12.1,BCA,Full Stack Developer,10,Pune,STARTUP,2103000,21.03
+13.2,BSC_CS,DevOps Engineer,10,Bengaluru,STARTUP,2763000,27.63
+12.0,MCA,Frontend Developer,10,Bengaluru,MID_SIZE,2462000,24.62
+3.9,MCA,Frontend Developer,3,Bengaluru,MID_SIZE,1214000,12.14
+5.3,BCA,Frontend Developer,5,Mumbai,ENTERPRISE,1414000,14.14
+4.2,BTECH,Frontend Developer,4,Chennai,MID_SIZE,1105000,11.05
+1.5,BCA,Cloud Architect,2,Delhi NCR,MID_SIZE,1056000,10.56
+8.4,BTECH,DevOps Engineer,9,Pune,MID_SIZE,2572000,25.72
+2.4,BTECH,Java Developer,4,Bengaluru,MID_SIZE,1052000,10.52
+3.8,MCA,Java Developer,3,Bengaluru,MID_SIZE,1299000,12.99
+3.9,BTECH,Java Developer,4,Chennai,STARTUP,1081000,10.81
+2.0,MCA,Java Developer,3,Hyderabad,ENTERPRISE,1196000,11.96
+10.3,BTECH,DevOps Engineer,9,Delhi NCR,MID_SIZE,2635000,26.35
+14.6,BTECH,Full Stack Developer,9,Mumbai,MID_SIZE,3242000,32.42
+10.1,BTECH,DevOps Engineer,7,Mumbai,ENTERPRISE,3288000,32.88
+6.3,BSC_CS,Java Developer,7,Bengaluru,STARTUP,1529000,15.29
+5.6,MCA,Java Developer,7,Mumbai,MID_SIZE,1752000,17.52
+5.0,MCA,Frontend Developer,4,Hyderabad,STARTUP,1339000,13.39
+10.8,MCA,Java Developer,10,Mumbai,MID_SIZE,2588000,25.88
+3.3,BCA,Data Analyst,2,Hyderabad,ENTERPRISE,1095000,10.95
+2.7,BCA,Java Developer,3,Pune,ENTERPRISE,1026000,10.26
+1.7,BTECH,ML Engineer,3,Mumbai,STARTUP,1192000,11.92
+5.2,MTECH,Data Analyst,7,Bengaluru,ENTERPRISE,1858000,18.58
+15.6,BSC_CS,Full Stack Developer,10,Hyderabad,MID_SIZE,3035000,30.35
+13.2,BCA,ML Engineer,10,Hyderabad,ENTERPRISE,3961000,39.61
+2.9,BTECH,ML Engineer,5,Hyderabad,MID_SIZE,1533000,15.33
+8.0,MCA,Java Developer,5,Bengaluru,ENTERPRISE,2402000,24.02
+8.3,BTECH,ML Engineer,7,Chennai,ENTERPRISE,2935000,29.35
+5.3,BCA,Cloud Architect,4,Delhi NCR,ENTERPRISE,2333000,23.33
+9.3,BTECH,Java Developer,8,Bengaluru,ENTERPRISE,2862000,28.62
+8.1,MCA,ML Engineer,6,Pune,ENTERPRISE,2962000,29.62
+1.0,MCA,ML Engineer,2,Pune,MID_SIZE,940000,9.4
+7.6,BTECH,Data Analyst,6,Pune,ENTERPRISE,1717000,17.17
+12.5,MTECH,Data Analyst,8,Hyderabad,MID_SIZE,2523000,25.23
+3.4,MCA,Full Stack Developer,6,Bengaluru,MID_SIZE,1556000,15.56
+11.9,MTECH,ML Engineer,10,Delhi NCR,STARTUP,3830000,38.3
+4.7,MCA,Java Developer,4,Pune,STARTUP,1371000,13.71
+0.5,MCA,Frontend Developer,4,Pune,MID_SIZE,594000,5.94
+6.3,BSC_CS,ML Engineer,7,Bengaluru,ENTERPRISE,2530000,25.3
+3.8,MCA,Java Developer,6,Delhi NCR,STARTUP,1260000,12.6
+14.7,MCA,Frontend Developer,9,Bengaluru,STARTUP,2626000,26.26
+5.8,BTECH,Data Analyst,4,Pune,STARTUP,1178000,11.78
+15.3,MCA,Data Analyst,10,Bengaluru,STARTUP,2663000,26.63
+8.6,BTECH,Cloud Architect,9,Hyderabad,ENTERPRISE,3806000,38.06
+11.1,BTECH,Java Developer,10,Bengaluru,MID_SIZE,2611000,26.11
+1.4,BTECH,Java Developer,4,Bengaluru,MID_SIZE,999000,9.99
+14.3,MCA,Frontend Developer,10,Delhi NCR,MID_SIZE,2541000,25.41
+10.1,BTECH,Data Analyst,9,Hyderabad,STARTUP,1735000,17.35
+6.1,MCA,Frontend Developer,7,Hyderabad,MID_SIZE,1502000,15.02
+10.0,BTECH,Frontend Developer,7,Chennai,ENTERPRISE,2287000,22.87
+5.1,BCA,Java Developer,4,Pune,MID_SIZE,1123000,11.23
+12.9,MCA,Java Developer,9,Pune,ENTERPRISE,3403000,34.03
+15.3,BTECH,Full Stack Developer,10,Bengaluru,STARTUP,3270000,32.7
+15.9,MTECH,Frontend Developer,10,Hyderabad,MID_SIZE,2968000,29.68
+4.5,MTECH,Full Stack Developer,6,Bengaluru,STARTUP,1694000,16.94
+11.2,MTECH,DevOps Engineer,9,Mumbai,MID_SIZE,3471000,34.71
+11.6,BTECH,ML Engineer,10,Pune,MID_SIZE,3364000,33.64
+4.0,BCA,Frontend Developer,4,Bengaluru,ENTERPRISE,1342000,13.42
+2.3,MTECH,Java Developer,2,Chennai,MID_SIZE,1001000,10.01
+9.6,BTECH,Java Developer,7,Hyderabad,ENTERPRISE,2705000,27.05
+9.8,BTECH,Java Developer,7,Pune,MID_SIZE,2205000,22.05
+5.1,MCA,Java Developer,4,Bengaluru,MID_SIZE,1663000,16.63
+5.3,BCA,Cloud Architect,7,Chennai,ENTERPRISE,2340000,23.4
+3.8,MTECH,Java Developer,4,Bengaluru,ENTERPRISE,1988000,19.88
+3.8,MCA,ML Engineer,4,Mumbai,STARTUP,1790000,17.9
+11.8,MCA,Java Developer,8,Delhi NCR,STARTUP,2461000,24.61
+5.7,PHD,Data Analyst,6,Mumbai,MID_SIZE,1782000,17.82
+14.8,BTECH,ML Engineer,9,Bengaluru,MID_SIZE,4542000,45.42
+11.5,BSC_CS,Full Stack Developer,9,Bengaluru,MID_SIZE,2680000,26.8
+3.8,BSC_CS,ML Engineer,3,Pune,MID_SIZE,1344000,13.44
+15.8,MTECH,Frontend Developer,10,Hyderabad,ENTERPRISE,3530000,35.3
+15.6,BCA,Frontend Developer,10,Chennai,MID_SIZE,2290000,22.9
+10.2,BCA,Full Stack Developer,8,Bengaluru,MID_SIZE,2423000,24.23
+6.3,MCA,ML Engineer,7,Pune,ENTERPRISE,2592000,25.92
+10.6,BCA,Java Developer,8,Bengaluru,MID_SIZE,2014000,20.14
+9.4,BTECH,Full Stack Developer,7,Mumbai,ENTERPRISE,2981000,29.81
+16.0,BTECH,ML Engineer,10,Bengaluru,MID_SIZE,4504000,45.04
+11.4,MCA,Full Stack Developer,7,Mumbai,MID_SIZE,2911000,29.11
+9.6,MCA,ML Engineer,6,Bengaluru,ENTERPRISE,3733000,37.33
+9.8,BTECH,Frontend Developer,7,Delhi NCR,STARTUP,1850000,18.5
+10.6,BTECH,Frontend Developer,7,Mumbai,STARTUP,2011000,20.11
+6.1,BTECH,Full Stack Developer,6,Chennai,STARTUP,1490000,14.9
+15.2,BTECH,DevOps Engineer,10,Pune,STARTUP,3487000,34.87
+8.6,BTECH,Cloud Architect,6,Pune,STARTUP,2842000,28.42
+1.2,BCA,Frontend Developer,2,Delhi NCR,STARTUP,588000,5.88
+3.8,BCA,Java Developer,5,Pune,STARTUP,959000,9.59
+10.6,BTECH,Frontend Developer,8,Chennai,MID_SIZE,1902000,19.02
+1.6,PHD,ML Engineer,3,Pune,STARTUP,1363000,13.63
+10.5,BSC_CS,Full Stack Developer,10,Delhi NCR,MID_SIZE,2153000,21.53
+15.4,BTECH,Java Developer,10,Pune,MID_SIZE,2696000,26.96
+10.4,BTECH,Java Developer,8,Bengaluru,ENTERPRISE,2954000,29.54
+2.0,BSC_CS,Cloud Architect,2,Chennai,ENTERPRISE,1305000,13.05
+11.8,MCA,Java Developer,10,Hyderabad,MID_SIZE,2680000,26.8
+9.9,BSC_CS,DevOps Engineer,8,Chennai,MID_SIZE,2251000,22.51
+11.0,BTECH,ML Engineer,8,Delhi NCR,MID_SIZE,3071000,30.71
+11.1,MCA,ML Engineer,9,Bengaluru,MID_SIZE,3373000,33.73
+11.7,MCA,Cloud Architect,10,Bengaluru,MID_SIZE,4083000,40.83
+15.8,BTECH,ML Engineer,10,Bengaluru,MID_SIZE,4391000,43.91
+13.8,BTECH,Cloud Architect,9,Hyderabad,STARTUP,3823000,38.23
+4.2,BTECH,Frontend Developer,6,Bengaluru,MID_SIZE,1365000,13.65
+0.7,MCA,Cloud Architect,4,Chennai,STARTUP,1078000,10.78
+16.0,MCA,DevOps Engineer,10,Hyderabad,MID_SIZE,4187000,41.87
+11.4,BSC_CS,ML Engineer,7,Mumbai,ENTERPRISE,3531000,35.31
+15.5,MTECH,Data Analyst,10,Pune,STARTUP,2564000,25.64
+2.6,BCA,Java Developer,2,Hyderabad,STARTUP,839000,8.39
+11.0,MTECH,DevOps Engineer,10,Delhi NCR,MID_SIZE,3262000,32.62
+3.8,BTECH,ML Engineer,3,Bengaluru,MID_SIZE,1906000,19.06
+14.3,BCA,DevOps Engineer,10,Bengaluru,MID_SIZE,3264000,32.64
+0.6,BSC_CS,DevOps Engineer,4,Hyderabad,STARTUP,701000,7.01
+8.7,BTECH,DevOps Engineer,8,Delhi NCR,STARTUP,2314000,23.14
+6.6,BTECH,Java Developer,4,Bengaluru,ENTERPRISE,2412000,24.12
+10.7,BCA,Full Stack Developer,8,Mumbai,STARTUP,2083000,20.83
+4.9,BTECH,Frontend Developer,4,Hyderabad,STARTUP,1297000,12.97
+15.4,BCA,Cloud Architect,10,Hyderabad,MID_SIZE,3902000,39.02
+12.3,BTECH,DevOps Engineer,10,Chennai,ENTERPRISE,3437000,34.37
+15.3,BCA,ML Engineer,10,Hyderabad,STARTUP,3126000,31.26
+13.4,BTECH,Full Stack Developer,10,Bengaluru,MID_SIZE,3346000,33.46
+12.3,BSC_CS,Java Developer,8,Hyderabad,STARTUP,2204000,22.04
+15.9,MCA,Java Developer,10,Bengaluru,ENTERPRISE,4385000,43.85
+8.3,PHD,Frontend Developer,6,Pune,MID_SIZE,1983000,19.83
+6.7,BSC_CS,Java Developer,6,Bengaluru,STARTUP,1408000,14.08
+1.3,BTECH,Full Stack Developer,3,Pune,STARTUP,832000,8.32
+1.5,BCA,Full Stack Developer,3,Bengaluru,MID_SIZE,933000,9.33
+4.3,BSC_CS,DevOps Engineer,5,Bengaluru,MID_SIZE,1457000,14.57
+7.8,BCA,DevOps Engineer,7,Bengaluru,ENTERPRISE,2624000,26.24
+2.2,MCA,Data Analyst,4,Mumbai,STARTUP,958000,9.58
+6.1,BTECH,ML Engineer,5,Hyderabad,MID_SIZE,2224000,22.24
+1.9,MCA,Frontend Developer,3,Pune,STARTUP,734000,7.34
+7.4,MTECH,Frontend Developer,8,Pune,MID_SIZE,1898000,18.98
+3.6,BCA,ML Engineer,5,Bengaluru,MID_SIZE,1630000,16.3
+12.3,BTECH,DevOps Engineer,8,Hyderabad,MID_SIZE,3453000,34.53
+1.5,MTECH,Full Stack Developer,3,Hyderabad,STARTUP,1083000,10.83
+2.5,BTECH,Frontend Developer,5,Mumbai,MID_SIZE,988000,9.88
+8.8,BCA,Full Stack Developer,9,Hyderabad,MID_SIZE,1999000,19.99
+4.7,BSC_CS,Frontend Developer,6,Bengaluru,MID_SIZE,1151000,11.51
+11.7,MTECH,Java Developer,8,Bengaluru,MID_SIZE,2887000,28.87
+1.2,BCA,Java Developer,2,Bengaluru,ENTERPRISE,892000,8.92
+12.8,BSC_CS,Data Analyst,8,Delhi NCR,MID_SIZE,1916000,19.16
+10.3,BTECH,Cloud Architect,9,Chennai,ENTERPRISE,4110000,41.1
+6.8,BTECH,Data Analyst,7,Bengaluru,ENTERPRISE,1936000,19.36
+15.5,PHD,Frontend Developer,10,Pune,ENTERPRISE,4137000,41.37
+11.2,BTECH,Cloud Architect,8,Pune,MID_SIZE,3679000,36.79
+3.9,BTECH,Java Developer,4,Delhi NCR,ENTERPRISE,1546000,15.46
+11.8,BCA,Full Stack Developer,10,Hyderabad,MID_SIZE,2341000,23.41
+13.9,BTECH,Java Developer,9,Mumbai,MID_SIZE,2849000,28.49
+14.2,MCA,DevOps Engineer,10,Bengaluru,STARTUP,3637000,36.37
+14.6,BCA,Cloud Architect,9,Pune,ENTERPRISE,4470000,44.7
+6.4,MCA,Frontend Developer,4,Mumbai,MID_SIZE,1462000,14.62
+12.4,MTECH,Java Developer,8,Pune,ENTERPRISE,3628000,36.28
+2.1,BTECH,ML Engineer,5,Mumbai,STARTUP,1363000,13.63
+14.3,BTECH,DevOps Engineer,10,Hyderabad,STARTUP,3528000,35.28
+2.4,BCA,DevOps Engineer,5,Bengaluru,MID_SIZE,1149000,11.49
+14.6,BTECH,Frontend Developer,10,Bengaluru,MID_SIZE,2981000,29.81
+11.1,MCA,ML Engineer,7,Delhi NCR,MID_SIZE,3136000,31.36
+15.3,BCA,Java Developer,10,Hyderabad,MID_SIZE,2804000,28.04
+9.9,BTECH,Frontend Developer,7,Pune,MID_SIZE,1965000,19.65
+11.2,BTECH,Data Analyst,10,Delhi NCR,MID_SIZE,2142000,21.42
+15.0,MCA,ML Engineer,10,Bengaluru,STARTUP,4459000,44.59
+2.8,BTECH,Frontend Developer,2,Mumbai,ENTERPRISE,1120000,11.2
+7.1,BCA,ML Engineer,8,Hyderabad,STARTUP,1967000,19.67
+8.2,PHD,Full Stack Developer,6,Pune,MID_SIZE,2789000,27.89
+10.6,BTECH,Java Developer,8,Hyderabad,MID_SIZE,2330000,23.3
+9.5,BTECH,Full Stack Developer,6,Pune,ENTERPRISE,2650000,26.5
+0.5,BCA,Cloud Architect,2,Pune,ENTERPRISE,996000,9.96
+5.9,MTECH,DevOps Engineer,5,Delhi NCR,MID_SIZE,2332000,23.32
+9.0,BTECH,Cloud Architect,7,Bengaluru,STARTUP,3085000,30.85
+11.3,MCA,Frontend Developer,7,Pune,MID_SIZE,2137000,21.37
+10.8,MCA,Frontend Developer,9,Delhi NCR,STARTUP,1917000,19.17
+4.3,MCA,Frontend Developer,6,Hyderabad,ENTERPRISE,1601000,16.01
+12.1,BTECH,ML Engineer,8,Hyderabad,MID_SIZE,3349000,33.49
+2.9,BCA,DevOps Engineer,2,Mumbai,MID_SIZE,1174000,11.74
+7.1,BTECH,Cloud Architect,7,Mumbai,MID_SIZE,2983000,29.83
+7.1,PHD,Frontend Developer,6,Pune,ENTERPRISE,2440000,24.4
+6.7,BTECH,Frontend Developer,5,Delhi NCR,ENTERPRISE,1923000,19.23
+7.8,MCA,Java Developer,7,Delhi NCR,STARTUP,1913000,19.13
+3.5,BCA,Frontend Developer,3,Pune,ENTERPRISE,1003000,10.03
+3.0,BSC_CS,Frontend Developer,3,Bengaluru,ENTERPRISE,1103000,11.03
+10.4,BTECH,Frontend Developer,10,Chennai,MID_SIZE,1762000,17.62
+5.4,BCA,Cloud Architect,7,Hyderabad,MID_SIZE,2083000,20.83
+5.4,BTECH,Full Stack Developer,6,Bengaluru,MID_SIZE,1835000,18.35
+12.0,MCA,Frontend Developer,10,Bengaluru,MID_SIZE,2510000,25.1
+14.0,BSC_CS,Frontend Developer,9,Pune,STARTUP,2014000,20.14
+4.1,MCA,Java Developer,5,Bengaluru,ENTERPRISE,1803000,18.03
+2.5,MCA,Java Developer,5,Chennai,STARTUP,938000,9.38
+16.0,MTECH,Data Analyst,10,Pune,ENTERPRISE,3604000,36.04
+2.7,BTECH,DevOps Engineer,2,Chennai,ENTERPRISE,1462000,14.62
+7.5,BTECH,Frontend Developer,7,Bengaluru,MID_SIZE,1668000,16.68
+3.3,BTECH,ML Engineer,5,Hyderabad,MID_SIZE,1644000,16.44
+2.7,BTECH,Frontend Developer,5,Bengaluru,ENTERPRISE,1276000,12.76
+10.1,BTECH,Data Analyst,9,Hyderabad,MID_SIZE,1939000,19.39
+11.1,BTECH,Full Stack Developer,7,Delhi NCR,MID_SIZE,2753000,27.53
+4.3,BCA,DevOps Engineer,4,Delhi NCR,MID_SIZE,1428000,14.28
+13.7,MTECH,Java Developer,10,Pune,MID_SIZE,3074000,30.74
+14.5,BCA,Full Stack Developer,10,Mumbai,ENTERPRISE,3700000,37.0
+3.6,BTECH,Java Developer,6,Chennai,MID_SIZE,1106000,11.06
+7.5,MTECH,Full Stack Developer,5,Bengaluru,STARTUP,2552000,25.52
+12.5,MCA,Frontend Developer,9,Mumbai,ENTERPRISE,2789000,27.89
+14.0,MCA,Cloud Architect,9,Bengaluru,MID_SIZE,4529000,45.29
+4.7,MTECH,Frontend Developer,4,Hyderabad,MID_SIZE,1439000,14.39
+4.5,BCA,DevOps Engineer,5,Delhi NCR,MID_SIZE,1386000,13.86
+5.9,BTECH,Full Stack Developer,7,Pune,STARTUP,1605000,16.05
+11.2,BCA,Full Stack Developer,7,Mumbai,MID_SIZE,2475000,24.75
+9.5,MCA,Frontend Developer,8,Delhi NCR,ENTERPRISE,2203000,22.03
+14.4,BTECH,Cloud Architect,10,Hyderabad,ENTERPRISE,5000000,50.0
+11.7,MTECH,Cloud Architect,8,Delhi NCR,MID_SIZE,3925000,39.25
+12.1,MCA,Java Developer,9,Mumbai,MID_SIZE,2687000,26.87
+15.3,BTECH,Cloud Architect,10,Bengaluru,ENTERPRISE,5000000,50.0
+5.3,BCA,DevOps Engineer,7,Hyderabad,ENTERPRISE,2000000,20.0
+6.0,BTECH,Full Stack Developer,5,Mumbai,STARTUP,1763000,17.63
+6.3,BSC_CS,Full Stack Developer,7,Hyderabad,MID_SIZE,1637000,16.37
+11.4,MTECH,Cloud Architect,7,Bengaluru,STARTUP,4004000,40.04
+0.8,BCA,Cloud Architect,2,Mumbai,MID_SIZE,1055000,10.55
+8.3,MCA,ML Engineer,8,Delhi NCR,STARTUP,2628000,26.28
+2.3,MTECH,DevOps Engineer,5,Hyderabad,ENTERPRISE,1768000,17.68
+13.2,MCA,ML Engineer,9,Bengaluru,MID_SIZE,4089000,40.89
+4.6,BTECH,Data Analyst,4,Delhi NCR,ENTERPRISE,1352000,13.52
+14.6,BCA,Frontend Developer,10,Mumbai,ENTERPRISE,2725000,27.25
+15.4,BSC_CS,Cloud Architect,10,Chennai,STARTUP,3574000,35.74
+12.9,BCA,Data Analyst,9,Pune,ENTERPRISE,2223000,22.23
+5.4,BSC_CS,Frontend Developer,4,Mumbai,STARTUP,1118000,11.18
+12.7,MCA,DevOps Engineer,10,Bengaluru,MID_SIZE,3526000,35.26
+1.9,MCA,Full Stack Developer,2,Pune,STARTUP,960000,9.6
+0.9,PHD,ML Engineer,2,Pune,ENTERPRISE,1395000,13.95
+14.4,BTECH,Java Developer,10,Bengaluru,ENTERPRISE,4024000,40.24
+10.7,MTECH,Java Developer,7,Pune,MID_SIZE,2340000,23.4
+14.9,BCA,Frontend Developer,9,Bengaluru,STARTUP,2289000,22.89
+6.1,BTECH,DevOps Engineer,4,Hyderabad,STARTUP,1914000,19.14
+10.2,BTECH,Java Developer,10,Delhi NCR,MID_SIZE,2428000,24.28
+3.3,BSC_CS,Frontend Developer,2,Pune,MID_SIZE,754000,7.54
+5.8,PHD,Java Developer,6,Pune,STARTUP,1995000,19.95
+3.5,BCA,Frontend Developer,5,Hyderabad,STARTUP,842000,8.42
+3.9,BSC_CS,Java Developer,5,Mumbai,ENTERPRISE,1337000,13.37
+3.6,MCA,Frontend Developer,6,Pune,MID_SIZE,1081000,10.81
+15.2,BTECH,DevOps Engineer,10,Bengaluru,ENTERPRISE,5000000,50.0
+2.1,BTECH,ML Engineer,5,Bengaluru,STARTUP,1350000,13.5
+7.4,BTECH,Data Analyst,8,Hyderabad,STARTUP,1542000,15.42
+9.3,MCA,Full Stack Developer,6,Bengaluru,STARTUP,2682000,26.82
+4.4,MCA,Full Stack Developer,5,Delhi NCR,ENTERPRISE,1874000,18.74
+2.3,BTECH,ML Engineer,3,Bengaluru,STARTUP,1394000,13.94
+6.3,BCA,ML Engineer,6,Hyderabad,STARTUP,1756000,17.56
+9.3,BSC_CS,Java Developer,7,Bengaluru,MID_SIZE,1954000,19.54
+2.1,MCA,Java Developer,2,Delhi NCR,ENTERPRISE,1218000,12.18
+10.5,BTECH,Data Analyst,7,Delhi NCR,STARTUP,1946000,19.46
+8.2,BTECH,Cloud Architect,7,Bengaluru,STARTUP,3154000,31.54
+4.2,BCA,Frontend Developer,3,Mumbai,MID_SIZE,1090000,10.9
+4.9,BTECH,DevOps Engineer,3,Delhi NCR,ENTERPRISE,2064000,20.64
+0.8,MCA,Full Stack Developer,3,Hyderabad,MID_SIZE,908000,9.08
+6.7,BTECH,Full Stack Developer,8,Pune,MID_SIZE,1874000,18.74
+10.4,MCA,DevOps Engineer,8,Chennai,STARTUP,2395000,23.95
+0.7,BTECH,Frontend Developer,2,Pune,MID_SIZE,567000,5.67
+11.7,MCA,ML Engineer,8,Pune,STARTUP,2986000,29.86
+12.7,MTECH,Frontend Developer,10,Bengaluru,MID_SIZE,2752000,27.52
+3.1,BTECH,Frontend Developer,5,Bengaluru,ENTERPRISE,1398000,13.98
+10.9,BSC_CS,Full Stack Developer,9,Hyderabad,MID_SIZE,2207000,22.07
+11.8,BTECH,Java Developer,9,Bengaluru,STARTUP,2677000,26.77
+11.9,BCA,Java Developer,8,Chennai,STARTUP,1950000,19.5
+7.8,BTECH,Full Stack Developer,7,Hyderabad,ENTERPRISE,2748000,27.48
+5.3,BSC_CS,Full Stack Developer,5,Hyderabad,ENTERPRISE,1854000,18.54
+6.5,MCA,Full Stack Developer,4,Bengaluru,MID_SIZE,2000000,20.0
+3.0,MTECH,Java Developer,2,Pune,STARTUP,1166000,11.66
+4.2,BSC_CS,DevOps Engineer,6,Bengaluru,MID_SIZE,1496000,14.96
+2.3,BTECH,Full Stack Developer,5,Bengaluru,MID_SIZE,1259000,12.59
+1.3,BCA,Java Developer,4,Pune,ENTERPRISE,823000,8.23
+3.4,BTECH,Frontend Developer,3,Pune,MID_SIZE,1016000,10.16
+10.5,BSC_CS,Cloud Architect,9,Bengaluru,STARTUP,2955000,29.55
+8.7,MTECH,Java Developer,9,Pune,MID_SIZE,2090000,20.9
+11.9,BTECH,DevOps Engineer,10,Bengaluru,ENTERPRISE,4297000,42.97
+11.4,BCA,Java Developer,10,Bengaluru,ENTERPRISE,2940000,29.4
+13.7,BSC_CS,ML Engineer,10,Pune,STARTUP,3040000,30.4
+2.7,BTECH,Frontend Developer,4,Hyderabad,STARTUP,981000,9.81
+3.1,BCA,ML Engineer,2,Hyderabad,MID_SIZE,1273000,12.73
+4.3,MCA,Frontend Developer,4,Pune,ENTERPRISE,1409000,14.09
+3.1,BCA,Frontend Developer,5,Hyderabad,ENTERPRISE,1093000,10.93
+5.9,MCA,Full Stack Developer,6,Bengaluru,MID_SIZE,1946000,19.46
+5.7,MCA,Full Stack Developer,7,Delhi NCR,ENTERPRISE,2094000,20.94
+11.1,BCA,ML Engineer,8,Chennai,ENTERPRISE,3045000,30.45
+1.0,MCA,Data Analyst,2,Hyderabad,STARTUP,668000,6.68
+15.3,MTECH,Data Analyst,10,Delhi NCR,MID_SIZE,3087000,30.87
+14.1,MTECH,Frontend Developer,10,Hyderabad,MID_SIZE,3064000,30.64
+4.8,BTECH,Java Developer,3,Mumbai,ENTERPRISE,1760000,17.6
+7.6,MCA,Cloud Architect,8,Bengaluru,ENTERPRISE,4241000,42.41
+2.8,BTECH,Data Analyst,3,Bengaluru,MID_SIZE,1016000,10.16
+5.0,BCA,ML Engineer,4,Bengaluru,MID_SIZE,1656000,16.56
+5.2,MCA,Full Stack Developer,6,Bengaluru,MID_SIZE,1992000,19.92
+12.7,MTECH,Full Stack Developer,10,Pune,ENTERPRISE,3659000,36.59
+11.9,MTECH,Full Stack Developer,10,Bengaluru,STARTUP,3175000,31.75
+11.0,BTECH,Full Stack Developer,9,Delhi NCR,ENTERPRISE,3317000,33.17
+3.2,MTECH,Full Stack Developer,3,Delhi NCR,STARTUP,1301000,13.01
+7.0,BTECH,Java Developer,8,Bengaluru,ENTERPRISE,2436000,24.36
+6.3,BTECH,DevOps Engineer,6,Bengaluru,MID_SIZE,2256000,22.56
+11.1,BTECH,Java Developer,10,Hyderabad,ENTERPRISE,2802000,28.02
+9.2,BTECH,Cloud Architect,8,Mumbai,MID_SIZE,3547000,35.47
+9.5,MCA,Full Stack Developer,6,Delhi NCR,ENTERPRISE,3104000,31.04
+6.6,BCA,Full Stack Developer,7,Delhi NCR,ENTERPRISE,2125000,21.25
+1.8,PHD,Java Developer,4,Bengaluru,MID_SIZE,1346000,13.46
+11.2,BCA,DevOps Engineer,7,Pune,MID_SIZE,2505000,25.05
+8.5,MTECH,Full Stack Developer,7,Bengaluru,ENTERPRISE,3239000,32.39
+5.3,BCA,Cloud Architect,4,Hyderabad,MID_SIZE,1846000,18.46
+2.9,BTECH,DevOps Engineer,2,Bengaluru,STARTUP,1454000,14.54
+7.4,BCA,Frontend Developer,6,Hyderabad,ENTERPRISE,1804000,18.04
+9.0,MCA,DevOps Engineer,9,Delhi NCR,MID_SIZE,2547000,25.47
+0.8,MCA,Frontend Developer,2,Bengaluru,MID_SIZE,727000,7.27
+5.0,MTECH,Data Analyst,7,Hyderabad,MID_SIZE,1468000,14.68
+12.9,MCA,Full Stack Developer,8,Bengaluru,MID_SIZE,3349000,33.49
+0.7,MCA,Java Developer,2,Delhi NCR,MID_SIZE,796000,7.96
+6.0,MTECH,Frontend Developer,5,Hyderabad,STARTUP,1498000,14.98
+13.8,BTECH,Full Stack Developer,9,Mumbai,MID_SIZE,3087000,30.87
+2.8,BTECH,Data Analyst,3,Hyderabad,ENTERPRISE,1152000,11.52
+12.3,BTECH,Java Developer,10,Delhi NCR,MID_SIZE,2801000,28.01
+9.9,MCA,Frontend Developer,8,Hyderabad,MID_SIZE,1925000,19.25
+5.5,BTECH,Cloud Architect,4,Pune,MID_SIZE,2046000,20.46
+11.9,MCA,Java Developer,10,Hyderabad,MID_SIZE,2784000,27.84
+15.7,MCA,ML Engineer,10,Bengaluru,ENTERPRISE,5000000,50.0
+6.5,MTECH,Cloud Architect,4,Bengaluru,MID_SIZE,3285000,32.85
+1.6,MCA,ML Engineer,3,Delhi NCR,ENTERPRISE,1361000,13.61
+7.5,MCA,Frontend Developer,8,Pune,STARTUP,1527000,15.27
+4.9,BSC_CS,Java Developer,4,Delhi NCR,ENTERPRISE,1365000,13.65
+0.9,BCA,Cloud Architect,2,Bengaluru,STARTUP,1023000,10.23
+6.8,BCA,Full Stack Developer,8,Bengaluru,ENTERPRISE,2148000,21.48
+3.7,BTECH,DevOps Engineer,4,Hyderabad,ENTERPRISE,1997000,19.97
+7.3,MTECH,Data Analyst,7,Pune,STARTUP,1509000,15.09
+8.2,BTECH,Frontend Developer,7,Bengaluru,ENTERPRISE,2450000,24.5
+4.4,BCA,ML Engineer,3,Delhi NCR,ENTERPRISE,1849000,18.49
+4.2,MCA,Full Stack Developer,3,Hyderabad,MID_SIZE,1530000,15.3
+15.0,MCA,Cloud Architect,10,Bengaluru,MID_SIZE,4935000,49.35
+12.4,BTECH,Frontend Developer,8,Mumbai,ENTERPRISE,2761000,27.61
+1.6,MTECH,Cloud Architect,2,Mumbai,ENTERPRISE,1893000,18.93
+1.6,MCA,Full Stack Developer,4,Chennai,ENTERPRISE,1253000,12.53
+4.7,BCA,Frontend Developer,6,Hyderabad,MID_SIZE,1094000,10.94
+12.6,BSC_CS,DevOps Engineer,9,Chennai,STARTUP,2418000,24.18
+13.8,MCA,Data Analyst,10,Pune,STARTUP,2291000,22.91
+7.2,BCA,Full Stack Developer,7,Hyderabad,ENTERPRISE,2106000,21.06
+5.8,BSC_CS,DevOps Engineer,7,Bengaluru,STARTUP,1804000,18.04
+14.3,BTECH,ML Engineer,10,Chennai,STARTUP,3582000,35.82
+1.7,BSC_CS,Frontend Developer,3,Bengaluru,MID_SIZE,789000,7.89
+2.5,MCA,Full Stack Developer,3,Pune,STARTUP,1069000,10.69
+11.9,MTECH,Java Developer,10,Bengaluru,ENTERPRISE,3989000,39.89
+5.0,BTECH,Data Analyst,4,Bengaluru,MID_SIZE,1269000,12.69
+14.5,MCA,ML Engineer,10,Bengaluru,STARTUP,4396000,43.96
+8.6,BTECH,Java Developer,7,Bengaluru,ENTERPRISE,2499000,24.99
+4.1,MCA,Full Stack Developer,3,Chennai,STARTUP,1244000,12.44
+9.6,MTECH,Java Developer,9,Bengaluru,ENTERPRISE,3302000,33.02
+13.9,BCA,Full Stack Developer,10,Bengaluru,STARTUP,2814000,28.14
+10.7,MCA,Frontend Developer,9,Chennai,ENTERPRISE,2571000,25.71
+14.6,BTECH,ML Engineer,10,Mumbai,MID_SIZE,4348000,43.48
+12.6,MCA,Cloud Architect,10,Delhi NCR,MID_SIZE,4373000,43.73
+15.0,BTECH,Full Stack Developer,10,Pune,MID_SIZE,3404000,34.04
+7.7,BSC_CS,Cloud Architect,7,Delhi NCR,MID_SIZE,2263000,22.63
+4.4,BTECH,Full Stack Developer,5,Hyderabad,MID_SIZE,1489000,14.89
+4.4,MCA,Data Analyst,5,Bengaluru,MID_SIZE,1416000,14.16
+13.6,BCA,Full Stack Developer,10,Bengaluru,STARTUP,2750000,27.5
+13.6,BCA,Java Developer,10,Chennai,MID_SIZE,2377000,23.77
+7.3,MCA,Java Developer,6,Bengaluru,MID_SIZE,2087000,20.87
+2.8,BCA,Data Analyst,5,Bengaluru,STARTUP,898000,8.98
+1.2,BCA,ML Engineer,3,Mumbai,MID_SIZE,882000,8.82
+13.6,BTECH,DevOps Engineer,9,Bengaluru,STARTUP,3315000,33.15
+7.4,BSC_CS,Full Stack Developer,8,Hyderabad,MID_SIZE,1653000,16.53
+7.1,BCA,Java Developer,8,Pune,MID_SIZE,1594000,15.94
+6.3,BTECH,Cloud Architect,6,Bengaluru,MID_SIZE,2980000,29.8
+14.6,MCA,Frontend Developer,10,Delhi NCR,MID_SIZE,2818000,28.18
+6.4,MCA,Data Analyst,4,Bengaluru,ENTERPRISE,2087000,20.87
+15.4,BTECH,Cloud Architect,10,Chennai,MID_SIZE,4292000,42.92
+2.4,MCA,DevOps Engineer,5,Pune,MID_SIZE,1243000,12.43
+3.5,MTECH,Data Analyst,5,Hyderabad,ENTERPRISE,1451000,14.51
+5.4,MCA,Cloud Architect,7,Hyderabad,ENTERPRISE,2982000,29.82
+6.0,MTECH,Full Stack Developer,7,Pune,MID_SIZE,2051000,20.51
+4.1,PHD,DevOps Engineer,6,Chennai,STARTUP,1929000,19.29
+10.8,MCA,Data Analyst,10,Hyderabad,STARTUP,2006000,20.06
+15.7,MCA,Data Analyst,10,Mumbai,ENTERPRISE,3138000,31.38
+2.4,BTECH,Java Developer,3,Chennai,ENTERPRISE,1229000,12.29
+13.4,BSC_CS,Frontend Developer,10,Bengaluru,MID_SIZE,2351000,23.51
+6.0,BTECH,Full Stack Developer,6,Mumbai,STARTUP,1821000,18.21
+10.1,BCA,Cloud Architect,10,Mumbai,MID_SIZE,3339000,33.39
+10.3,BTECH,ML Engineer,8,Mumbai,ENTERPRISE,4041000,40.41
+9.6,BTECH,DevOps Engineer,8,Bengaluru,STARTUP,2885000,28.85
+7.5,BSC_CS,Java Developer,5,Mumbai,MID_SIZE,1536000,15.36
+8.1,BTECH,Frontend Developer,8,Pune,MID_SIZE,1594000,15.94
+6.5,MTECH,ML Engineer,5,Bengaluru,ENTERPRISE,3308000,33.08
+4.8,BTECH,DevOps Engineer,5,Hyderabad,STARTUP,1646000,16.46
+7.3,BTECH,DevOps Engineer,5,Delhi NCR,ENTERPRISE,2900000,29.0
+10.8,BSC_CS,Frontend Developer,7,Delhi NCR,ENTERPRISE,2127000,21.27
+1.1,BTECH,DevOps Engineer,2,Bengaluru,MID_SIZE,1035000,10.35
+4.9,BTECH,Cloud Architect,6,Hyderabad,STARTUP,2100000,21.0
+2.2,MCA,ML Engineer,4,Hyderabad,MID_SIZE,1286000,12.86
+2.6,MCA,Java Developer,3,Chennai,ENTERPRISE,1276000,12.76
+5.6,BTECH,Full Stack Developer,4,Pune,MID_SIZE,1675000,16.75
+5.4,BTECH,DevOps Engineer,6,Chennai,ENTERPRISE,2044000,20.44
+9.2,MCA,DevOps Engineer,7,Chennai,MID_SIZE,2348000,23.48
+6.3,MCA,Cloud Architect,5,Bengaluru,STARTUP,2792000,27.92
+4.9,MTECH,Java Developer,4,Chennai,ENTERPRISE,1673000,16.73
+1.5,BSC_CS,Full Stack Developer,3,Bengaluru,MID_SIZE,899000,8.99
+10.3,BTECH,Java Developer,9,Pune,ENTERPRISE,2835000,28.35
+14.1,BTECH,Data Analyst,10,Pune,MID_SIZE,2230000,22.3
+3.9,MTECH,Cloud Architect,6,Mumbai,MID_SIZE,2304000,23.04
+10.8,BTECH,Frontend Developer,10,Hyderabad,STARTUP,2096000,20.96
+12.5,MCA,Full Stack Developer,9,Hyderabad,MID_SIZE,2821000,28.21
+4.7,MTECH,Java Developer,5,Hyderabad,MID_SIZE,1562000,15.62
+5.4,BTECH,Full Stack Developer,6,Hyderabad,ENTERPRISE,2116000,21.16

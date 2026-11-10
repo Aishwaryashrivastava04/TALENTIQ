@@ -1,0 +1,517 @@
+/* ============================================================================
+   INSTITUTIONAL AQUATIC – CORPORATE RECRUITMENT INTELLIGENCE DESIGN SYSTEM
+   Brand: TALENTIQ | Enterprise SaaS Architecture
+   ============================================================================ */
+
+:root {
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Color Palette - Institutional Aquatic */
+  --primary-blue: #0060A8;
+  --hero-blue: #0066AE;
+  --accent-blue: #1473E6;
+  --bg-gray: #F1F5F8;
+  --bg-white: #FFFFFF;
+  --deep-navy: #031120;
+  --body-text: #6C6C6C;
+  --muted-text: #9CA3AF;
+  --border-color: #E5EAF0;
+  --status-success: #16845B;
+  --status-warning: #D99524;
+  --status-danger: #D94C4C;
+
+  /* Component Defaults */
+  --bg-app: #F1F5F8;
+  --bg-sidebar: #FFFFFF;
+  --bg-header: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FFFFFF;
+  --bg-input: #F1F5F8;
+  --border-subtle: #E5EAF0;
+  --border-focus: #1473E6;
+  --text-main: #031120;
+  --text-body: #6C6C6C;
+  --text-muted: #9CA3AF;
+
+  /* Geometry & Elevation */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-pill: 9999px;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 20px -4px rgba(0, 96, 168, 0.12);
+}
+
+/* Dark mode option preserving deep navy institutional integrity */
+[data-theme="dark"] {
+  --bg-app: #031120;
+  --bg-sidebar: #06192E;
+  --bg-header: #06192E;
+  --bg-card: #0A223D;
+  --bg-card-hover: #0E2B4C;
+  --bg-input: #0E2B4C;
+  --border-subtle: rgba(229, 234, 240, 0.12);
+  --border-focus: #1473E6;
+  --text-main: #FFFFFF;
+  --text-body: #B0B9C6;
+  --text-muted: #8493A8;
+  --border-color: rgba(229, 234, 240, 0.12);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+/* Custom Institutional Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: var(--radius-pill);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Typography Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* App Container Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-app);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: var(--bg-app);
+}
+
+.page-body {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Institutional Section Heading with 48px x 4px accent underline */
+.section-heading-container {
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-underline {
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-blue);
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--body-text);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* Institutional Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-static {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+/* Institutional Status Card (4px blue left border) */
+.status-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-blue);
+  border-radius: var(--radius-md);
+  padding: 1.5rem; /* 24px padding */
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.status-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.status-card-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F1F5F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .status-card-icon-wrap {
+  background-color: rgba(20, 115, 230, 0.15);
+  color: #38BDF8;
+}
+
+/* Institutional Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-pill); /* Pill-shaped */
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 200ms ease;
+  text-decoration: none;
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background-color: var(--hero-blue);
+  color: #FFFFFF;
+  border-color: var(--hero-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: var(--primary-blue);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-gray);
+  color: var(--accent-blue);
+  border-color: #CBD5E1;
+}
+
+[data-theme="dark"] .btn-secondary {
+  background-color: #0E2B4C;
+  color: #FFFFFF;
+  border-color: rgba(229, 234, 240, 0.2);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background-color: #143760;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+/* Institutional Form Controls */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--deep-navy);
+  margin-bottom: 0.45rem;
+  text-transform: none;
+}
+
+[data-theme="dark"] .form-label {
+  color: #E2E8F0;
+}
+
+.form-control {
+  width: 100%;
+  height: 46px; /* Institutional 46px height */
+  padding: 0 1rem;
+  background-color: var(--bg-input);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md); /* 10px radius */
+  color: var(--text-main);
+  font-size: 0.88rem;
+  font-family: inherit;
+  transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 2px rgba(20, 115, 230, 0.2);
+  background-color: #FFFFFF;
+}
+
+[data-theme="dark"] .form-control:focus {
+  background-color: #0A223D;
+}
+
+textarea.form-control {
+  height: auto;
+  padding: 0.75rem 1rem;
+}
+
+/* Institutional Status Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-blue {
+  background-color: rgba(0, 96, 168, 0.1);
+  color: var(--primary-blue);
+  border: 1px solid rgba(0, 96, 168, 0.2);
+}
+
+.badge-success, .badge-emerald {
+  background-color: rgba(22, 132, 91, 0.1);
+  color: var(--status-success);
+  border: 1px solid rgba(22, 132, 91, 0.25);
+}
+
+.badge-warning, .badge-amber {
+  background-color: rgba(217, 149, 36, 0.1);
+  color: var(--status-warning);
+  border: 1px solid rgba(217, 149, 36, 0.25);
+}
+
+.badge-danger, .badge-rose {
+  background-color: rgba(217, 76, 76, 0.1);
+  color: var(--status-danger);
+  border: 1px solid rgba(217, 76, 76, 0.25);
+}
+
+.badge-neutral {
+  background-color: rgba(108, 108, 108, 0.1);
+  color: var(--body-text);
+  border: 1px solid rgba(108, 108, 108, 0.2);
+}
+
+.badge-applied {
+  background-color: rgba(3, 17, 32, 0.06);
+  color: var(--deep-navy);
+  border: 1px solid rgba(3, 17, 32, 0.15);
+}
+
+/* Institutional Data Tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .table-responsive {
+  background-color: #0A223D;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.table-custom th {
+  background-color: #F8FAFC;
+  color: #6C6C6C;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .table-custom th {
+  background-color: #06192E;
+  color: #9CA3AF;
+  border-bottom-color: rgba(229, 234, 240, 0.1);
+}
+
+.table-custom td {
+  padding: 1rem 1.1rem;
+  font-size: 0.86rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--deep-navy);
+  vertical-align: middle;
+}
+
+[data-theme="dark"] .table-custom td {
+  border-bottom-color: rgba(229, 234, 240, 0.08);
+  color: #F1F5F8;
+}
+
+.table-custom tr:last-child td {
+  border-bottom: none;
+}
+
+.table-custom tr:hover td {
+  background-color: #F8FAFC;
+}
+
+[data-theme="dark"] .table-custom tr:hover td {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* Interactive Links */
+a, .link-institutional {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 180ms ease;
+  cursor: pointer;
+}
+
+a:hover, .link-institutional:hover {
+  color: var(--hero-blue);
+  text-decoration: underline;
+}
+
+/* Modal Dialogs */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 17, 32, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+
+.modal-content {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: modalEnter 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .modal-content {
+  background: #0A223D;
+  border-color: rgba(229, 234, 240, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes modalEnter {
+  from { opacity: 0; transform: scale(0.97) translateY(6px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes skeletonShimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.card {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px -4px rgba(0, 96, 168, 0.12);
+}
+
+.btn {
+  white-space: nowrap;
+}
+
+/* Responsive Grids */
+.grid-cols-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.25rem;
+}
+
+.grid-cols-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .page-body {
+    padding: 1.25rem;
+  }
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,103 @@
+{
+    "training_samples": 1200,
+    "test_samples": 300,
+    "k_fold_cv_splits": 5,
+    "linear_regression": {
+        "model_name": "Linear Regression (OLS)",
+        "mae": 176728.6,
+        "mse": 56753158123.02,
+        "rmse": 238229.21,
+        "r2_score": 0.9458,
+        "r2_percentage": 94.58,
+        "cv_r2_scores": [
+            0.9458,
+            0.9466,
+            0.9476,
+            0.9518,
+            0.9576
+        ],
+        "cv_r2_mean": 0.9499,
+        "cv_r2_std": 0.0044
+    },
+    "random_forest": {
+        "model_name": "Random Forest Regressor (100 Trees Ensemble)",
+        "mae": 191568.69,
+        "mse": 76351811318.09,
+        "rmse": 276318.32,
+        "r2_score": 0.9271,
+        "r2_percentage": 92.71,
+        "cv_r2_scores": [
+            0.9247,
+            0.9193,
+            0.9324,
+            0.9225,
+            0.9569
+        ],
+        "cv_r2_mean": 0.9312,
+        "cv_r2_std": 0.0136
+    },
+    "feature_importances": {
+        "top_individual_features": [
+            {
+                "feature": "experience_years",
+                "importance": 0.7371,
+                "importance_percentage": 73.71
+            },
+            {
+                "feature": "company_size_ENTERPRISE",
+                "importance": 0.0431,
+                "importance_percentage": 4.31
+            },
+            {
+                "feature": "job_role_Cloud Architect",
+                "importance": 0.0377,
+                "importance_percentage": 3.77
+            },
+            {
+                "feature": "job_role_Frontend Developer",
+                "importance": 0.0299,
+                "importance_percentage": 2.99
+            },
+            {
+                "feature": "job_role_ML Engineer",
+                "importance": 0.0242,
+                "importance_percentage": 2.42
+            },
+            {
+                "feature": "job_role_Data Analyst",
+                "importance": 0.0194,
+                "importance_percentage": 1.94
+            },
+            {
+                "feature": "job_role_DevOps Engineer",
+                "importance": 0.0146,
+                "importance_percentage": 1.46
+            },
+            {
+                "feature": "job_role_Full Stack Developer",
+                "importance": 0.0123,
+                "importance_percentage": 1.23
+            },
+            {
+                "feature": "education_level_PHD",
+                "importance": 0.0115,
+                "importance_percentage": 1.15
+            },
+            {
+                "feature": "job_role_Java Developer",
+                "importance": 0.0115,
+                "importance_percentage": 1.15
+            }
+        ],
+        "grouped_by_domain": {
+            "Experience (Years)": 0.7371,
+            "Job Role / Domain": 0.1496,
+            "Education Level": 0.0435,
+            "Location / Tier": 0.0164,
+            "Company Size": 0.0467,
+            "Skills Count": 0.0067
+        }
+    },
+    "best_performing_model": "Linear Regression",
+    "r2_delta": 0.0187
+}
