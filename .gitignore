@@ -45,3 +45,4 @@ backend/uploads/*
 *.log
 npm-debug.log*
 yarn-debug.log*
+java-service/target/

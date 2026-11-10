@@ -55,7 +55,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"full_name\": \"Aishwarya Shree\",\n  \"email\": \"aishwarya.shree@talentcorp.com\",\n  \"phone\": \"+919113173220\",\n  \"password\": \"Password@123\",\n  \"role\": \"HR_MANAGER\"\n}"
+              "raw": "{\n  \"full_name\": \"Test HR User\",\n  \"email\": \"test.hr@example.invalid\",\n  \"phone\": \"+910000000000\",\n  \"password\": \"{{testPassword}}\",\n  \"role\": \"HR_MANAGER\"\n}"
             },
             "url": {
               "raw": "http://127.0.0.1:5005/api/auth/register",
@@ -93,7 +93,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\": \"aishwarya.shree@talentcorp.com\",\n  \"password\": \"Password@123\"\n}"
+              "raw": "{\n  \"email\": \"test.hr@example.invalid\",\n  \"password\": \"{{testPassword}}\"\n}"
             },
             "url": {
               "raw": "http://127.0.0.1:5005/api/auth/login",
@@ -205,7 +205,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"resume_text\": \"Experienced MCA graduate with 4 years in Python, React, PostgreSQL, Docker, and AWS. Contact: aishwarya.shree@talentcorp.com\"\n}"
+              "raw": "{\n  \"resume_text\": \"Experienced MCA graduate with 4 years in Python, React, PostgreSQL, Docker, and AWS. Contact: test.hr@example.invalid\"\n}"
             },
             "url": {
               "raw": "http://127.0.0.1:5005/api/ml/parse-resume",
