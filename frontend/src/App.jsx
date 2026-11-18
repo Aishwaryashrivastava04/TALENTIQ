@@ -31,6 +31,7 @@ export default function App() {
   const [user, setUser] = useState(null);
   const [activeTab, setActiveTab] = useState('dashboard');
   const [authView, setAuthView] = useState('landing'); // 'landing' | 'login' | 'register' | 'forgot-password' | 'reset-password'
+  const [isDashboardOpen, setIsDashboardOpen] = useState(false);
   const [selectedRoleForRegister, setSelectedRoleForRegister] = useState('HR_MANAGER');
   const [resetToken, setResetToken] = useState('');
   const [showChangePasswordModal, setShowChangePasswordModal] = useState(false);
@@ -42,6 +43,7 @@ export default function App() {
   const navigateToAuth = (view, role = 'HR_MANAGER', replace = false) => {
     setSelectedRoleForRegister(role);
     setAuthView(view);
+    setIsDashboardOpen(false);
     const hash = view === 'landing' ? '' : `#/${view}`;
     const targetUrl = hash ? `${window.location.pathname}${hash}` : window.location.pathname;
     if (replace) {
@@ -55,6 +57,7 @@ export default function App() {
   // Sync dashboard tabs with HTML5 history & URL hash
   const handleTabChange = (tab, replace = false) => {
     setActiveTab(tab);
+    setIsDashboardOpen(true);
     const hash = `#/${tab}`;
     if (replace) {
       window.history.replaceState({ activeTab: tab }, '', hash);
@@ -64,15 +67,30 @@ export default function App() {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
+  // Return to First Page (Public Website) from anywhere
+  const handleReturnToPublicWebsite = () => {
+    setIsDashboardOpen(false);
+    setAuthView('landing');
+    window.history.pushState({ authView: 'landing' }, '', window.location.pathname);
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
   // Robust return to landing page from any auth sub-view
   const handleNavigateHome = () => {
     setAuthView('landing');
+    setIsDashboardOpen(false);
     if (window.location.hash) {
       window.history.back();
     } else {
       navigateToAuth('landing', 'HR_MANAGER', true);
     }
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  // Enter dashboard directly from landing page when user is recognized
+  const handleEnterDashboard = () => {
+    const targetTab = user?.role === 'CANDIDATE' ? 'candidate-portal' : (user?.role === 'ADMIN' ? 'admin-center' : 'dashboard');
+    handleTabChange(targetTab);
   };
 
   useEffect(() => {
@@ -87,6 +105,7 @@ export default function App() {
 
     const savedUser = localStorage.getItem('sr_user');
     const savedToken = localStorage.getItem('sr_token');
+    let loadedUser = null;
     if (savedToken && savedUser) {
       try {
         const parsed = JSON.parse(savedUser);
@@ -94,28 +113,40 @@ export default function App() {
           parsed.full_name = 'Aishwarya Shree';
           localStorage.setItem('sr_user', JSON.stringify(parsed));
         }
+        loadedUser = parsed;
         setUser(parsed);
-        const initialTab = parsed.role === 'CANDIDATE' ? 'candidate-portal' : (parsed.role === 'ADMIN' ? 'admin-center' : 'dashboard');
-        setActiveTab(initialTab);
-        window.history.replaceState({ activeTab: initialTab }, '', `#/${initialTab}`);
       } catch (e) {
-        setUser({ full_name: 'Aishwarya Shree', role: 'ADMIN', email: 'admin@recruitment.com' });
+        loadedUser = { full_name: 'Aishwarya Shree', role: 'ADMIN', email: 'admin@recruitment.com' };
+        setUser(loadedUser);
       }
+    }
+
+    // Inspect URL hash
+    const rawHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
+    const dashboardTabs = [
+      'dashboard', 'candidates', 'screening', 'jobs', 'applications',
+      'interviews', 'company-profile', 'salary-insights', 'salary-prediction',
+      'analytics', 'reports', 'admin-center', 'candidate-portal',
+      'account-settings', 'settings', 'user-management', 'resume-builder'
+    ];
+
+    // IF USER EXPLICITLY HAS A DASHBOARD TAB IN URL (e.g. #/dashboard, #/candidates)
+    if (loadedUser && dashboardTabs.includes(rawHash)) {
+      setActiveTab(rawHash);
+      setIsDashboardOpen(true);
+    } else if (['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash)) {
+      setAuthView(rawHash);
+      setIsDashboardOpen(false);
     } else {
-      // FRESH VISIT: ALWAYS OPEN PUBLIC LANDING PAGE FIRST!
-      // Clear any accidental leftover hash so it never auto-opens register
+      // DEFAULT: ALWAYS OPEN FIRST PAGE (PUBLIC LANDING PAGE)!
       setAuthView('landing');
-      if (window.location.hash) {
-        try {
-          window.history.replaceState({ authView: 'landing' }, '', window.location.pathname);
-        } catch (e) {}
-      } else {
-        window.history.replaceState({ authView: 'landing' }, '', window.location.pathname);
-      }
+      setIsDashboardOpen(false);
+      window.history.replaceState({ authView: 'landing' }, '', window.location.pathname);
     }
 
     const handleAuthExpired = () => {
       setUser(null);
+      setIsDashboardOpen(false);
       navigateToAuth('login', 'HR_MANAGER', true);
     };
     window.addEventListener('auth:expired', handleAuthExpired);
@@ -127,21 +158,26 @@ export default function App() {
     const handlePopState = (event) => {
       const state = event.state || {};
       const rawHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
+      const dashboardTabs = [
+        'dashboard', 'candidates', 'screening', 'jobs', 'applications',
+        'interviews', 'company-profile', 'salary-insights', 'salary-prediction',
+        'analytics', 'reports', 'admin-center', 'candidate-portal',
+        'account-settings', 'settings', 'user-management', 'resume-builder'
+      ];
 
-      if (!user) {
-        if (state.authView) {
-          setAuthView(state.authView);
-          if (state.role) setSelectedRoleForRegister(state.role);
-        } else if (['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash)) {
-          setAuthView(rawHash);
-        } else {
-          // If no state or returning to root, ALWAYS go to landing page
-          setAuthView('landing');
-        }
+      if (!rawHash || rawHash === 'landing') {
+        setIsDashboardOpen(false);
+        setAuthView('landing');
+      } else if (['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash)) {
+        setIsDashboardOpen(false);
+        setAuthView(rawHash);
+        if (state.role) setSelectedRoleForRegister(state.role);
+      } else if (dashboardTabs.includes(rawHash)) {
+        setActiveTab(rawHash);
+        setIsDashboardOpen(true);
       } else {
-        const fallbackTab = user.role === 'ADMIN' ? 'admin-center' : (user.role === 'CANDIDATE' ? 'candidate-portal' : 'dashboard');
-        const targetTab = state.activeTab || (rawHash && !['landing', 'login', 'register'].includes(rawHash) ? rawHash : fallbackTab);
-        setActiveTab(targetTab);
+        setIsDashboardOpen(false);
+        setAuthView('landing');
       }
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     };
@@ -164,18 +200,21 @@ export default function App() {
       localStorage.removeItem('sr_token');
       localStorage.removeItem('sr_user');
       setUser(null);
+      setIsDashboardOpen(false);
       navigateToAuth('landing', 'HR_MANAGER', true);
     }
   };
 
-  // If user is not logged in, render Landing Page or Authentication sub-views
-  if (!user) {
+  // If dashboard is not open, render First Page (Landing) or Auth Sub-views (Login/Register)
+  if (!isDashboardOpen) {
     if (authView === 'landing') {
       return (
         <LandingPage
+          user={user}
           onNavigateLogin={() => navigateToAuth('login')}
           onNavigateRegister={(role) => navigateToAuth('register', role || 'HR_MANAGER')}
           onQuickDemoLogin={handleLoginSuccess}
+          onEnterDashboard={handleEnterDashboard}
         />
       );
     }
@@ -324,7 +363,10 @@ export default function App() {
       {/* SaaS Sidebar with Collapsible layout */}
       <Sidebar
         activeTab={activeTab}
-        setActiveTab={handleTabChange}
+        setActiveTab={(tab) => {
+          if (tab === 'public-website') handleReturnToPublicWebsite();
+          else handleTabChange(tab);
+        }}
         onLogout={handleLogout}
         user={user}
         isCollapsed={isSidebarCollapsed}
@@ -340,7 +382,10 @@ export default function App() {
           onLogout={handleLogout}
           isSidebarCollapsed={isSidebarCollapsed}
           toggleSidebar={toggleSidebar}
-          setActiveTab={handleTabChange}
+          setActiveTab={(tab) => {
+            if (tab === 'public-website') handleReturnToPublicWebsite();
+            else handleTabChange(tab);
+          }}
         />
         <main className="page-body">
           {renderActivePage()}

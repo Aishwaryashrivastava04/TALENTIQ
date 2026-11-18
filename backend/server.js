@@ -1,3 +1,5 @@
+// TALENTIQ Enterprise Recruitment Platform - Production Sync v1.0.1
+// Cloud User Persistence (MongoDB Atlas) & Fast Failover
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');

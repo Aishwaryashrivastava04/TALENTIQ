@@ -1,6 +1,6 @@
 {
   "name": "smart-recruitment-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enterprise Node.js/Express Orchestrator for Smart Recruitment System",
   "main": "server.js",
   "scripts": {
