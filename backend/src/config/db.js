@@ -22,6 +22,7 @@ const mysqlPool = mysql.createPool({
   database: process.env.DB_NAME || 'smart_recruitment_db',
   waitForConnections: true,
   connectionLimit: parseInt(process.env.DB_CONNECTION_LIMIT || '10', 10),
+  connectTimeout: 2000, // 2-second fast failover to memory store if MySQL host is unreachable
   queueLimit: 0,
   enableKeepAlive: true,
   keepAliveInitialDelay: 10000,

@@ -1,4 +1,4 @@
--- ============================================================================
+S-- ============================================================================
 -- SMART RECRUITMENT, SALARY PREDICTION & ANALYTICS SYSTEM
 -- SUBJECT 4: RDBMS - COMPREHENSIVE SAMPLE DATA
 -- Real-world Indian Tech Industry Recruitment Context

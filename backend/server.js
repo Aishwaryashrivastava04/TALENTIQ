@@ -48,21 +48,25 @@ app.use(helmet({
 
 app.use(cors({
   origin: (origin, callback) => {
-    // Allow server-to-server or tools without origin header (e.g. curl, postman)
+    // Allow server-to-server or tools without origin header (e.g. curl, postman, mobile webviews)
     if (!origin) return callback(null, true);
     // Allow any localhost or 127.0.0.1 port (Vite 5173, 5174, 5175, etc.)
     if (/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
       return callback(null, true);
     }
-    // Allow Vercel preview and production deployments
-    if (origin.endsWith('.vercel.app') || (process.env.CLIENT_URL && origin === process.env.CLIENT_URL)) {
+    // Allow all Vercel deployments, Render internal endpoints, and configured CLIENT_URL
+    if (origin.endsWith('.vercel.app') || origin.endsWith('.onrender.com') || (process.env.CLIENT_URL && origin === process.env.CLIENT_URL)) {
+      return callback(null, true);
+    }
+    // Permissive fallback in production to guarantee mobile and browser compatibility
+    if (process.env.NODE_ENV === 'production') {
       return callback(null, true);
     }
     return callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 }));
 
 app.use(cookieParser());

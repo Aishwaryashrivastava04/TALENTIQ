@@ -184,11 +184,13 @@ async function registerUser({
     IN_MEMORY_AUTH.users.push(newUser);
   }
 
-  // Send Welcome Email
+  // Send Welcome Email asynchronously without blocking HTTP response
   try {
-    await sendWelcomeEmail(newUser.email, newUser.full_name, newUser.role);
+    sendWelcomeEmail(newUser.email, newUser.full_name, newUser.role).catch(e => {
+      console.warn('Welcome email delivery note:', e.message);
+    });
   } catch (e) {
-    console.warn('Welcome email delivery error:', e.message);
+    console.warn('Welcome email trigger note:', e.message);
   }
 
   const token = createJWT(newUser);

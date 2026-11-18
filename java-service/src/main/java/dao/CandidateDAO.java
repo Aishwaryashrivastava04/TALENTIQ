@@ -23,7 +23,7 @@ import java.util.List;
  * - Custom Exception propagation (CandidateNotFoundException)
  * ============================================================================
  */
-public class CandidateDAO implements RecordOperations<Candidate> {
+public class CandidateDAO implements util.CandidateOperations {
 
     @Override
     public Candidate findById(int id) throws RecruitmentException {
@@ -234,6 +234,46 @@ public class CandidateDAO implements RecordOperations<Candidate> {
                 } catch (SQLException ignored) {}
             }
         }
+    }
+
+    @Override
+    public List<Candidate> findBySkill(String skill) throws RecruitmentException {
+        List<Candidate> list = new ArrayList<>();
+        String sql = "SELECT c.* FROM candidates c " +
+                "JOIN candidate_skills cs ON c.id = cs.candidate_id " +
+                "JOIN skills s ON cs.skill_id = s.id " +
+                "WHERE LOWER(s.skill_name) = LOWER(?)";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, skill);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    list.add(mapRowToCandidate(rs));
+                }
+            }
+        } catch (SQLException e) {
+            throw new DatabaseConnectionException("Error finding candidates by skill: " + skill, e);
+        }
+        return list;
+    }
+
+    @Override
+    public List<Candidate> findByExperienceRange(double minYears, double maxYears) throws RecruitmentException {
+        List<Candidate> list = new ArrayList<>();
+        String sql = "SELECT * FROM candidates WHERE experience_years BETWEEN ? AND ? ORDER BY experience_years DESC";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setDouble(1, minYears);
+            stmt.setDouble(2, maxYears);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    list.add(mapRowToCandidate(rs));
+                }
+            }
+        } catch (SQLException e) {
+            throw new DatabaseConnectionException("Error filtering candidates by experience: " + e.getMessage(), e);
+        }
+        return list;
     }
 
     /**

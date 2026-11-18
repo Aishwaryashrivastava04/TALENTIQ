@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity CSIT661 - Module IV PL/SQL (10 Slides with One-Click Copy)</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #cbd5e1;
+            --amity-blue: #1e40af;
+            --amity-gold: #d97706;
+            --teal: #0d9488;
+            --purple: #6d28d9;
+            --emerald: #10b981;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --code-bg: #0f172a;
+            --code-text: #f1f5f9;
+            --code-kw: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .presentation-container {
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16 / 9;
+            background: var(--bg-light);
+            border-radius: 12px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding: 35px 45px;
+            color: var(--text-main);
+            overflow-y: auto;
+            flex-direction: column;
+        }
+
+        .slide.active {
+            display: flex;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide.dark-theme {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+        }
+
+        .tag-banner {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--amity-blue);
+            margin-bottom: 4px;
+        }
+
+        .slide.dark-theme .tag-banner {
+            color: var(--amity-gold);
+        }
+
+        .slide-title {
+            font-size: 25px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 2px;
+        }
+
+        .slide.dark-theme .slide-title {
+            color: #ffffff;
+        }
+
+        .slide-subtitle {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 14px;
+            flex: 1;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-tag {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            font-size: 12.5px;
+            color: #334155;
+            margin-bottom: 8px;
+            line-height: 1.45;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .card li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: var(--amity-blue);
+            font-weight: bold;
+        }
+
+        .code-box {
+            background: var(--code-bg);
+            border-radius: 8px;
+            border: 1px solid #334155;
+            padding: 14px 18px;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 11.5px;
+            color: var(--code-text);
+            line-height: 1.38;
+            overflow-x: auto;
+            white-space: pre;
+            flex: 1;
+        }
+
+        .code-header {
+            color: var(--code-kw);
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #334155;
+        }
+
+        table.comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12.5px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        table.comp-table th {
+            background: var(--bg-dark);
+            color: white;
+            text-align: left;
+            padding: 11px 14px;
+            font-weight: 700;
+        }
+
+        table.comp-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+            vertical-align: top;
+            line-height: 1.4;
+        }
+
+        table.comp-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* Controls */
+        .controls {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 14px;
+            padding: 0 8px;
+        }
+
+        .nav-buttons button {
+            background: #1e293b;
+            color: white;
+            border: 1px solid #334155;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 13px;
+        }
+
+        .nav-buttons button:hover {
+            background: var(--amity-blue);
+            border-color: var(--amity-blue);
+        }
+
+        .btn-copy {
+            background: #059669 !important;
+            border-color: #10b981 !important;
+        }
+        .btn-copy:hover {
+            background: #10b981 !important;
+        }
+
+        .slide-counter {
+            font-size: 14px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .notes-panel {
+            width: 100%;
+            max-width: 1200px;
+            background: #1e293b;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            padding: 14px 20px;
+            margin-top: 12px;
+            color: #cbd5e1;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .notes-title {
+            font-weight: 700;
+            color: #38bdf8;
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #10b981;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 999;
+            animation: fadeIn 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+        <!-- Slide 1: Title -->
+        <div class="slide dark-theme active" data-member="All Team (Intro)" data-script="Good morning respected faculty. Today our 5-member team presents Module IV: Advanced PL/SQL from CSIT661. In this presentation, we will walk through the core pillars of PL/SQL: Procedures, Functions, Cursors, Triggers, and Exception Handling, grounded in our course lab schema of Salespeople, Customers, and Orders.">
+            <span class="tag-banner">AMITY UNIVERSITY | CSIT661: RELATIONAL DATABASE MANAGEMENT SYSTEMS</span>
+            <div style="margin-top: 35px; border-left: 5px solid var(--amity-gold); padding-left: 20px;">
+                <h1 style="font-size: 38px; font-weight: 800; margin-bottom: 8px;">Advanced PL/SQL Architecture</h1>
+                <h2 style="font-size: 19px; color: #94a3b8; font-weight: normal; margin-bottom: 25px;">
+                    Module IV: Procedures, Functions, Cursors, Triggers & Exception Handling
+                </h2>
+                <p style="color: var(--emerald); font-weight: 700; font-size: 14.5px; margin-bottom: 4px;">Focused 10-Slide 5-Member Team Presentation</p>
+                <p style="color: #cbd5e1; font-size: 13px;">Curriculum Case Study: Salespeople, Customers & Orders Lab Schema</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: PL/SQL Foundations & 5-Member Roadmap -->
+        <div class="slide" data-member="Intro (Member 1)" data-script="PL/SQL is a block-structured language comprising three main sections: DECLARE, where memory variables and cursors are created; BEGIN, which houses the mandatory executable SQL and control logic; and EXCEPTION, which traps runtime faults gracefully. Our team has divided the Module IV topics into 5 distinct ownership areas with zero overlap.">
+            <span class="tag-banner">COURSE STRUCTURE | MODULE IV</span>
+            <h1 class="slide-title">PL/SQL Foundations & 5-Member Roadmap</h1>
+            <p class="slide-subtitle">Syllabus mapping combining procedural control with SQL set operations</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-blue);">Program Architecture</span>
+                    <div class="card-title">PL/SQL Basic Block Structure</div>
+                    <ul>
+                        <li><strong>DECLARE (Optional):</strong> Memory variables, constants, cursors, and custom exceptions.</li>
+                        <li><strong>BEGIN (Mandatory):</strong> SQL statements and procedural control logic (IF-THEN, LOOPS).</li>
+                        <li><strong>EXCEPTION (Optional):</strong> Traps runtime errors cleanly, enabling ROLLBACK.</li>
+                        <li><strong>END; (Mandatory):</strong> Closes compiled executable unit.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-gold);">Team Ownership</span>
+                    <div class="card-title">5 Members Allocation</div>
+                    <ul>
+                        <li><strong>Member 1:</strong> Stored Procedures (IN, OUT & Lab 28 Commission Update)</li>
+                        <li><strong>Member 2:</strong> Database Functions & Procedure vs Function Matrix</li>
+                        <li><strong>Member 3:</strong> Cursor Concept (Context Area, Lifecycle & FOR Loops)</li>
+                        <li><strong>Member 4:</strong> Database Triggers (ECA Architecture, :OLD vs :NEW & Audit Logs)</li>
+                        <li><strong>Member 5:</strong> Exception Handling & End-to-End System Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Member 1 - Stored Procedures -->
+        <div class="slide" data-member="Member 1 (Stored Procedures)" data-script="Ma'am, a Stored Procedure is a pre-compiled PL/SQL subprogram stored directly in the database data dictionary. Unlike ad-hoc SQL queries that undergo parsing and optimization repeatedly, a procedure compiles once into p-code. It accepts three parameter modes: IN (read-only), OUT (write-only to return results), and IN OUT. In our code, we implemented Lab Practical 28: updating the commission of Mumbai salespersons by 10%. We take the city and percentage increase as IN parameters, execute the DML, capture the affected row count using SQL%ROWCOUNT, and return it via the p_rows_update OUT parameter, followed by an explicit COMMIT.">
+            <span class="tag-banner">MEMBER 1 | SUBPROGRAMS</span>
+            <h1 class="slide-title">Stored Procedures: Principles & Lab Task 28</h1>
+            <p class="slide-subtitle">Server-side precompiled routines for executing business actions and batch updates</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-blue);">Concepts & Parameters</span>
+                    <div class="card-title">How Stored Procedures Work</div>
+                    <ul>
+                        <li><strong>Precompiled Performance:</strong> Compiled once into p-code and stored in data dictionary.</li>
+                        <li><strong>Network Optimization:</strong> Multiple SQL statements run inside DB server without roundtrips.</li>
+                        <li><strong>Parameter Modes:</strong> <code>IN</code> (read-only), <code>OUT</code> (returns value), <code>IN OUT</code> (both).</li>
+                        <li><strong>Security:</strong> Users get EXECUTE rights without direct table access.</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+<div class="code-header">-- Lab 28: Update Mumbai Commission Procedure</div>CREATE OR REPLACE PROCEDURE UpdateCityCommission (
+    p_city        IN  VARCHAR2,
+    p_percent_inc IN  NUMBER,
+    p_rows_update OUT NUMBER
+) IS
+BEGIN
+    UPDATE Salespeople
+    SET commission = commission * (1 + (p_percent_inc / 100))
+    WHERE city = p_city;
+    
+    p_rows_update := SQL%ROWCOUNT;
+    COMMIT;
+END UpdateCityCommission;
+/
+
+-- Calling from SQL*Plus:
+VARIABLE v_count NUMBER;
+EXEC UpdateCityCommission('Mumbai', 10, :v_count);
+PRINT v_count;</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Member 2 - Database Functions -->
+        <div class="slide" data-member="Member 2 (Functions)" data-script="Thank you Member 1. A Database Function is designed specifically to compute and return a single value. The header mandates a RETURN clause, and the body must execute a RETURN statement. The unique capability of functions is that they can be invoked directly inside SQL queries like SELECT, WHERE, and ORDER BY. In our example from Lab 10, GetOrderCommission takes the order amount and calculates the commission. Notice in the query below: we call the function directly as a calculated column in our SELECT statement. It is declared DETERMINISTIC so that results for identical inputs are cached by the engine.">
+            <span class="tag-banner">MEMBER 2 | COMPUTATIONS</span>
+            <h1 class="slide-title">Database Functions: Syntax & SQL Integration</h1>
+            <p class="slide-subtitle">Self-contained subprograms engineered for calculation, requiring a single return value</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--teal);">Core Mechanics</span>
+                    <div class="card-title">Why Use Database Functions?</div>
+                    <ul>
+                        <li><strong>Mandatory RETURN:</strong> Must declare return data type and execute RETURN with single value.</li>
+                        <li><strong>SQL Integration:</strong> Can be called directly in SELECT, WHERE, and ORDER BY clauses.</li>
+                        <li><strong>Deterministic:</strong> Caches results for identical inputs to optimize performance.</li>
+                        <li><strong>Purity Rule:</strong> Cannot execute DML on the table being queried.</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+<div class="code-header">-- Function: Calculate Commission on Orders</div>CREATE OR REPLACE FUNCTION GetOrderCommission (
+    p_amt NUMBER,
+    p_rate NUMBER DEFAULT 0.12
+) RETURN NUMBER DETERMINISTIC IS
+    v_comm_amt NUMBER := 0;
+BEGIN
+    IF p_amt IS NULL OR p_amt <= 0 THEN
+        RETURN 0;
+    END IF;
+    
+    v_comm_amt := p_amt * p_rate;
+    RETURN ROUND(v_comm_amt, 2); -- Mandatory
+END GetOrderCommission;
+/
+
+-- Calling directly in SQL:
+SELECT onum, snum, amt,
+       GetOrderCommission(amt, 0.12) AS EarnedComm
+FROM Orders WHERE amt > 1000;</div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Member 2 - Comparison Matrix -->
+        <div class="slide" data-member="Member 2 (Procedure vs Function)" data-script="Slide 5 captures the 5 fundamental architectural differences between Stored Procedures and Functions. First: Return Value—procedures return values optionally via OUT parameters, while functions must return exactly one value. Second: SQL Invocation—procedures cannot be embedded in SELECT statements, whereas functions can. Third: DML operations—procedures permit full DML, whereas functions invoked from SQL cannot modify queried tables due to purity rules. Fourth: Primary Purpose—procedures execute actions and transactions; functions compute values. Fifth: Transactions—procedures can issue COMMIT/ROLLBACK internally, which functions cannot do when called from a query.">
+            <span class="tag-banner">MEMBER 2 & 1 | COMPARISON</span>
+            <h1 class="slide-title">Stored Procedure vs Database Function</h1>
+            <p class="slide-subtitle">Essential comparative matrix frequently tested in Amity end-term exams and vivas</p>
+            <table class="comp-table">
+                <thead>
+                    <tr>
+                        <th style="width: 22%;">Evaluation Metric</th>
+                        <th style="width: 39%;">Stored Procedure</th>
+                        <th style="width: 39%;">Database Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Return Value</strong></td>
+                        <td>Optional; Can return 0, 1, or multiple values via OUT parameters</td>
+                        <td><strong>Mandatory</strong>; Must return exactly ONE value via RETURN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Call in SQL Queries</strong></td>
+                        <td>Cannot be embedded inside SQL SELECT / WHERE statements</td>
+                        <td><strong>Can be called directly</strong> within SELECT, WHERE, ORDER BY</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DML Operations</strong></td>
+                        <td>Fully permits INSERT, UPDATE, and DELETE operations</td>
+                        <td>Restricted when called inside SQL queries (Purity rule)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Primary Objective</strong></td>
+                        <td>Execute business workflows, transactions, and batch tasks</td>
+                        <td>Compute values, transform data, and return results</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transaction Control</strong></td>
+                        <td>Can issue COMMIT and ROLLBACK statements internally</td>
+                        <td>Cannot manage transactions when called from SQL queries</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Slide 6: Member 3 - Cursor Concept -->
+        <div class="slide" data-member="Member 3 (Cursors)" data-script="Thank you Member 2. SQL operates on entire sets of records, but procedural variables process one row at a time. The database resolves this impedance mismatch by allocating a private memory buffer called the Context Area. A Cursor is a pointer to this Context Area. While Implicit cursors manage single-row queries, Explicit cursors handle multi-row queries via a 4-step lifecycle: DECLARE creates the pointer; OPEN executes the query and buffers the active set; FETCH iterates row-by-row into variables; and CLOSE frees the memory. If an explicit cursor is not closed, the system suffers memory leaks leading to ORA-01000: maximum open cursors exceeded. We also highlight the Cursor FOR Loop, which automates opening, fetching, and closing.">
+            <span class="tag-banner">MEMBER 3 | DATA BUFFERING</span>
+            <h1 class="slide-title">Database Cursors: Context Area & 4-Step Lifecycle</h1>
+            <p class="slide-subtitle">Bridging set-oriented SQL with row-oriented procedural execution to process active sets</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--purple);">Context Area Mechanics</span>
+                    <div class="card-title">What is a Cursor?</div>
+                    <ul>
+                        <li><strong>Context Area:</strong> Private memory in SGA allocated by DB server to hold SQL query result sets.</li>
+                        <li><strong>Cursor Definition:</strong> Named pointer to the Context Area allowing row-by-row traversal.</li>
+                        <li><strong>Implicit vs Explicit:</strong> Implicit for single-row DML; Explicit for multi-row queries.</li>
+                        <li><strong>Attributes:</strong> <code>%FOUND</code>, <code>%NOTFOUND</code>, <code>%ROWCOUNT</code>, <code>%ISOPEN</code>.</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+<div class="code-header">-- Explicit Cursor: 4-Step Memory Lifecycle</div>DECLARE
+    CURSOR c_orders IS
+        SELECT onum, amt, snum FROM Orders WHERE amt > 2000;
+    v_onum Orders.onum%TYPE;
+    v_amt  Orders.amt%TYPE;
+    v_snum Orders.snum%TYPE;
+BEGIN
+    OPEN c_orders; -- Step 1: Allocate & Execute
+    LOOP
+        FETCH c_orders INTO v_onum, v_amt, v_snum; -- Step 2
+        EXIT WHEN c_orders%NOTFOUND;
+        DBMS_OUTPUT.PUT_LINE('Order: ' || v_onum);
+    END LOOP;
+    CLOSE c_orders; -- Step 3: Free Memory
+END;
+/
+-- Best Practice: Cursor FOR Loop auto-opens & closes
+FOR rec IN (SELECT onum, amt FROM Orders) LOOP ... END LOOP;</div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Member 4 - Database Triggers -->
+        <div class="slide" data-member="Member 4 (Triggers)" data-script="Thank you Member 3. A Database Trigger is an event-driven PL/SQL block that executes automatically upon DML or DDL operations without manual invocation. Triggers adhere to the ECA rule: Event, Condition, and Action. They are classified by timing—BEFORE for data validation, and AFTER for audit logging—and by granularity—Statement-level vs Row-level using FOR EACH ROW. Our implementation tracks changes to the commission column on the Salespeople table. We utilize the correlation qualifiers :OLD, which retains the pre-update value, and :NEW, which holds the incoming value. A critical viva concept is the Mutating Table Error (ORA-04091): a row-level trigger cannot query or modify the same table currently being modified, as it is in a transitional state.">
+            <span class="tag-banner">MEMBER 4 | AUTOMATION</span>
+            <h1 class="slide-title">Database Triggers: Event-Driven Programming</h1>
+            <p class="slide-subtitle">Autonomous PL/SQL blocks executed automatically in response to database events</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-gold);">ECA Model & Correlation</span>
+                    <div class="card-title">Architecture of a Trigger</div>
+                    <ul>
+                        <li><strong>The ECA Rule:</strong> Event (INSERT/UPDATE/DELETE), Condition (WHEN), Action (PL/SQL body).</li>
+                        <li><strong>Implicit Invocation:</strong> Cannot be called with EXEC; fires automatically upon table modification.</li>
+                        <li><strong>Timing & Granularity:</strong> BEFORE (validation), AFTER (auditing); Statement-Level vs Row-Level.</li>
+                        <li><strong>Correlation Records:</strong> <code>:OLD</code> (pre-update value) vs <code>:NEW</code> (post-update value).</li>
+                        <li><strong>Mutating Table:</strong> ORA-04091 warning when row trigger queries the same table.</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+<div class="code-header">-- Trigger: Commission Audit Log on Salespeople</div>CREATE OR REPLACE TRIGGER Trg_AuditSalesCommission
+AFTER UPDATE OF commission ON Salespeople
+FOR EACH ROW
+BEGIN
+    IF :OLD.commission != :NEW.commission THEN
+        INSERT INTO Comm_Audit_Log (
+            snum,
+            old_comm,
+            new_comm,
+            changed_by,
+            change_date
+        ) VALUES (
+            :OLD.snum,
+            :OLD.commission,
+            :NEW.commission,
+            USER,
+            SYSDATE
+        );
+    END IF;
+END Trg_AuditSalesCommission;
+/</div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Member 5 - Exception Handling -->
+        <div class="slide" data-member="Member 5 (Exceptions)" data-script="Thank you Member 4. Exception Handling provides runtime resilience, isolating standard business logic from fault-recovery routines and preventing abrupt transaction crashes. Oracle categorizes exceptions into Pre-defined exceptions like NO_DATA_FOUND and TOO_MANY_ROWS, and User-defined exceptions declared via EXCEPTION and raised explicitly using RAISE. In our code, we enforce a 25% commission ceiling. If violated, we trigger e_excess_comm and use RAISE_APPLICATION_ERROR to communicate a custom error code (-20002) back to the client. In the WHEN OTHERS handler, SQLCODE retrieves the numeric error code and SQLERRM retrieves the textual error description, accompanied by a clean ROLLBACK to protect data consistency.">
+            <span class="tag-banner">MEMBER 5 | RESILIENCE</span>
+            <h1 class="slide-title">Exception Handling: Fault-Tolerance & Taxonomy</h1>
+            <p class="slide-subtitle">Preventing runtime crashes, ensuring data integrity, and isolating error recovery</p>
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--emerald);">Taxonomy & Diagnostics</span>
+                    <div class="card-title">Architecture & Diagnostic Tools</div>
+                    <ul>
+                        <li><strong>Why Handle Exceptions?</strong> Separates business code from error recovery; ensures clean ROLLBACK.</li>
+                        <li><strong>Pre-Defined System:</strong> <code>NO_DATA_FOUND</code>, <code>TOO_MANY_ROWS</code>, <code>ZERO_DIVIDE</code>.</li>
+                        <li><strong>User-Defined:</strong> Declared via <code>e_name EXCEPTION</code>, triggered via <code>RAISE</code>.</li>
+                        <li><strong>Diagnostics:</strong> <code>SQLCODE</code> (numeric code) and <code>SQLERRM</code> (text message string).</li>
+                    </ul>
+                </div>
+                <div class="code-box">
+<div class="code-header">-- Enforcing commission threshold with exception handling</div>DECLARE
+    v_comm Salespeople.commission%TYPE;
+    e_excess_comm EXCEPTION; -- Custom Exception
+BEGIN
+    SELECT commission INTO v_comm FROM Salespeople WHERE snum = 1001;
+    
+    IF v_comm > 0.25 THEN
+        RAISE e_excess_comm; -- Explicit raise
+    END IF;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Salesperson not found.');
+        ROLLBACK;
+    WHEN e_excess_comm THEN
+        RAISE_APPLICATION_ERROR(-20002, 'Commission exceeds 25% cap!');
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error: ' || SQLCODE || ' - ' || SQLERRM);
+        ROLLBACK;
+END;
+/</div>
+            </div>
+        </div>
+
+        <!-- Slide 9: System Integration -->
+        <div class="slide" data-member="All Team (Synthesis)" data-script="Slide 9 connects all 5 topics into one cohesive enterprise architecture. In a sales management system: 1. A Stored Procedure initiates the atomic transaction; 2. An Explicit Cursor buffers and iterates thousands of pending orders row-by-row; 3. A Database Function computes net commissions per record; 4. A Database Trigger automatically fires on table modification to write immutable audit records; and 5. Exception Handling wraps the entire pipeline to guarantee safe rollbacks and zero data corruption.">
+            <span class="tag-banner">ARCHITECTURE SYNTHESIS | MODULE IV</span>
+            <h1 class="slide-title">System Integration: How All 5 Pillars Work Together</h1>
+            <p class="slide-subtitle">End-to-end transaction processing on the Salespeople, Orders, and Customers schema</p>
+            <div class="grid-5">
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-blue);">1. Procedure</span>
+                    <div class="card-title">Entry Point</div>
+                    <p style="font-size: 12.5px; color: #475569;"><code>ProcessSalesBatch</code> initiates atomic batch transaction.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag" style="color: var(--purple);">2. Cursor</span>
+                    <div class="card-title">Batch Buffer</div>
+                    <p style="font-size: 12.5px; color: #475569;"><code>c_pending_orders</code> iterates orders row-by-row.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag" style="color: var(--teal);">3. Function</span>
+                    <div class="card-title">Calculation</div>
+                    <p style="font-size: 12.5px; color: #475569;"><code>GetOrderCommission</code> calculates net commission per row.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag" style="color: var(--amity-gold);">4. Trigger</span>
+                    <div class="card-title">Audit Guard</div>
+                    <p style="font-size: 12.5px; color: #475569;">Auto-fires on commission DML, saving audit record.</p>
+                </div>
+                <div class="card">
+                    <span class="card-tag" style="color: var(--emerald);">5. Exception</span>
+                    <div class="card-title">Fault Shield</div>
+                    <p style="font-size: 12.5px; color: #475569;">Wraps entire flow, ensuring clean rollback on failure.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Conclusion & Viva -->
+        <div class="slide dark-theme" data-member="All Team (Conclusion)" data-script="To conclude our presentation, Slide 10 compiles the top 5 questions frequently asked in CSIT661 end-term examinations and vivas, covering Procedure vs Function, Cursor closing rationale, Mutating Table constraints, :OLD vs :NEW qualifiers, and SQLCODE/SQLERRM diagnostics. Thank you respected faculty and classmates. Our team is now open for questions.">
+            <span class="tag-banner">CSIT661 VIVA VOCE & END-TERM REFERENCE</span>
+            <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 6px;">Summary & Teacher Viva Voce Preparation</h1>
+            <p style="color: #94a3b8; font-size: 14px; margin-bottom: 22px;">Prepared by 5-Member Engineering Team</p>
+            
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid #334155; border-radius: 8px; padding: 18px 22px;">
+                <p style="color: var(--amity-gold); font-weight: bold; font-size: 13.5px; margin-bottom: 12px;">CSIT661 End-Term & Viva Voce Cross-Questions:</p>
+                <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 8px;"><strong>Q: Procedure vs Function?</strong> ➔ Procedure executes actions/DML; Function calculates and MUST return exactly one value.</p>
+                <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 8px;"><strong>Q: Why close an explicit cursor?</strong> ➔ Releases Context Area memory and prevents ORA-01000 limit.</p>
+                <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 8px;"><strong>Q: What is a Mutating Table error?</strong> ➔ ORA-04091: Row trigger modifying/querying table currently undergoing DML.</p>
+                <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 8px;"><strong>Q: Difference between :OLD and :NEW?</strong> ➔ :OLD holds pre-update values; :NEW holds incoming update values.</p>
+                <p style="font-size: 12.5px; color: #cbd5e1;"><strong>Q: Purpose of SQLCODE and SQLERRM?</strong> ➔ SQLCODE returns numeric error code; SQLERRM returns the textual error message.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="prevSlide()">❮ Previous</button>
+            <button id="nextBtn" onclick="nextSlide()">Next ❯</button>
+            <button class="btn-copy" onclick="copyCurrentScript()">📋 Copy Active Slide Script</button>
+            <button onclick="toggleNotes()" style="margin-left: 6px; background: #0284c7;">🎙️ Show Notes</button>
+            <button onclick="toggleFullScreen()" style="margin-left: 6px;">⛶ Fullscreen</button>
+        </div>
+        <div class="slide-counter" id="counter">Slide 1 of 10</div>
+    </div>
+
+    <!-- Speaker Notes Bar -->
+    <div class="notes-panel" id="notesPanel">
+        <div class="notes-title">
+            <span id="speakerTag">🗣️ SPEAKER SCRIPT</span>
+            <button onclick="copyCurrentScript()" style="background:#059669; color:white; border:none; padding:4px 10px; border-radius:4px; cursor:pointer; font-size:11px;">📋 Copy This Script</button>
+        </div>
+        <div id="notesText">Use Left/Right arrow keys to navigate slides.</div>
+    </div>
+
+    <div class="toast" id="toastMsg">✅ Script copied to clipboard!</div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIdx = 0;
+
+        function updateSlide() {
+            slides.forEach((s, i) => {
+                s.classList.toggle('active', i === currentIdx);
+            });
+            document.getElementById('counter').innerText = `Slide ${currentIdx + 1} of ${slides.length}`;
+            
+            const member = slides[currentIdx].getAttribute('data-member') || 'Presenter';
+            const script = slides[currentIdx].getAttribute('data-script') || 'No specific notes.';
+            
+            document.getElementById('speakerTag').innerText = `🗣️ SPEAKER: ${member.toUpperCase()}`;
+            document.getElementById('notesText').innerText = script;
+        }
+
+        function nextSlide() {
+            if (currentIdx < slides.length - 1) {
+                currentIdx++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentIdx > 0) {
+                currentIdx--;
+                updateSlide();
+            }
+        }
+
+        function toggleNotes() {
+            const panel = document.getElementById('notesPanel');
+            panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+
+        function copyCurrentScript() {
+            const script = slides[currentIdx].getAttribute('data-script');
+            navigator.clipboard.writeText(script).then(() => {
+                const toast = document.getElementById('toastMsg');
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 2200);
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        updateSlide();
+    </script>
+</body>
+</html>

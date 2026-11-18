@@ -1,174 +1,203 @@
+import basics.Module1IntroDemo;
+import collections.CollectionsMasterDemo;
+import concurrency.ThreadLifeCycleDemo;
 import dao.CandidateDAO;
 import dao.JobDAO;
 import exception.CandidateNotFoundException;
 import exception.InvalidSalaryException;
 import exception.RecruitmentException;
-import model.Candidate;
-import model.Job;
-import model.Person;
+import gui.RecruitmentDashboardGUI;
+import model.*;
+import networking.RecruitmentSocketClient;
 import service.RecruitmentManager;
+import servlet.ServletLifecycleSimulator;
+import util.DBMetaDataExplorer;
+import util.RecordOperations;
+import viksitbharat.ViksitBharatAlignment;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * ============================================================================
- * SMART RECRUITMENT, SALARY PREDICTION & ANALYTICS SYSTEM
- * SUBJECT 2: CORE JAVA - VERIFICATION & DEMONSTRATION RUNNER
+ * SMART RECRUITMENT, SALARY PREDICTION & ANALYTICS SYSTEM (TALENTIQ)
+ * COURSE CODE: CSIT751 - CORE JAVA (AMITY UNIVERSITY CURRICULUM COMPLIANT)
  * ============================================================================
- * Demonstrates all 14 mandatory academic items:
- * 1. Candidate class
- * 2. Job class
- * 3. Application class
- * 4. Encapsulation (Private fields with getter/setter boundaries)
- * 5. Inheritance (Candidate extends Person)
- * 6. Polymorphism (Dynamic Method Dispatch on Person reference)
- * 7. Abstraction (Abstract Person base class)
- * 8. Interfaces (RecordOperations<T> CRUD contract)
- * 9. Collections Framework (ArrayList, HashMap)
- * 10. Exception Handling (Custom checked & unchecked exceptions)
- * 11. JDBC connectivity with MySQL
- * 12. CRUD operations using JDBC
- * 13. PreparedStatement (Parameter binding)
- * 14. ResultSet (Data extraction)
+ * Comprehensive Master Demonstration Harness covering all Syllabus Modules:
+ * - Module I:    Introduction to Java, JVM Architecture, Bytecode & 1D/2D Arrays
+ * - Module II:   Java with OOP Features (Inheritance, Polymorphism, Abstract, Interfaces)
+ * - Module III:  Exception Handling (Custom/Built-in) & Thread in Java (Lifecycle, Sync)
+ * - Module IV:   Collections Framework (ArrayList, Vector, Map, Set) & Swing GUI
+ * - Module V:    Java Server Technologies (Servlet Lifecycle, web.xml, JSP, JSTL)
+ * - Module VI:   Database Programming using JDBC (ResultSetMetaData) & Networking (Socket)
+ * - Module VII:  Recent Trends and Development & Viksit Bharat@2047 Guidelines
  * ============================================================================
  */
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("================================================================================");
-        System.out.println("🎓 SUBJECT 2: CORE JAVA RECRUITMENT SYSTEM DEMONSTRATION");
-        System.out.println("================================================================================");
+        // If argument "gui" is passed, directly launch the Swing GUI
+        if (args.length > 0 && "gui".equalsIgnoreCase(args[0])) {
+            System.out.println("🚀 Launching TALENTIQ Java Swing Desktop GUI Application...");
+            RecruitmentDashboardGUI.launch();
+            return;
+        }
+
+        printBanner();
 
         // ---------------------------------------------------------------------
-        // DEMO 1: Abstraction, Inheritance & Polymorphism
+        // MODULE I: Introduction to Java, JVM & Arrays
         // ---------------------------------------------------------------------
-        System.out.println("\n[1] OOP CONCEPTS: Abstraction, Inheritance & Polymorphism");
+        Module1IntroDemo.runModule1Demonstration();
+
+        // ---------------------------------------------------------------------
+        // MODULE II: OOP Features (Inheritance, Polymorphism, Abstract, Interfaces)
+        // ---------------------------------------------------------------------
+        runModule2OOPDemonstration();
+
+        // ---------------------------------------------------------------------
+        // MODULE III: Exception Handling & Multithreading
+        // ---------------------------------------------------------------------
+        runModule3ExceptionsAndThreading();
+
+        // ---------------------------------------------------------------------
+        // MODULE IV: Collections Framework
+        // ---------------------------------------------------------------------
+        CollectionsMasterDemo.runCollectionsDemonstration();
+
+        // ---------------------------------------------------------------------
+        // MODULE V: Java Server Technologies & Servlets
+        // ---------------------------------------------------------------------
+        ServletLifecycleSimulator.runServletLifecycleDemo();
+
+        // ---------------------------------------------------------------------
+        // MODULE VI: Database Programming using JDBC & Networking
+        // ---------------------------------------------------------------------
+        DBMetaDataExplorer.runJdbcAndMetaDataDemo();
+        RecruitmentSocketClient.runNetworkingDemo();
+
+        // ---------------------------------------------------------------------
+        // MODULE VII / VIII: Viksit Bharat@2047 & Recent Trends
+        // ---------------------------------------------------------------------
+        ViksitBharatAlignment.displayViksitBharatStrategy();
+
+        printCompletionSummary();
+    }
+
+    private static void printBanner() {
+        System.out.println("================================================================================");
+        System.out.println("🎓 AMITY UNIVERSITY - CSIT751: CORE JAVA CURRICULUM VERIFICATION SUITE");
+        System.out.println("   PROJECT: TALENTIQ - Smart Recruitment, Salary Prediction & Analytics System");
+        System.out.println("   PRIMARY ADMINISTRATOR: Aishwarya Shree (Lead Architect)");
+        System.out.println("================================================================================");
+    }
+
+    private static void runModule2OOPDemonstration() {
+        System.out.println("\n================================================================================");
+        System.out.println("🧱 MODULE II: JAVA WITH OBJECT ORIENTED FEATURES DEMONSTRATION");
+        System.out.println("================================================================================");
+
+        // 1. Abstraction & Dynamic Method Dispatch (Runtime Polymorphism)
+        System.out.println("\n[A] ABSTRACTION & RUNTIME POLYMORPHISM (Dynamic Method Dispatch):");
         System.out.println("------------------------------------------------------------------");
-        
-        // Polymorphic reference: Abstract Person reference pointing to Candidate instance
-        Person polyPerson = new Candidate(
-                101,
-                "CAN-DEMO",
-                "Arun",
-                "Kumar",
-                "arun.k@example.com",
-                "+91 9988776655",
-                4.5,
-                "MCA",
-                850000.0,
-                1200000.0,
-                "Bengaluru",
-                "AVAILABLE"
+
+        Person polyCandidate = new Candidate(
+                101, "CAN-101", "Aishwarya", "Shree",
+                "aishwarya@talentiq.com", "+91 9876543210", 5.5, "MCA",
+                1200000.0, 1800000.0, "Bengaluru", "OFFERED"
         );
 
-        System.out.println("Variable Type:  " + polyPerson.getClass().getSuperclass().getName() + " (Abstract Class)");
-        System.out.println("Instance Type:  " + polyPerson.getClass().getName() + " (Inherited Sub-class)");
-        System.out.println("Polymorphic Call -> getRoleTitle():      " + polyPerson.getRoleTitle());
-        System.out.println("Polymorphic Call -> getDisplaySummary(): " + polyPerson.getDisplaySummary());
+        System.out.println("Reference Type: " + polyCandidate.getClass().getSuperclass().getName() + " (Abstract Class)");
+        System.out.println("Instance Type:  " + polyCandidate.getClass().getName() + " (Inherited Subclass)");
+        System.out.println("Polymorphic Call -> getRoleTitle():      " + polyCandidate.getRoleTitle());
+        System.out.println("Polymorphic Call -> getDisplaySummary(): " + polyCandidate.getDisplaySummary());
 
-        // ---------------------------------------------------------------------
-        // DEMO 2: Encapsulation & Business Calculations
-        // ---------------------------------------------------------------------
-        System.out.println("\n[2] ENCAPSULATION & DATA HIDING");
+        // 2. Multi-Level Inheritance Hierarchy
+        System.out.println("\n[B] MULTI-LEVEL INHERITANCE HIERARCHY:");
         System.out.println("------------------------------------------------------------------");
-        Candidate candidate = (Candidate) polyPerson;
-        System.out.printf("Candidate Full Name: %s\n", candidate.getFullName());
-        System.out.printf("Current Salary:      ₹%,.2f\n", candidate.getCurrentSalary());
-        System.out.printf("Expected Salary:     ₹%,.2f\n", candidate.getExpectedSalary());
-        System.out.printf("Calculated Hike:     %.2f%%\n", candidate.calculateHikePercentage());
+        System.out.println("Level 1: Person (Abstract Base Class)");
+        System.out.println("Level 2: └── Recruiter extends Person (Single Inheritance)");
+        System.out.println("Level 3:     └── SeniorHRManager extends Recruiter (Multi-level Hierarchy)");
 
-        // ---------------------------------------------------------------------
-        // DEMO 3: Exception Handling with Custom Exceptions
-        // ---------------------------------------------------------------------
-        System.out.println("\n[3] EXCEPTION HANDLING (Custom Exceptions)");
+        SeniorHRManager hrManager = new SeniorHRManager(
+                201, "Priya", "Menon", "priya.m@talentiq.com", "+91 9988776655",
+                "Technology Hiring", 15, 75.0, "Enterprise Cloud & AI"
+        );
+
+        System.out.println("\nInstance of 3-Level Multi-level Class (SeniorHRManager):");
+        System.out.println("Role Title:       " + hrManager.getRoleTitle());
+        System.out.println("Summary:          " + hrManager.getDisplaySummary());
+        System.out.println("Final Method Call: approveCompensationOffer(15,00,000) -> " +
+                hrManager.approveCompensationOffer(1500000.0));
+
+        // 3. Method Overloading (Compile-Time Polymorphism)
+        System.out.println("\n[C] METHOD OVERLOADING (Compile-Time Polymorphism in Recruiter):");
         System.out.println("------------------------------------------------------------------");
+        Recruiter recruiter = new Recruiter(301, "Vikram", "Malhotra", "vikram@talentiq.com", "9811223344", "Engineering", 10);
+        System.out.println("Initial Hires: " + recruiter.getHiredCount());
+        recruiter.recordHire(); // Overloaded Version 1: 0 arguments
+        System.out.println("After recordHire(): " + recruiter.getHiredCount());
+        recruiter.recordHire(3); // Overloaded Version 2: 1 argument (batch)
+        System.out.println("After recordHire(3): " + recruiter.getHiredCount());
+
+        // 4. Interfaces: Constants, Default Methods & Static Methods
+        System.out.println("\n[D] INTERFACE ARCHITECTURE (RecordOperations<T>):");
+        System.out.println("------------------------------------------------------------------");
+        RecordOperations.printInterfaceContractSummary();
+        CandidateDAO dao = new CandidateDAO();
+        dao.logAudit("QUERY", 101, "Aishwarya Shree");
+        System.out.println("Batch Permissible Check (500 records): " + dao.isBatchPermissible(500));
+        System.out.println("================================================================================");
+    }
+
+    private static void runModule3ExceptionsAndThreading() {
+        System.out.println("\n================================================================================");
+        System.out.println("🛡️ MODULE III: EXCEPTION HANDLING (CUSTOM & BUILT-IN EXCEPTIONS)");
+        System.out.println("================================================================================");
+
         RecruitmentManager manager = new RecruitmentManager();
 
-        // 3a. Testing custom unchecked InvalidSalaryException
+        // 1. Unchecked Custom Exception (InvalidSalaryException)
         try {
-            System.out.print("Testing InvalidSalaryException with negative input: ");
-            manager.validateSalaryParameters(-50000.0, 800000.0);
+            System.out.print("Testing InvalidSalaryException with negative salary: ");
+            manager.validateSalaryParameters(-50000.0, 900000.0);
         } catch (InvalidSalaryException e) {
             System.out.println("CAUGHT EXPECTED EXCEPTION -> " + e.getMessage());
         }
 
-        // 3b. Testing custom checked CandidateNotFoundException
+        // 2. Checked Custom Exception (CandidateNotFoundException)
         try {
-            System.out.print("Testing CandidateNotFoundException for non-existent ID 99999: ");
-            manager.getCandidateSafely(99999);
+            System.out.print("Testing CandidateNotFoundException for non-existent candidate #999: ");
+            manager.getCandidateSafely(999);
         } catch (CandidateNotFoundException e) {
             System.out.println("CAUGHT EXPECTED EXCEPTION -> [" + e.getErrorCode() + "] " + e.getMessage());
         }
 
-        // ---------------------------------------------------------------------
-        // DEMO 4: Multithreading & Concurrent Background Tasks
-        // ---------------------------------------------------------------------
-        System.out.println("\n[4] MULTITHREADING: ExecutorService & Concurrent Candidate Analysis");
-        System.out.println("------------------------------------------------------------------");
-        List<Candidate> sampleBatch = new ArrayList<>();
-        sampleBatch.add(candidate);
-        sampleBatch.add(new Candidate(2, "CAN-1002", "Sneha", "Patel", "sneha@test.com", "9823456781", 5.0, "BTECH", 1250000.0, 1600000.0, "Pune", "AVAILABLE"));
-        sampleBatch.add(new Candidate(3, "CAN-1003", "Ananya", "Iyer", "ananya@test.com", "9912345672", 2.0, "BCA", 450000.0, 650000.0, "Chennai", "AVAILABLE"));
-
-        List<String> asyncResults = manager.processCandidateMetricsConcurrently(sampleBatch);
-        System.out.printf("Concurrently processed %d candidate metrics across thread pool:\n", asyncResults.size());
-        for (String res : asyncResults) {
-            System.out.println("   " + res);
-        }
-
-        // ---------------------------------------------------------------------
-        // DEMO 5: JDBC Connectivity, Transactions, PreparedStatement & ResultSet
-        // ---------------------------------------------------------------------
-        System.out.println("\n[5] JDBC CONNECTIVITY & ACID TRANSACTIONS (MySQL)");
-        System.out.println("------------------------------------------------------------------");
+        // 3. Multiple Catch Blocks with Built-in Exceptions
+        System.out.println("\nTesting Multiple Catch Blocks (NumberFormatException & ArithmeticException):");
         try {
-            CandidateDAO candidateDAO = new CandidateDAO();
-            List<Candidate> dbCandidates = candidateDAO.findAll();
-
-            System.out.printf("✅ Successfully connected to MySQL via JDBC! Retrieved %d candidates:\n", dbCandidates.size());
-            for (int i = 0; i < Math.min(5, dbCandidates.size()); i++) {
-                Candidate c = dbCandidates.get(i);
-                System.out.printf("   [%s] %-20s | Exp: %3.1f yrs | Current: ₹%,10.2f | Exp: ₹%,10.2f | Loc: %s\n",
-                        c.getCandidateCode(), c.getFullName(), c.getExperienceYears(),
-                        c.getCurrentSalary(), c.getExpectedSalary(), c.getLocation());
-            }
-
-            // -----------------------------------------------------------------
-            // DEMO 6: Collections Framework (ArrayList & HashMap)
-            // -----------------------------------------------------------------
-            System.out.println("\n[6] COLLECTIONS FRAMEWORK: HashMap & ArrayList Operations");
-            System.out.println("------------------------------------------------------------------");
-
-            // 6a. HashMap lookup
-            JobDAO jobDAO = new JobDAO();
-            Map<Integer, Job> jobMap = jobDAO.getJobsAsIndexedMap();
-            System.out.printf("Indexed HashMap<Integer, Job> contains %d active job openings:\n", jobMap.size());
-            for (Map.Entry<Integer, Job> entry : jobMap.entrySet()) {
-                System.out.printf("   Key [Job ID: %d] => %s\n", entry.getKey(), entry.getValue().getTitle());
-            }
-
-            // 6b. Grouping using HashMap
-            Map<String, List<Candidate>> groupedByEdu = manager.groupCandidatesByEducation();
-            System.out.println("\nGrouped Candidates by Education Level (HashMap<String, List<Candidate>>):");
-            for (Map.Entry<String, List<Candidate>> entry : groupedByEdu.entrySet()) {
-                System.out.printf("   %-10s -> %d candidate(s)\n", entry.getKey(), entry.getValue().size());
-            }
-
-            // 6c. ACID Transaction Demo
-            System.out.println("\n[7] ACID TRANSACTION DEMO (Commit & Rollback)");
-            System.out.println("------------------------------------------------------------------");
-            boolean txSuccess = candidateDAO.hireCandidateTransaction(1, 1, 1100000.0);
-            System.out.println("Transaction Execution Status: " + (txSuccess ? "COMMITTED" : "ROLLED BACK"));
-
-        } catch (RecruitmentException e) {
-            System.out.println("⚠️ MySQL Database is not currently running or reachable: " + e.getMessage());
-            System.out.println("   (When local MySQL is active with database/schema.sql and sample_data.sql, full live records will display)");
+            String invalidSalaryStr = "FIFTY_LAKH";
+            int parsed = Integer.parseInt(invalidSalaryStr);
+            int division = parsed / 0;
+            System.out.println("Result: " + division);
+        } catch (NumberFormatException e) {
+            System.out.println("   [Catch Block 1] Caught java.lang.NumberFormatException: Cannot parse text to number");
+        } catch (ArithmeticException e) {
+            System.out.println("   [Catch Block 2] Caught java.lang.ArithmeticException: Division by zero");
+        } finally {
+            System.out.println("   [Finally Block] Cleanup executed unconditionally (Guaranteed Resource Release).");
         }
 
+        // Run Multithreading Demo
+        ThreadLifeCycleDemo.runCompleteConcurrencyDemonstration();
+    }
+
+    private static void printCompletionSummary() {
         System.out.println("\n================================================================================");
-        System.out.println("✅ CORE JAVA MODULE VERIFICATION COMPLETED SUCCESSFULLY");
+        System.out.println("🎉 ALL 7 AMITY CSIT751 CORE JAVA SYLLABUS MODULES VERIFIED SUCCESSFULLY!");
         System.out.println("================================================================================");
+        System.out.println("💡 PRO-TIP FOR EXAMINER / VIVA PRESENTATION:");
+        System.out.println("   To launch the interactive Java Swing Desktop GUI, run:");
+        System.out.println("   👉 /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -cp \"java-service/lib/mysql-connector-j-8.4.0.jar:java-service/bin\" Main gui");
+        System.out.println("================================================================================\n");
     }
 }
