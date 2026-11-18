@@ -34,7 +34,8 @@ import {
   DollarSign,
   AlertCircle,
   Menu,
-  X
+  X,
+  LayoutDashboard
 } from 'lucide-react';
 import { jobService } from '../services/api';
 import PrivacyPolicyModal from '../components/PrivacyPolicyModal';
@@ -44,7 +45,8 @@ import Pricing from './Pricing';
 export default function LandingPage({
   onNavigateLogin,
   onNavigateRegister,
-  onQuickDemoLogin
+  onQuickDemoLogin,
+  user
 }) {
   // Navigation state between public pages
   // 'home' | 'about' | 'features' | 'how-it-works' | 'candidates' | 'employers' | 'jobs' | 'contact'
@@ -391,20 +393,32 @@ export default function LandingPage({
 
         {/* Desktop Action CTAs */}
         <div className="desktop-ctas" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-          <button
-            onClick={onNavigateLogin}
-            className="btn btn-secondary btn-sm"
-            style={{ fontWeight: 600, padding: '0.55rem 1.25rem' }}
-          >
-            Sign In
-          </button>
-          <button
-            onClick={() => onNavigateRegister('HR_MANAGER')}
-            className="btn btn-primary btn-sm"
-            style={{ fontWeight: 600, padding: '0.55rem 1.4rem' }}
-          >
-            Get Started
-          </button>
+          {user ? (
+            <button
+              onClick={onNavigateLogin}
+              className="btn btn-primary btn-sm"
+              style={{ fontWeight: 700, padding: '0.55rem 1.35rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+            >
+              <LayoutDashboard size={15} /> Return to Workspace
+            </button>
+          ) : (
+            <>
+              <button
+                onClick={onNavigateLogin}
+                className="btn btn-secondary btn-sm"
+                style={{ fontWeight: 600, padding: '0.55rem 1.25rem' }}
+              >
+                Sign In
+              </button>
+              <button
+                onClick={() => onNavigateRegister('HR_MANAGER')}
+                className="btn btn-primary btn-sm"
+                style={{ fontWeight: 600, padding: '0.55rem 1.4rem' }}
+              >
+                Get Started
+              </button>
+            </>
+          )}
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -465,20 +479,32 @@ export default function LandingPage({
             </button>
           ))}
           <div style={{ display: 'flex', gap: '0.75rem', paddingTop: '1rem', borderTop: '1px solid #E5EAF0' }}>
-            <button
-              onClick={() => { setMobileMenuOpen(false); onNavigateLogin(); }}
-              className="btn btn-secondary btn-sm"
-              style={{ flex: 1, padding: '0.75rem' }}
-            >
-              Sign In
-            </button>
-            <button
-              onClick={() => { setMobileMenuOpen(false); onNavigateRegister('HR_MANAGER'); }}
-              className="btn btn-primary btn-sm"
-              style={{ flex: 1, padding: '0.75rem' }}
-            >
-              Get Started
-            </button>
+            {user ? (
+              <button
+                onClick={() => { setMobileMenuOpen(false); onNavigateLogin(); }}
+                className="btn btn-primary btn-sm"
+                style={{ flex: 1, padding: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
+              >
+                <LayoutDashboard size={16} /> Return to Workspace
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={() => { setMobileMenuOpen(false); onNavigateLogin(); }}
+                  className="btn btn-secondary btn-sm"
+                  style={{ flex: 1, padding: '0.75rem' }}
+                >
+                  Sign In
+                </button>
+                <button
+                  onClick={() => { setMobileMenuOpen(false); onNavigateRegister('HR_MANAGER'); }}
+                  className="btn btn-primary btn-sm"
+                  style={{ flex: 1, padding: '0.75rem' }}
+                >
+                  Get Started
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}

@@ -21,7 +21,8 @@ import {
   User,
   Sliders,
   Shield,
-  Sparkles
+  Sparkles,
+  Globe
 } from 'lucide-react';
 
 export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCollapsed, toggleSidebar }) {
@@ -32,6 +33,7 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
   let menuItems = [];
   if (isCandidate) {
     menuItems = [
+      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'candidate-portal', label: 'Candidate Workspace', icon: LayoutDashboard, badge: 'Home' },
       { id: 'pricing', label: 'TALENTIQ Premium', icon: Sparkles, badge: 'PRO' },
       { id: 'resume-builder', label: 'Resume Builder', icon: FileText, badge: 'ATS' },
@@ -42,6 +44,7 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
     ];
   } else if (isAdmin) {
     menuItems = [
+      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'admin-center', label: 'Admin Control Center', icon: Shield, badge: 'Exec' },
       { id: 'pricing', label: 'Membership Plans', icon: Sparkles, badge: 'Plans' },
       { id: 'dashboard', label: 'Overview', icon: LayoutDashboard },
@@ -61,6 +64,7 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
   } else {
     // HR_MANAGER
     menuItems = [
+      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'dashboard', label: 'Overview', icon: LayoutDashboard },
       { id: 'candidates', label: 'Candidates', icon: Users },
       { id: 'screening', label: 'Smart Resume Intelligence', icon: FileSearch, badge: 'Smart' },

@@ -229,6 +229,19 @@ export default function App() {
     const isHR = user?.role === 'HR_MANAGER';
     const isAdmin = user?.role === 'ADMIN';
 
+    // Universal Public Website tab for any role (view website without signing out)
+    if (activeTab === 'public-website') {
+      const returnTab = isAdmin ? 'admin-center' : (isCandidate ? 'candidate-portal' : 'dashboard');
+      return (
+        <LandingPage
+          user={user}
+          onQuickDemoLogin={handleLoginSuccess}
+          onNavigateLogin={() => handleTabChange(returnTab)}
+          onNavigateRegister={() => handleTabChange(returnTab)}
+        />
+      );
+    }
+
     // 1. Candidate RBAC Guard
     if (isCandidate) {
       if (activeTab === 'resume-builder') {

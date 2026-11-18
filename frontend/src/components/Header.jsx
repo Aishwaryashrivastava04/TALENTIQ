@@ -12,7 +12,8 @@ import {
   ChevronRight,
   ExternalLink,
   X,
-  BookOpen
+  BookOpen,
+  Globe
 } from 'lucide-react';
 import HelpDrawer from './HelpDrawer';
 import { notificationService } from '../services/api';
@@ -34,6 +35,7 @@ export default function Header({
   const [showSearchDropdown, setShowSearchDropdown] = useState(false);
 
   const tabLabels = {
+    'public-website': 'Public Website Showcase',
     dashboard: 'Overview',
     'candidate-portal': 'Candidate Workspace',
     'resume-builder': 'Resume Builder',
@@ -240,8 +242,31 @@ export default function Header({
         )}
       </div>
 
-      {/* Right: Actions (Help, Notifications, User Menu) */}
+      {/* Right: Actions (Public Site Link, Help, Notifications, User Menu) */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        {/* Quick Switcher to Public Landing Page */}
+        <button
+          onClick={() => setActiveTab && setActiveTab('public-website')}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.45rem',
+            padding: '0.42rem 0.85rem',
+            borderRadius: '8px',
+            border: '1px solid #C4DCEF',
+            backgroundColor: '#E8F1F9',
+            color: '#0060A8',
+            fontWeight: 700,
+            fontSize: '0.8rem',
+            cursor: 'pointer',
+            transition: 'all 160ms ease'
+          }}
+          title="View Public Website Homepage without signing out"
+        >
+          <Globe size={15} />
+          <span className="hidden sm:inline">Public Website</span>
+        </button>
+
         {/* Help Icon */}
         <button
           onClick={() => setShowHelpModal(true)}
