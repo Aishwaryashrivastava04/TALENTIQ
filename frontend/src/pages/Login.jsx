@@ -3,6 +3,7 @@ import {
   Lock,
   Mail,
   ArrowRight,
+  ArrowLeft,
   Eye,
   EyeOff,
   ShieldCheck,
@@ -65,24 +66,9 @@ export default function Login({ onLoginSuccess, onNavigateRegister, onNavigateFo
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      backgroundColor: '#F1F5F8',
-      fontFamily: "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
-    }}>
+    <div className="auth-split-wrapper">
       {/* LEFT COLUMN: Institutional Blue Corporate Identity */}
-      <div style={{
-        flex: '1 1 48%',
-        backgroundColor: '#0060A8',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        padding: '4rem 4.5rem',
-        color: '#FFFFFF',
-        position: 'relative',
-        overflow: 'hidden'
-      }}>
+      <div className="auth-split-left">
         {/* Subtle Institutional Architectural Lines */}
         <div style={{
           position: 'absolute',
@@ -124,7 +110,7 @@ export default function Login({ onLoginSuccess, onNavigateRegister, onNavigateFo
         </div>
 
         {/* Core Hero Message */}
-        <div style={{ maxWidth: '540px', margin: 'auto 0' }}>
+        <div className="auth-split-left-hero" style={{ maxWidth: '540px', margin: 'auto 0' }}>
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -206,40 +192,26 @@ export default function Login({ onLoginSuccess, onNavigateRegister, onNavigateFo
         </div>
 
         {/* Footer Note */}
-        <div style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.65)' }}>
+        <div className="auth-split-left-footer" style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.65)' }}>
           © 2026 TALENTIQ Technologies Inc. All rights reserved. Corporate Recruitment Platform.
         </div>
       </div>
 
       {/* RIGHT COLUMN: Clean White Corporate Login Surface */}
-      <div style={{
-        flex: '1 1 52%',
-        backgroundColor: '#FFFFFF',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '3rem 4rem'
-      }}>
-        <div style={{ maxWidth: '440px', width: '100%' }}>
+      <div className="auth-split-right">
+        <div className="auth-form-inner" style={{ maxWidth: '440px', width: '100%' }}>
           {/* Back to Home Link */}
           {onNavigateHome && (
             <button
-              onClick={onNavigateHome}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: '#0060A8',
-                fontWeight: 600,
-                fontSize: '0.82rem',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                marginBottom: '1.5rem',
-                padding: 0
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onNavigateHome();
               }}
+              className="auth-back-btn"
             >
-              ← Back to Public Website
+              <ArrowLeft size={16} /> Back to Public Website
             </button>
           )}
 

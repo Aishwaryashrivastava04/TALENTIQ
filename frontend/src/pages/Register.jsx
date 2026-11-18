@@ -7,6 +7,7 @@ import {
   Eye,
   EyeOff,
   ArrowRight,
+  ArrowLeft,
   ShieldCheck,
   AlertCircle,
   CheckCircle2,
@@ -207,23 +208,9 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
   }
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      backgroundColor: '#F1F5F8',
-      fontFamily: "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
-    }}>
+    <div className="auth-split-wrapper">
       {/* LEFT COLUMN: Institutional Blue Corporate Identity */}
-      <div style={{
-        flex: '1 1 42%',
-        backgroundColor: '#0060A8',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        padding: '3.5rem 4rem',
-        color: '#FFFFFF',
-        position: 'relative'
-      }}>
+      <div className="auth-split-left">
         {/* Brand Header */}
         <div
           onClick={onNavigateHome}
@@ -255,7 +242,7 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
         </div>
 
         {/* Narrative Section */}
-        <div style={{ maxWidth: '480px', margin: 'auto 0' }}>
+        <div className="auth-split-left-hero" style={{ maxWidth: '480px', margin: 'auto 0' }}>
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -316,40 +303,25 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
         </div>
 
         {/* Footer */}
-        <div style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.65)' }}>
+        <div className="auth-split-left-footer" style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.65)' }}>
           © 2026 TALENTIQ Technologies Inc. All rights reserved.
         </div>
       </div>
 
       {/* RIGHT COLUMN: Interactive Registration Form */}
-      <div style={{
-        flex: '1 1 58%',
-        backgroundColor: '#FFFFFF',
-        overflowY: 'auto',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '3rem 4rem'
-      }}>
-        <div style={{ maxWidth: '540px', width: '100%' }}>
+      <div className="auth-split-right">
+        <div className="auth-form-inner" style={{ maxWidth: '540px', width: '100%' }}>
           {onNavigateHome && (
             <button
-              onClick={onNavigateHome}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: '#0060A8',
-                fontWeight: 600,
-                fontSize: '0.82rem',
-                cursor: 'pointer',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                marginBottom: '1.25rem',
-                padding: 0
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onNavigateHome();
               }}
+              className="auth-back-btn"
             >
-              ← Back to Public Website
+              <ArrowLeft size={16} /> Back to Public Website
             </button>
           )}
 
@@ -472,7 +444,7 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
             </div>
 
             {/* Email & Phone */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="auth-grid-2col">
               <div>
                 <label className="form-label">{role === 'HR_MANAGER' ? 'Corporate Email *' : 'Email Address *'}</label>
                 <div style={{ position: 'relative' }}>
@@ -508,7 +480,7 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
 
             {/* Role-Specific Fields */}
             {role === 'HR_MANAGER' ? (
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="auth-grid-2col">
                 <div>
                   <label className="form-label">Company Name *</label>
                   <div style={{ position: 'relative' }}>
@@ -611,7 +583,7 @@ export default function Register({ onRegisterSuccess, onNavigateLogin, onNavigat
             )}
 
             {/* Password & Confirm Password */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div className="auth-grid-2col">
               <div>
                 <label className="form-label">Password * (Min 8 chars)</label>
                 <div style={{ position: 'relative' }}>

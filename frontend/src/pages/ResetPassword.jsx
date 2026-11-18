@@ -83,6 +83,21 @@ export default function ResetPassword({ token: initialToken, onNavigateLogin, on
         padding: '2.5rem',
         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)'
       }}>
+        {onNavigateHome && (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onNavigateHome();
+            }}
+            className="auth-back-btn"
+            style={{ marginBottom: '1.25rem', padding: '0.45rem 0.9rem', fontSize: '0.8rem' }}
+          >
+            <ArrowLeft size={14} /> Back to Public Website
+          </button>
+        )}
+
         {/* Brand Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '1.75rem' }}>
           <div style={{

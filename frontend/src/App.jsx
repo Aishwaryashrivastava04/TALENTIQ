@@ -38,13 +38,47 @@ export default function App() {
 
   const toggleSidebar = () => setIsSidebarCollapsed(prev => !prev);
 
+  // Sync auth subviews with HTML5 history & URL hash for smooth mobile back button
+  const navigateToAuth = (view, role = 'HR_MANAGER', replace = false) => {
+    setSelectedRoleForRegister(role);
+    setAuthView(view);
+    const hash = view === 'landing' ? '#/' : `#/${view}`;
+    if (replace) {
+      window.history.replaceState({ authView: view, role }, '', hash);
+    } else {
+      window.history.pushState({ authView: view, role }, '', hash);
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  // Sync dashboard tabs with HTML5 history & URL hash
+  const handleTabChange = (tab, replace = false) => {
+    setActiveTab(tab);
+    const hash = `#/${tab}`;
+    if (replace) {
+      window.history.replaceState({ activeTab: tab }, '', hash);
+    } else {
+      window.history.pushState({ activeTab: tab }, '', hash);
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  };
+
+  // Robust return to landing page from any auth sub-view
+  const handleNavigateHome = () => {
+    if (window.history.state && window.history.state.authView && window.history.state.authView !== 'landing') {
+      window.history.back();
+    } else {
+      navigateToAuth('landing', 'HR_MANAGER', false);
+    }
+  };
+
   useEffect(() => {
     // Check URL parameters for reset-password link: ?token=...
     const urlParams = new URLSearchParams(window.location.search);
     const urlToken = urlParams.get('token');
     if (urlToken) {
       setResetToken(urlToken);
-      setAuthView('reset-password');
+      navigateToAuth('reset-password', 'HR_MANAGER', true);
     }
 
     const savedUser = localStorage.getItem('sr_user');
@@ -57,36 +91,61 @@ export default function App() {
           localStorage.setItem('sr_user', JSON.stringify(parsed));
         }
         setUser(parsed);
-        if (parsed.role === 'CANDIDATE') {
-          setActiveTab('candidate-portal');
-        } else if (parsed.role === 'ADMIN') {
-          setActiveTab('admin-center');
-        } else {
-          setActiveTab('dashboard');
-        }
+        const initialTab = parsed.role === 'CANDIDATE' ? 'candidate-portal' : (parsed.role === 'ADMIN' ? 'admin-center' : 'dashboard');
+        setActiveTab(initialTab);
+        window.history.replaceState({ activeTab: initialTab }, '', `#/${initialTab}`);
       } catch (e) {
         setUser({ full_name: 'Aishwarya Shree', role: 'ADMIN', email: 'admin@recruitment.com' });
+      }
+    } else {
+      // Unauthenticated initial hash inspection
+      const initialHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
+      if (['login', 'register', 'forgot-password'].includes(initialHash)) {
+        setAuthView(initialHash);
+        window.history.replaceState({ authView: initialHash }, '', `#/${initialHash}`);
+      } else {
+        window.history.replaceState({ authView: 'landing' }, '', '#/');
       }
     }
 
     const handleAuthExpired = () => {
       setUser(null);
-      setAuthView('login');
+      navigateToAuth('login', 'HR_MANAGER', true);
     };
     window.addEventListener('auth:expired', handleAuthExpired);
     return () => window.removeEventListener('auth:expired', handleAuthExpired);
   }, []);
 
+  // Listen to popstate event (hardware mobile back button, swipe back, browser back)
+  useEffect(() => {
+    const handlePopState = (event) => {
+      const rawHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
+      const state = event.state || {};
+
+      if (!user) {
+        const viewFromHash = ['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash) ? rawHash : 'landing';
+        const targetView = state.authView || viewFromHash;
+        setAuthView(targetView);
+        if (state.role) {
+          setSelectedRoleForRegister(state.role);
+        }
+      } else {
+        const fallbackTab = user.role === 'ADMIN' ? 'admin-center' : (user.role === 'CANDIDATE' ? 'candidate-portal' : 'dashboard');
+        const targetTab = state.activeTab || (rawHash && !['landing', 'login', 'register'].includes(rawHash) ? rawHash : fallbackTab);
+        setActiveTab(targetTab);
+      }
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [user]);
+
   const handleLoginSuccess = (userData) => {
     setUser(userData);
-    if (userData?.role === 'CANDIDATE') {
-      setActiveTab('candidate-portal');
-    } else if (userData?.role === 'ADMIN') {
-      setActiveTab('admin-center');
-    } else {
-      setActiveTab('dashboard');
-    }
-    setAuthView('login');
+    const targetTab = userData?.role === 'CANDIDATE' ? 'candidate-portal' : (userData?.role === 'ADMIN' ? 'admin-center' : 'dashboard');
+    handleTabChange(targetTab, true);
+    setAuthView('landing');
   };
 
   const handleLogout = async () => {
@@ -96,7 +155,7 @@ export default function App() {
       localStorage.removeItem('sr_token');
       localStorage.removeItem('sr_user');
       setUser(null);
-      setAuthView('landing');
+      navigateToAuth('landing', 'HR_MANAGER', true);
     }
   };
 
@@ -105,11 +164,8 @@ export default function App() {
     if (authView === 'landing') {
       return (
         <LandingPage
-          onNavigateLogin={() => setAuthView('login')}
-          onNavigateRegister={(role) => {
-            setSelectedRoleForRegister(role || 'HR_MANAGER');
-            setAuthView('register');
-          }}
+          onNavigateLogin={() => navigateToAuth('login')}
+          onNavigateRegister={(role) => navigateToAuth('register', role || 'HR_MANAGER')}
           onQuickDemoLogin={handleLoginSuccess}
         />
       );
@@ -120,8 +176,8 @@ export default function App() {
         <Register
           initialRole={selectedRoleForRegister}
           onRegisterSuccess={handleLoginSuccess}
-          onNavigateLogin={() => setAuthView('login')}
-          onNavigateHome={() => setAuthView('landing')}
+          onNavigateLogin={() => navigateToAuth('login')}
+          onNavigateHome={handleNavigateHome}
         />
       );
     }
@@ -129,12 +185,12 @@ export default function App() {
     if (authView === 'forgot-password') {
       return (
         <ForgotPassword
-          onNavigateLogin={() => setAuthView('login')}
+          onNavigateLogin={() => navigateToAuth('login')}
           onNavigateResetWithToken={(tok) => {
             setResetToken(tok);
-            setAuthView('reset-password');
+            navigateToAuth('reset-password');
           }}
-          onNavigateHome={() => setAuthView('landing')}
+          onNavigateHome={handleNavigateHome}
         />
       );
     }
@@ -143,8 +199,8 @@ export default function App() {
       return (
         <ResetPassword
           token={resetToken}
-          onNavigateLogin={() => setAuthView('login')}
-          onNavigateHome={() => setAuthView('landing')}
+          onNavigateLogin={() => navigateToAuth('login')}
+          onNavigateHome={handleNavigateHome}
         />
       );
     }
@@ -152,12 +208,9 @@ export default function App() {
     return (
       <Login
         onLoginSuccess={handleLoginSuccess}
-        onNavigateRegister={() => {
-          setSelectedRoleForRegister('HR_MANAGER');
-          setAuthView('register');
-        }}
-        onNavigateForgotPassword={() => setAuthView('forgot-password')}
-        onNavigateHome={() => setAuthView('landing')}
+        onNavigateRegister={(role) => navigateToAuth('register', role || 'HR_MANAGER')}
+        onNavigateForgotPassword={() => navigateToAuth('forgot-password')}
+        onNavigateHome={handleNavigateHome}
       />
     );
   }
@@ -207,9 +260,9 @@ export default function App() {
       case 'admin-center':
         return <AdminControlCenter user={user} />;
       case 'pricing':
-        return <Pricing user={user} onNavigateToDashboard={() => setActiveTab(isAdmin ? 'admin-center' : 'dashboard')} />;
+        return <Pricing user={user} onNavigateToDashboard={() => handleTabChange(isAdmin ? 'admin-center' : 'dashboard')} />;
       case 'dashboard':
-        return <Dashboard setActiveTab={setActiveTab} user={user} />;
+        return <Dashboard setActiveTab={handleTabChange} user={user} />;
       case 'candidate-portal':
         return <CandidatePortal user={user} />;
       case 'candidates':
@@ -240,7 +293,7 @@ export default function App() {
       case 'settings':
         return <Settings user={user} />;
       default:
-        return isAdmin ? <AdminControlCenter user={user} /> : <Dashboard setActiveTab={setActiveTab} user={user} />;
+        return isAdmin ? <AdminControlCenter user={user} /> : <Dashboard setActiveTab={handleTabChange} user={user} />;
     }
   };
 
@@ -249,7 +302,7 @@ export default function App() {
       {/* SaaS Sidebar with Collapsible layout */}
       <Sidebar
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
         onLogout={handleLogout}
         user={user}
         isCollapsed={isSidebarCollapsed}
@@ -265,7 +318,7 @@ export default function App() {
           onLogout={handleLogout}
           isSidebarCollapsed={isSidebarCollapsed}
           toggleSidebar={toggleSidebar}
-          setActiveTab={setActiveTab}
+          setActiveTab={handleTabChange}
         />
         <main className="page-body">
           {renderActivePage()}
