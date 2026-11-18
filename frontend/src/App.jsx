@@ -42,11 +42,12 @@ export default function App() {
   const navigateToAuth = (view, role = 'HR_MANAGER', replace = false) => {
     setSelectedRoleForRegister(role);
     setAuthView(view);
-    const hash = view === 'landing' ? '#/' : `#/${view}`;
+    const hash = view === 'landing' ? '' : `#/${view}`;
+    const targetUrl = hash ? `${window.location.pathname}${hash}` : window.location.pathname;
     if (replace) {
-      window.history.replaceState({ authView: view, role }, '', hash);
+      window.history.replaceState({ authView: view, role }, '', targetUrl);
     } else {
-      window.history.pushState({ authView: view, role }, '', hash);
+      window.history.pushState({ authView: view, role }, '', targetUrl);
     }
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
@@ -65,11 +66,13 @@ export default function App() {
 
   // Robust return to landing page from any auth sub-view
   const handleNavigateHome = () => {
-    if (window.history.state && window.history.state.authView && window.history.state.authView !== 'landing') {
+    setAuthView('landing');
+    if (window.location.hash) {
       window.history.back();
     } else {
-      navigateToAuth('landing', 'HR_MANAGER', false);
+      navigateToAuth('landing', 'HR_MANAGER', true);
     }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   };
 
   useEffect(() => {
@@ -79,6 +82,7 @@ export default function App() {
     if (urlToken) {
       setResetToken(urlToken);
       navigateToAuth('reset-password', 'HR_MANAGER', true);
+      return;
     }
 
     const savedUser = localStorage.getItem('sr_user');
@@ -98,13 +102,15 @@ export default function App() {
         setUser({ full_name: 'Aishwarya Shree', role: 'ADMIN', email: 'admin@recruitment.com' });
       }
     } else {
-      // Unauthenticated initial hash inspection
-      const initialHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
-      if (['login', 'register', 'forgot-password'].includes(initialHash)) {
-        setAuthView(initialHash);
-        window.history.replaceState({ authView: initialHash }, '', `#/${initialHash}`);
+      // FRESH VISIT: ALWAYS OPEN PUBLIC LANDING PAGE FIRST!
+      // Clear any accidental leftover hash so it never auto-opens register
+      setAuthView('landing');
+      if (window.location.hash) {
+        try {
+          window.history.replaceState({ authView: 'landing' }, '', window.location.pathname);
+        } catch (e) {}
       } else {
-        window.history.replaceState({ authView: 'landing' }, '', '#/');
+        window.history.replaceState({ authView: 'landing' }, '', window.location.pathname);
       }
     }
 
@@ -119,15 +125,18 @@ export default function App() {
   // Listen to popstate event (hardware mobile back button, swipe back, browser back)
   useEffect(() => {
     const handlePopState = (event) => {
-      const rawHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
       const state = event.state || {};
+      const rawHash = (window.location.hash || '').replace('#/', '').replace('#', '').trim();
 
       if (!user) {
-        const viewFromHash = ['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash) ? rawHash : 'landing';
-        const targetView = state.authView || viewFromHash;
-        setAuthView(targetView);
-        if (state.role) {
-          setSelectedRoleForRegister(state.role);
+        if (state.authView) {
+          setAuthView(state.authView);
+          if (state.role) setSelectedRoleForRegister(state.role);
+        } else if (['login', 'register', 'forgot-password', 'reset-password'].includes(rawHash)) {
+          setAuthView(rawHash);
+        } else {
+          // If no state or returning to root, ALWAYS go to landing page
+          setAuthView('landing');
         }
       } else {
         const fallbackTab = user.role === 'ADMIN' ? 'admin-center' : (user.role === 'CANDIDATE' ? 'candidate-portal' : 'dashboard');
