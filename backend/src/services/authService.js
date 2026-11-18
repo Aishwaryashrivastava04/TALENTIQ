@@ -160,7 +160,7 @@ async function registerUser({
       }
     }
   } catch (dbErr) {
-    console.warn('⚠️ [MySQL] DB query failed, using in-memory registration:', dbErr.message);
+    console.warn('⚠️ [MySQL] DB query failed, using resilient persistence:', dbErr.message);
 
     // Fallback in-memory: if exists, return seamlessly
     const existingMem = IN_MEMORY_AUTH.users.find(u => u.email === cleanEmail);
@@ -180,8 +180,44 @@ async function registerUser({
       role: targetRole,
       is_active: 1,
       is_verified: 0,
+      company_name: company_name || null,
+      job_title: job_title || null,
     };
     IN_MEMORY_AUTH.users.push(newUser);
+  }
+
+  // Persist user permanently in MongoDB Atlas Cloud Store
+  try {
+    const MongoUser = require('../models/User');
+    const savedDoc = await MongoUser.findOneAndUpdate(
+      { email: cleanEmail },
+      {
+        email: cleanEmail,
+        password_hash: passwordHash,
+        full_name: cleanName,
+        phone: phone || null,
+        role: targetRole,
+        is_active: true,
+        is_verified: true,
+        company_name: company_name || null,
+        job_title: job_title || null,
+      },
+      { upsert: true, new: true }
+    );
+    if (savedDoc && (!newUser || !newUser.id)) {
+      newUser = {
+        id: savedDoc._id.toString(),
+        email: savedDoc.email,
+        full_name: savedDoc.full_name,
+        phone: savedDoc.phone,
+        role: savedDoc.role,
+        is_verified: 1,
+        company_name: savedDoc.company_name,
+        job_title: savedDoc.job_title,
+      };
+    }
+  } catch (mErr) {
+    console.warn('MongoDB Atlas user persistence note:', mErr.message);
   }
 
   // Send Welcome Email asynchronously without blocking HTTP response
@@ -217,14 +253,38 @@ async function loginUser({ email, password, remember_me }) {
 
   try {
     const [rows] = await mysqlPool.query(
-      'SELECT id, email, password_hash, full_name, phone, role, is_active, is_verified FROM users WHERE email = ? LIMIT 1',
+      'SELECT id, email, password_hash, full_name, phone, role, is_active, is_verified, company_name, job_title FROM users WHERE email = ? LIMIT 1',
       [cleanEmail]
     );
     if (rows && rows.length > 0) {
       user = rows[0];
     }
   } catch (dbErr) {
-    console.warn('⚠️ [MySQL] Login DB query failed, checking in-memory fallback:', dbErr.message);
+    console.warn('⚠️ [MySQL] Login DB query failed, checking MongoDB Atlas & memory:', dbErr.message);
+  }
+
+  // 2. Try MongoDB Atlas Cloud Persistent Store
+  if (!user) {
+    try {
+      const MongoUser = require('../models/User');
+      const mUser = await MongoUser.findOne({ email: cleanEmail });
+      if (mUser) {
+        user = {
+          id: mUser._id.toString(),
+          email: mUser.email,
+          password_hash: mUser.password_hash,
+          full_name: mUser.full_name,
+          phone: mUser.phone,
+          role: mUser.role,
+          is_active: mUser.is_active ? 1 : 0,
+          is_verified: mUser.is_verified ? 1 : 0,
+          company_name: mUser.company_name,
+          job_title: mUser.job_title,
+        };
+      }
+    } catch (mErr) {
+      console.warn('⚠️ [MongoDB Atlas] Login lookup note:', mErr.message);
+    }
   }
 
   if (!user) {

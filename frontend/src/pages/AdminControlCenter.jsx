@@ -526,7 +526,7 @@ export default function AdminControlCenter({ user }) {
                   TALENTIQ Premium Subscription & Pricing Governance
                 </h3>
                 <div style={{ fontSize: '0.78rem', color: '#64748B', marginTop: '3px' }}>
-                  Supervised by Master Administrator: <strong>Aishwarya Shree (AS)</strong> • Real-time Razorpay Ledger
+                  Supervised by Master Administrator: <strong>{user?.full_name || 'Aishwarya Shree'}</strong> • Real-time Razorpay Ledger
                 </div>
               </div>
             </div>
@@ -1072,7 +1072,7 @@ export default function AdminControlCenter({ user }) {
                   TALENTIQ Premium Subscription & Pricing Governance
                 </h3>
                 <div style={{ fontSize: '0.78rem', color: '#64748B', marginTop: '3px' }}>
-                  Supervised by Master Administrator: <strong>Aishwarya Shree (AS)</strong> • Real-time Razorpay Ledger
+                  Supervised by Master Administrator: <strong>{user?.full_name || 'Aishwarya Shree'}</strong> • Real-time Razorpay Ledger
                 </div>
               </div>
             </div>
@@ -1484,7 +1484,7 @@ export default function AdminControlCenter({ user }) {
                   TALENTIQ Premium Subscription & Pricing Governance
                 </h3>
                 <div style={{ fontSize: '0.78rem', color: '#64748B', marginTop: '3px' }}>
-                  Supervised by Master Administrator: <strong>Aishwarya Shree (AS)</strong> • Real-time Razorpay Ledger
+                  Supervised by Master Administrator: <strong>{user?.full_name || 'Aishwarya Shree'}</strong> • Real-time Razorpay Ledger
                 </div>
               </div>
             </div>
@@ -1934,7 +1934,7 @@ export default function AdminControlCenter({ user }) {
                   TALENTIQ Premium Subscription & Pricing Governance
                 </h3>
                 <div style={{ fontSize: '0.78rem', color: '#64748B', marginTop: '3px' }}>
-                  Supervised by Master Administrator: <strong>Aishwarya Shree (AS)</strong> • Real-time Razorpay Ledger
+                  Supervised by Master Administrator: <strong>{user?.full_name || 'Aishwarya Shree'}</strong> • Real-time Razorpay Ledger
                 </div>
               </div>
             </div>
