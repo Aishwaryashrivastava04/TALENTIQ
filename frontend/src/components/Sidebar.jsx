@@ -33,7 +33,6 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
   let menuItems = [];
   if (isCandidate) {
     menuItems = [
-      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'candidate-portal', label: 'Candidate Workspace', icon: LayoutDashboard, badge: 'Home' },
       { id: 'pricing', label: 'TALENTIQ Premium', icon: Sparkles, badge: 'PRO' },
       { id: 'resume-builder', label: 'Resume Builder', icon: FileText, badge: 'ATS' },
@@ -44,7 +43,6 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
     ];
   } else if (isAdmin) {
     menuItems = [
-      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'admin-center', label: 'Admin Control Center', icon: Shield, badge: 'Exec' },
       { id: 'pricing', label: 'Membership Plans', icon: Sparkles, badge: 'Plans' },
       { id: 'dashboard', label: 'Overview', icon: LayoutDashboard },
@@ -64,7 +62,6 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
   } else {
     // HR_MANAGER
     menuItems = [
-      { id: 'public-website', label: 'Public Website', icon: Globe, badge: 'Site' },
       { id: 'dashboard', label: 'Overview', icon: LayoutDashboard },
       { id: 'candidates', label: 'Candidates', icon: Users },
       { id: 'screening', label: 'Smart Resume Intelligence', icon: FileSearch, badge: 'Smart' },
@@ -296,6 +293,31 @@ export default function Sidebar({ activeTab, setActiveTab, onLogout, user, isCol
             )}
           </div>
         )}
+
+        {/* Return to Public Website link */}
+        <button
+          onClick={() => setActiveTab('public-website')}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.6rem',
+            width: '100%',
+            padding: isCollapsed ? '0.65rem' : '0.55rem 0.75rem',
+            borderRadius: '6px',
+            border: '1px solid #E5EAF0',
+            backgroundColor: '#F8FAFC',
+            color: '#0060A8',
+            fontSize: '0.8rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            justifyContent: isCollapsed ? 'center' : 'flex-start',
+            transition: 'background-color 160ms ease'
+          }}
+          title="Return to Public Website"
+        >
+          <Globe size={16} color="#0060A8" />
+          {!isCollapsed && <span>Public Website</span>}
+        </button>
 
         {/* Logout Button */}
         <button

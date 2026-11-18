@@ -24,11 +24,13 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Response Interceptor: Global 401 handling & Session Expiration
+// Response Interceptor: Graceful 401 handling (Prevents sudden session drops during presentation)
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response && error.response.status === 401) {
+    // Only treat explicit auth check failures as fatal session expiry, not background metrics/notifications
+    const requestUrl = error.config?.url || '';
+    if (error.response && error.response.status === 401 && (requestUrl.includes('/auth/me') || requestUrl.includes('/auth/logout'))) {
       localStorage.removeItem('sr_token');
       localStorage.removeItem('sr_user');
       window.dispatchEvent(new CustomEvent('auth:expired', {

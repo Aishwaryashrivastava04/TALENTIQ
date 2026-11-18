@@ -165,6 +165,23 @@ export default function App() {
         'account-settings', 'settings', 'user-management', 'resume-builder'
       ];
 
+      // If user is inside the dashboard workspace: STAY IN THE DASHBOARD! Never kick out accidentally!
+      if (user && isDashboardOpen) {
+        if (dashboardTabs.includes(rawHash)) {
+          setActiveTab(rawHash);
+        } else if (rawHash === 'public-website' || state.authView === 'landing') {
+          setIsDashboardOpen(false);
+          setAuthView('landing');
+        } else {
+          // If hash is cleared or empty, maintain current dashboard tab without kicking out
+          const fallbackTab = user.role === 'ADMIN' ? 'admin-center' : (user.role === 'CANDIDATE' ? 'candidate-portal' : 'dashboard');
+          setActiveTab(fallbackTab);
+        }
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        return;
+      }
+
+      // If user is outside the dashboard (on public site or login/register):
       if (!rawHash || rawHash === 'landing') {
         setIsDashboardOpen(false);
         setAuthView('landing');
@@ -172,7 +189,7 @@ export default function App() {
         setIsDashboardOpen(false);
         setAuthView(rawHash);
         if (state.role) setSelectedRoleForRegister(state.role);
-      } else if (dashboardTabs.includes(rawHash)) {
+      } else if (user && dashboardTabs.includes(rawHash)) {
         setActiveTab(rawHash);
         setIsDashboardOpen(true);
       } else {
@@ -184,7 +201,7 @@ export default function App() {
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [user]);
+  }, [user, isDashboardOpen]);
 
   const handleLoginSuccess = (userData) => {
     setUser(userData);
